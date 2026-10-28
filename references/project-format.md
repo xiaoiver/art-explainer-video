@@ -6,7 +6,7 @@
 | --- | --- |
 | `schema_version` | 当前为 `1` |
 | `artwork` | 对象，`title` 与 `sources`（公开资料 URL 数组） |
-| `video` | `width`、`height`、`fps`、`duration_seconds` |
+| `video` | `width`、`height`、`fps`、`duration_seconds`；可选 `orientation` 为 `landscape`、`portrait` 或 `square`，须与宽高一致 |
 | `cover` | 可选；`width`、`height`，单独指定比例 |
 | `assets` | 对象数组；`id` 唯一，`kind` 是 `original`、`ai-image`、`ai-video`、`audio` 或 `graphic`；可选 `path`、`source_url`、`notes` |
 | `shots` | 对象数组；`id` 唯一，`start`、`end`、`asset_id`、`purpose`（`analysis`、`atmosphere`、`title`）；生成画面增加非空 `ai_label` |
@@ -16,7 +16,7 @@
 
 每个 `shot` 表示主画面，允许为转场短暂重叠；字幕、图形叠加和声音轨仍保留在实际编辑工程中。时间线不得有未覆盖的空段。`analysis` 指对原作视觉证据的讲解，引用 `original`；生成画面应用于延展。脚本检查这种标记关系，不判断讲解事实是否正确。
 
-示例见简化的 [xishan-plan.json](../examples/xishan-plan.json)，或保留25镜头时间线的 [early-spring-plan.json](../examples/early-spring-plan.json)。复制到自己的项目目录后修改作品、时间、来源与文件路径，不能把案例坐标和素材当作其他画作的依据。
+示例见简化的 [xishan-plan.json](../examples/xishan-plan.json)、保留25镜头时间线的 [early-spring-plan.json](../examples/early-spring-plan.json)，以及 [雪中猎人竖版计划](../examples/hunters-in-snow-portrait-plan.json)。同一作品的不同方向各存一个计划，避免覆盖原版。复制后修改作品、时间、来源与文件路径，不能把案例坐标和素材当作其他画作的依据。
 
 ```bash
 python3 scripts/validate_plan.py examples/xishan-plan.json

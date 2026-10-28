@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "artwork": {
+    "title": "雪中猎人",
+    "sources": [
+      "https://bruegel.at/die-jaeger-im-schnee/",
+      "https://zeitendernatur.khm.at/puzzle/"
+    ]
+  },
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 24,
+    "duration_seconds": 122,
+    "orientation": "portrait"
+  },
+  "cover": {
+    "width": 2304,
+    "height": 1728
+  },
+  "assets": [
+    {
+      "id": "painting",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg"
+    },
+    {
+      "id": "hunters",
+      "kind": "ai-video"
+    },
+    {
+      "id": "ice",
+      "kind": "ai-video"
+    },
+    {
+      "id": "fire",
+      "kind": "ai-video"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 2,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s02",
+      "start": 2,
+      "end": 7,
+      "asset_id": "hunters",
+      "purpose": "atmosphere",
+      "ai_label": "AI 想象演绎",
+      "notes": "生成视频按主体位置取竖幅窗口"
+    },
+    {
+      "id": "s03",
+      "start": 7,
+      "end": 19,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "完整原画按原比例展示，上下排版"
+    },
+    {
+      "id": "s04",
+      "start": 19,
+      "end": 25,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "完整原画按原比例展示，上下排版"
+    },
+    {
+      "id": "s05",
+      "start": 25,
+      "end": 30,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s06",
+      "start": 30,
+      "end": 35,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s07",
+      "start": 35,
+      "end": 41,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s08",
+      "start": 41,
+      "end": 46,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s09",
+      "start": 46,
+      "end": 48,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s10",
+      "start": 48,
+      "end": 53.5,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s11",
+      "start": 53.5,
+      "end": 59,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s12",
+      "start": 59,
+      "end": 64,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "完整原画按原比例展示，上下排版"
+    },
+    {
+      "id": "s13",
+      "start": 64,
+      "end": 68,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s14",
+      "start": 68,
+      "end": 76,
+      "asset_id": "ice",
+      "purpose": "atmosphere",
+      "ai_label": "AI 想象演绎",
+      "notes": "生成视频按主体位置取竖幅窗口"
+    },
+    {
+      "id": "s15",
+      "start": 76,
+      "end": 81,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s16",
+      "start": 81,
+      "end": 85,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s17",
+      "start": 85,
+      "end": 91,
+      "asset_id": "fire",
+      "purpose": "atmosphere",
+      "ai_label": "AI 想象演绎",
+      "notes": "生成视频按主体位置取竖幅窗口"
+    },
+    {
+      "id": "s18",
+      "start": 91,
+      "end": 97,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s19",
+      "start": 97,
+      "end": 103,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "完整原画按原比例展示，上下排版"
+    },
+    {
+      "id": "s20",
+      "start": 103,
+      "end": 108,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s21",
+      "start": 108,
+      "end": 113,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s22",
+      "start": 113,
+      "end": 117,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从高清原画重新安排竖幅取景"
+    },
+    {
+      "id": "s23",
+      "start": 117,
+      "end": 122,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "完整原画按原比例展示，上下排版"
+    }
+  ],
+  "notes": "Each orientation has its own plan, editable timeline and export. Cover stays independently selected at 4:3. This is not an executable render project."
+}

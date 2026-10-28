@@ -1,6 +1,6 @@
 # Art Explainer Video · 画作赏析视频
 
-把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》与《早春图》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
+把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》与《雪中猎人》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
 覆盖原画研究、讲解脚本、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
 
@@ -22,6 +22,12 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 
 也可以仅请求：“沿用已经确认的音色，继续配乐、字幕与剪映精剪，并更新制作记录。”
 
+支持选择**横版、竖版或两个版本**。只说横版时建议1920 × 1080（16:9），竖版时建议1080 × 1920（9:16）；指定其他比例时以用户要求为准。视频和封面分别配置。
+
+> 把已完成的《雪中猎人》再做一版9:16竖版。沿用配音、配乐和已选动态，重新安排原画局部、完整构图、字幕换行和安全区，保留横版文件。
+
+横转竖需要重新取景与排版，不是整片居中裁切。方法见 [横竖版](references/formats.md)。
+
 ## 文件导航
 
 | 文件 | 用途 |
@@ -32,10 +38,13 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [工具接入](references/tooling.md) | YouMind、Seed Audio、Open Montage 的接入与恢复 |
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |
 | [剪辑与交付](references/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
+| [横竖版与重新构图](references/formats.md) | 方向选择、原画局部、宽幅全景、字幕安全区与素材复用 |
 | [计划文件格式](references/project-format.md) | 可选 JSON 格式与检查命令 |
 | [溪山行旅图案例](references/xishan-case.md) | 已完成案例的选择、指标与限制 |
 | [早春图案例](references/early-spring-case.md) | 题款题诗、开场声音修订与 146 秒成片复盘 |
 | [早春图分镜计划](examples/early-spring-plan.json) | 对应修订版的 25 个主画面镜头，不含媒体 |
+| [雪中猎人案例](references/hunters-in-snow-case.md) | 西方绘画、授权配乐与独立竖版重构 |
+| [雪中猎人竖版计划](examples/hunters-in-snow-portrait-plan.json) | 9:16视频与独立4:3封面，23个主画面镜头，不含媒体 |
 
 ## 本地检查
 
@@ -44,6 +53,7 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 ```bash
 python3 scripts/validate_plan.py examples/xishan-plan.json
 python3 scripts/validate_plan.py examples/early-spring-plan.json
+python3 scripts/validate_plan.py examples/hunters-in-snow-portrait-plan.json
 python3 -m unittest discover -s tests -v
 ```
 

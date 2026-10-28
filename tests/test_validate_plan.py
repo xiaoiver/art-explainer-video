@@ -30,6 +30,31 @@ class PlanChecks(unittest.TestCase):
         self.plan["shots"][1]["purpose"] = "analysis"
         self.assertTrue(self.validate()["errors"])
 
+    def test_orientation_and_cover_remain_independent(self):
+        self.plan["video"].update(width=1080, height=1920, orientation="portrait")
+        result = self.validate()
+        self.assertEqual(result["errors"], [])
+        self.assertEqual(result["ratios"], {"video": "9:16", "cover": "4:3"})
+        self.plan["video"]["orientation"] = "landscape"
+        self.assertTrue(self.validate()["errors"])
+        for bad in ([], None, "vertical"):
+            self.plan["video"]["orientation"] = bad
+            self.assertTrue(self.validate()["errors"])
+
+    def test_portrait_plan_cannot_pass_with_landscape_media(self):
+        self.plan["video"].update(width=1080, height=1920, orientation="portrait")
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            (base / "asset.bin").write_bytes(b"fixture")
+            for asset in self.plan["assets"]:
+                asset["path"] = "asset.bin"
+            self.plan["deliverables"] = {"video": "asset.bin", "cover": "asset.bin"}
+            media = [{"width": 1920, "height": 1080, "fps": 24, "duration_seconds": 90},
+                     {"width": 2304, "height": 1728}]
+            with patch.object(MODULE, "inspect_media", side_effect=media):
+                result = MODULE.validate_plan(self.plan, base, probe=True)
+            self.assertTrue(any("width differs" in item for item in result["errors"]))
+
     def test_generated_picture_needs_disclosure(self):
         self.plan["shots"][1].pop("ai_label")
         self.assertTrue(self.validate()["errors"])

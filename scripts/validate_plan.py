@@ -83,6 +83,15 @@ def validate_plan(data, base_dir, check_files=False, probe=False):
         sizes[key] = spec
         result["ratios"][key] = aspect(spec["width"], spec["height"])
     video = data.get("video", {})
+    if isinstance(video, dict) and "orientation" in video:
+        orientation = video["orientation"]
+        if not isinstance(orientation, str) or orientation not in {"landscape", "portrait", "square"}:
+            errors.append("video.orientation must be landscape, portrait or square")
+        elif "video" in sizes:
+            width, height = sizes["video"]["width"], sizes["video"]["height"]
+            expected = "landscape" if width > height else "portrait" if height > width else "square"
+            if orientation != expected:
+                errors.append("video.orientation differs from width and height")
     duration = video.get("duration_seconds") if isinstance(video, dict) else None
     fps = video.get("fps") if isinstance(video, dict) else None
     if not positive_number(duration):
