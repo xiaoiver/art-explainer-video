@@ -16,7 +16,7 @@
 
 每个 `shot` 表示主画面，允许为转场短暂重叠；字幕、图形叠加和声音轨仍保留在实际编辑工程中。时间线不得有未覆盖的空段。`analysis` 指对原作视觉证据的讲解，引用 `original`；生成画面应用于延展。脚本检查这种标记关系，不判断讲解事实是否正确。
 
-示例见 [xishan-plan.json](../examples/xishan-plan.json)。复制到自己的项目目录后修改作品、时间、来源与文件路径，不能把案例坐标和素材当作其他画作的依据。
+示例见简化的 [xishan-plan.json](../examples/xishan-plan.json)，或保留25镜头时间线的 [early-spring-plan.json](../examples/early-spring-plan.json)。复制到自己的项目目录后修改作品、时间、来源与文件路径，不能把案例坐标和素材当作其他画作的依据。
 
 ```bash
 python3 scripts/validate_plan.py examples/xishan-plan.json

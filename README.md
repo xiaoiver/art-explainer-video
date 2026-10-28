@@ -1,6 +1,6 @@
 # Art Explainer Video · 画作赏析视频
 
-把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
+把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》与《早春图》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
 覆盖原画研究、讲解脚本、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
 
@@ -34,6 +34,8 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [剪辑与交付](references/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
 | [计划文件格式](references/project-format.md) | 可选 JSON 格式与检查命令 |
 | [溪山行旅图案例](references/xishan-case.md) | 已完成案例的选择、指标与限制 |
+| [早春图案例](references/early-spring-case.md) | 题款题诗、开场声音修订与 146 秒成片复盘 |
+| [早春图分镜计划](examples/early-spring-plan.json) | 对应修订版的 25 个主画面镜头，不含媒体 |
 
 ## 本地检查
 
@@ -41,9 +43,10 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 
 ```bash
 python3 scripts/validate_plan.py examples/xishan-plan.json
+python3 scripts/validate_plan.py examples/early-spring-plan.json
 python3 -m unittest discover -s tests -v
 ```
 
-示例是重建的分镜计划，不含可下载的私人素材；还不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
+《溪山行旅图》示例是简化重建计划，《早春图》示例保留修订版的25镜头时间线；均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
 
 制作环境的安装按需执行，不能因为调用此 skill 就默认安装整套工具。计划检查脚本已用本次实际成片与封面验证；尚未在全新机器上重跑完整制作。生成、试听、剪辑软件兼容性仍须在使用者环境中确认。

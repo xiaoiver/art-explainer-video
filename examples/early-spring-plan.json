@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "artwork": {
+    "title": "早春图",
+    "sources": [
+      "https://digitalarchive.npm.gov.tw/Collection/Detail/47?dep=P"
+    ]
+  },
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 146
+  },
+  "cover": {
+    "width": 2304,
+    "height": 1728
+  },
+  "assets": [
+    {
+      "id": "painting",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/47?dep=P",
+      "notes": "Supply your own permitted local file via path; media is not distributed."
+    },
+    {
+      "id": "mist",
+      "kind": "ai-video",
+      "notes": "Supply your own permitted local file via path; media is not distributed."
+    },
+    {
+      "id": "stream",
+      "kind": "ai-video",
+      "notes": "Supply your own permitted local file via path; media is not distributed."
+    },
+    {
+      "id": "colophon",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/47?dep=P",
+      "notes": "Supply your own permitted local file via path; media is not distributed."
+    },
+    {
+      "id": "poem",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/47?dep=P",
+      "notes": "Supply your own permitted local file via path; media is not distributed."
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 4,
+      "asset_id": "painting",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s02",
+      "start": 4,
+      "end": 8,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "寒枝"
+    },
+    {
+      "id": "s03",
+      "start": 8,
+      "end": 15,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "山腰烟岚"
+    },
+    {
+      "id": "s04",
+      "start": 15,
+      "end": 23,
+      "asset_id": "painting",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s05",
+      "start": 23,
+      "end": 28,
+      "asset_id": "mist",
+      "purpose": "atmosphere",
+      "ai_label": "AI笔墨延展"
+    },
+    {
+      "id": "s06a",
+      "start": 28,
+      "end": 29,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "近处树石"
+    },
+    {
+      "id": "insert-locate",
+      "start": 29,
+      "end": 31,
+      "asset_id": "painting",
+      "purpose": "analysis"
+    },
+    {
+      "id": "insert-colophon",
+      "start": 31,
+      "end": 35.2,
+      "asset_id": "colophon",
+      "purpose": "analysis",
+      "notes": "Original detail with a separate modern transcription and author/date label."
+    },
+    {
+      "id": "insert-poem",
+      "start": 35.2,
+      "end": 42.8,
+      "asset_id": "poem",
+      "purpose": "analysis",
+      "notes": "Original detail with a separate modern transcription and author/date label."
+    },
+    {
+      "id": "insert-return",
+      "start": 42.8,
+      "end": 49,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "从题诗回看烟岚"
+    },
+    {
+      "id": "s06b",
+      "start": 49,
+      "end": 57,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "近处树石"
+    },
+    {
+      "id": "s07",
+      "start": 57,
+      "end": 69,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "虚实之间"
+    },
+    {
+      "id": "s08",
+      "start": 69,
+      "end": 73.5,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "高远"
+    },
+    {
+      "id": "s09",
+      "start": 73.5,
+      "end": 78.5,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "深远"
+    },
+    {
+      "id": "s10",
+      "start": 78.5,
+      "end": 84,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "平远"
+    },
+    {
+      "id": "s11",
+      "start": 84,
+      "end": 93,
+      "asset_id": "painting",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s12",
+      "start": 93,
+      "end": 100,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "卷云皴"
+    },
+    {
+      "id": "s13",
+      "start": 100,
+      "end": 106,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "蟹爪枝"
+    },
+    {
+      "id": "s14",
+      "start": 106,
+      "end": 111,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "树石之势"
+    },
+    {
+      "id": "s15",
+      "start": 111,
+      "end": 116.5,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "水岸人物"
+    },
+    {
+      "id": "s16",
+      "start": 116.5,
+      "end": 120.5,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "林间屋宇"
+    },
+    {
+      "id": "s17",
+      "start": 120.5,
+      "end": 126,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "可游之境"
+    },
+    {
+      "id": "s18",
+      "start": 126,
+      "end": 131,
+      "asset_id": "stream",
+      "purpose": "atmosphere",
+      "ai_label": "AI笔墨延展"
+    },
+    {
+      "id": "s19",
+      "start": 131,
+      "end": 141,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "空白里的春意"
+    },
+    {
+      "id": "s20",
+      "start": 141,
+      "end": 146,
+      "asset_id": "painting",
+      "purpose": "analysis"
+    }
+  ]
+}
