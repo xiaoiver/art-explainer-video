@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "artwork": {
+    "title": "溪山行旅图",
+    "sources": ["https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959"]
+  },
+  "video": {"width": 1920, "height": 1080, "fps": 24, "duration_seconds": 90},
+  "cover": {"width": 2304, "height": 1728},
+  "assets": [
+    {"id": "painting", "kind": "original", "source_url": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959", "notes": "自行获取可用高清图，确认使用条件后填入 path"},
+    {"id": "caravan-motion", "kind": "ai-video", "notes": "自有图生视频：行旅，需保留原作尺度"},
+    {"id": "mountain-motion", "kind": "ai-video", "notes": "自有图生视频：巨峰，保持笔墨稳定"}
+  ],
+  "shots": [
+    {"id": "opening", "start": 0, "end": 12, "asset_id": "painting", "purpose": "analysis", "notes": "全景进入行旅局部"},
+    {"id": "caravan", "start": 12, "end": 17, "asset_id": "caravan-motion", "purpose": "atmosphere", "ai_label": "AI笔墨延展"},
+    {"id": "scale", "start": 17, "end": 31, "asset_id": "painting", "purpose": "analysis"},
+    {"id": "composition", "start": 31, "end": 40, "asset_id": "painting", "purpose": "analysis"},
+    {"id": "mountain", "start": 40, "end": 45, "asset_id": "mountain-motion", "purpose": "atmosphere", "ai_label": "AI笔墨延展"},
+    {"id": "brushwork", "start": 45, "end": 60, "asset_id": "painting", "purpose": "analysis"},
+    {"id": "waterfall", "start": 60, "end": 74, "asset_id": "painting", "purpose": "analysis"},
+    {"id": "return", "start": 74, "end": 90, "asset_id": "painting", "purpose": "analysis"}
+  ]
+}

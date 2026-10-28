@@ -1,0 +1,4 @@
+interface:
+  display_name: "画作赏析视频"
+  short_description: "从原画资料到动态讲解、统一音色、剪映精剪与发布素材的制作流程"
+  default_prompt: "使用 $art-explainer-video 为我制作一支画作赏析视频，以原画讲解为主，穿插保留原作质感的 AI 动态。"

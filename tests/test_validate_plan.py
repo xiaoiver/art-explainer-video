@@ -1,0 +1,100 @@
+import copy
+import importlib.util
+import json
+from pathlib import Path
+import tempfile
+import unittest
+from unittest.mock import patch
+
+
+ROOT = Path(__file__).resolve().parents[1]
+SPEC = importlib.util.spec_from_file_location("validate_plan", ROOT / "scripts/validate_plan.py")
+MODULE = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(MODULE)
+
+
+class PlanChecks(unittest.TestCase):
+    def setUp(self):
+        self.plan = json.loads((ROOT / "examples/xishan-plan.json").read_text(encoding="utf-8"))
+
+    def validate(self, plan=None, **kwargs):
+        return MODULE.validate_plan(self.plan if plan is None else plan, ROOT, **kwargs)
+
+    def test_planning_example_and_independent_ratios(self):
+        result = self.validate()
+        self.assertEqual(result["errors"], [])
+        self.assertEqual(result["ratios"], {"video": "16:9", "cover": "4:3"})
+        self.assertTrue(result["warnings"])
+
+    def test_generated_picture_cannot_replace_evidence(self):
+        self.plan["shots"][1]["purpose"] = "analysis"
+        self.assertTrue(self.validate()["errors"])
+
+    def test_generated_picture_needs_disclosure(self):
+        self.plan["shots"][1].pop("ai_label")
+        self.assertTrue(self.validate()["errors"])
+
+    def test_gaps_and_overruns_are_rejected(self):
+        self.plan["shots"][1]["start"] += 1
+        self.assertTrue(self.validate()["errors"])
+        self.plan["shots"][1]["start"] -= 1
+        self.plan["shots"][-1]["end"] += 1
+        self.assertTrue(self.validate()["errors"])
+
+    def test_dissolve_overlap_is_accepted(self):
+        self.plan["shots"][1]["start"] -= 0.25
+        self.assertEqual(self.validate()["errors"], [])
+
+    def test_unknown_asset_and_duplicates_are_rejected(self):
+        self.plan["shots"][0]["asset_id"] = "missing"
+        self.assertTrue(self.validate()["errors"])
+        self.plan["assets"].append(copy.deepcopy(self.plan["assets"][0]))
+        self.assertTrue(self.validate()["errors"])
+
+    def test_nonfinite_and_malformed_input_returns_errors(self):
+        for bad in ([], {"schema_version": 1}, {"video": None}):
+            with self.subTest(bad=bad):
+                self.assertTrue(self.validate(bad)["errors"])
+        for field in ("fps", "duration_seconds"):
+            for value in (float("nan"), float("inf"), True, -1):
+                with self.subTest(field=field, value=value):
+                    altered = copy.deepcopy(self.plan)
+                    altered["video"][field] = value
+                    self.assertTrue(self.validate(altered)["errors"])
+
+    def test_missing_files_fail_only_when_requested(self):
+        self.assertEqual(self.validate()["errors"], [])
+        self.assertTrue(self.validate(check_files=True)["errors"])
+
+    def test_malformed_enum_fields_report_errors(self):
+        self.plan["assets"][0]["kind"] = []
+        self.plan["shots"][0]["purpose"] = {}
+        self.assertTrue(self.validate()["errors"])
+
+    def test_relative_paths_and_actual_media_dimensions(self):
+        with tempfile.TemporaryDirectory() as directory:
+            base = Path(directory)
+            (base / "asset.bin").write_bytes(b"fixture")
+            for asset in self.plan["assets"]:
+                asset["path"] = "asset.bin"
+            self.plan["deliverables"] = {"video": "asset.bin", "cover": "asset.bin"}
+            correct = [
+                {"width": 1920, "height": 1080, "fps": 24, "duration_seconds": 90.047},
+                {"width": 2304, "height": 1728},
+            ]
+            with patch.object(MODULE, "inspect_media", side_effect=correct):
+                result = MODULE.validate_plan(self.plan, base, probe=True)
+            self.assertEqual(result["errors"], [])
+            wrong = [correct[0], {"width": 2304, "height": 1296}]
+            with patch.object(MODULE, "inspect_media", side_effect=wrong):
+                result = MODULE.validate_plan(self.plan, base, probe=True)
+            self.assertTrue(result["errors"])
+
+    def test_probe_requires_deliverables(self):
+        result = self.validate(probe=True)
+        self.assertTrue(any("deliverables.video" in error for error in result["errors"]))
+        self.assertTrue(any("deliverables.cover" in error for error in result["errors"]))
+
+
+if __name__ == "__main__":
+    unittest.main()
