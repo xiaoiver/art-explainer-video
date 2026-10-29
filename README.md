@@ -2,9 +2,9 @@
 
 把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》与《雪中猎人》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
-覆盖原画研究、讲解脚本、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
+覆盖原画研究、讲解脚本、让手机观众看见原作尺幅的一拍、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
 
-本仓库提供制作方法与计划检查脚本，**不是一键渲染器**。媒体服务与剪辑软件需要使用者自己的访问权限；本仓库不包含凭据、原画母版、生成媒体或私人项目链接。
+本仓库提供制作方法与计划检查脚本，**不是一键渲染器**。媒体服务与剪辑软件需要使用者自己的访问权限；本仓库不包含凭据、原画母版、完整视频或音频素材、私人项目链接；仅附带下述成片示例静帧。
 
 ## 作品截图
 
@@ -17,11 +17,11 @@
 | 《溪山行旅图》 | 《早春图》 | 《雪中猎人》 |
 | :---: | :---: | :---: |
 | <img src="docs/shots/xishan-cover.webp" alt="《溪山行旅图》片头" width="100%" /> | <img src="docs/shots/zaochun-cover.webp" alt="《早春图》片头" width="100%" /> | <img src="docs/shots/hunters-cover.webp" alt="《雪中猎人》片头" width="100%" /> |
-| <img src="docs/shots/xishan-frame-travelers.webp" alt="《溪山行旅图》行旅局部" width="100%" /> | <img src="docs/shots/zaochun-frame-mist.webp" alt="《早春图》烟岚局部" width="100%" /> | <img src="docs/shots/hunters-frame-dogs.webp" alt="《雪中猎人》猎人与猎犬局部" width="100%" /> |
+| <img src="docs/shots/xishan-frame-travelers.webp" alt="《溪山行旅图》行旅局部" width="100%" /> | <img src="docs/shots/zaochun-frame-mist.webp" alt="《早春图》烟岚局部" width="100%" /> | <img src="docs/shots/hunters-frame-dogs.webp" alt="《雪中猎人》猎人与猎犬的 AI 想象演绎静帧" width="100%" /> |
 
-上一行是片头，下一行分别是行旅、山腰烟岚、猎人与猎犬。
+上一行是片头，下一行分别是原画行旅局部、原画山腰烟岚局部，以及《雪中猎人》猎人与猎犬的 **AI 想象演绎静帧**。生成静帧不作为原作细节证据。
 
-《溪山行旅图》与《早春图》的画面来自国立故宫博物院（台北）公开数据；《早春图》按案例沿用馆方当时所示的 CC BY 4.0 署名。《雪中猎人》为维也纳艺术史博物馆藏，图像使用与案例相同的公有领域复制品（Google Art Project / Wikimedia Commons）。
+以下署名针对制作所用的原画素材，AI 演绎静帧不属于原画复制品。《溪山行旅图》与《早春图》的原画来自国立故宫博物院（台北）公开数据；《早春图》按案例沿用馆方当时所示的 CC BY 4.0 署名。《雪中猎人》为维也纳艺术史博物馆藏，原画图像使用与案例相同的公有领域复制品（Google Art Project / Wikimedia Commons）。
 
 这些静帧只说明成片画面。仓库仍不附带完整视频，也不附带博物馆原图母版。
 
@@ -52,7 +52,7 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | 文件 | 用途 |
 | --- | --- |
 | [SKILL.md](SKILL.md) | 智能体入口与工作流 |
-| [画面与脚本](references/art-direction.md) | 证据、资料优先级、表面细节、叙事节奏、同作者对照与生成提示词 |
+| [画面与脚本](references/art-direction.md) | 证据、资料优先级、原画定位、尺幅、表面细节、叙事节奏、同作者对照与生成提示词 |
 | [题跋与印章](references/inscriptions-and-seals.md) | 从题名、后人观看与收藏流传中选取有依据的故事 |
 | [工具接入](references/tooling.md) | YouMind、Seed Audio、Open Montage 的接入与恢复 |
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |
