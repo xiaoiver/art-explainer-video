@@ -1,0 +1,21 @@
+{
+  "image": "viewer-standing-left.png",
+  "image_size_px": [
+    941,
+    1671
+  ],
+  "visible_bounds_px": [
+    307,
+    57,
+    679,
+    1617
+  ],
+  "bounds_convention": "x0,y0 inclusive; x1,y1 exclusive",
+  "bounds_alpha_threshold": 16,
+  "sha256": "aac11e59a678118e01e204ab81eedd44a4d4a00d7c9cc2d3c21b3b689568b540",
+  "pose": "standing, three-quarter back view, looking left, hands loosely behind lower back",
+  "palette": "muted warm gray-taupe",
+  "source": "Original synthetic illustration; approved figure design extracted with built-in image editing tool on 2026-10-29. No real-person reference.",
+  "role": "illustrative scale reference, not a gallery photo",
+  "default_reference_height_cm": 170
+}
