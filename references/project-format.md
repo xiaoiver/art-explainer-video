@@ -16,6 +16,8 @@
 
 每个 `shot` 表示主画面，允许为转场短暂重叠；字幕、图形叠加和声音轨仍保留在实际编辑工程中。时间线不得有未覆盖的空段。`analysis` 指对原作视觉证据的讲解，引用 `original`；生成画面应用于延展。脚本检查这种标记关系，不判断讲解事实是否正确。
 
+尺幅镜头记成时间线上的一镜：原画全幅，或 `graphic` 叠在原画上。`notes` 写明馆方尺寸页面。计划检查不判断对照是否符合厘米比例，也不能代替 [画面与脚本](art-direction.md) 里的尺幅要求。
+
 示例见简化的 [xishan-plan.json](../examples/xishan-plan.json)、保留25镜头时间线的 [early-spring-plan.json](../examples/early-spring-plan.json)，以及 [雪中猎人竖版计划](../examples/hunters-in-snow-portrait-plan.json)。同一作品的不同方向各存一个计划，避免覆盖原版。复制后修改作品、时间、来源与文件路径，不能把案例坐标和素材当作其他画作的依据。
 
 ```bash

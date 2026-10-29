@@ -2,7 +2,7 @@
 
 把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》与《雪中猎人》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
-覆盖原画研究、讲解脚本、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
+覆盖原画研究、讲解脚本、让手机观众看见原作尺幅的一拍、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
 
 本仓库提供制作方法与计划检查脚本，**不是一键渲染器**。媒体服务与剪辑软件需要使用者自己的访问权限；本仓库不包含凭据、原画、生成媒体或私人项目链接。
 
@@ -33,7 +33,7 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | 文件 | 用途 |
 | --- | --- |
 | [SKILL.md](SKILL.md) | 智能体入口与工作流 |
-| [画面与脚本](references/art-direction.md) | 证据、原画定位、镜头与生成提示词 |
+| [画面与脚本](references/art-direction.md) | 证据、原画定位、尺幅、镜头与生成提示词 |
 | [题跋与印章](references/inscriptions-and-seals.md) | 从题名、后人观看与收藏流传中选取有依据的故事 |
 | [工具接入](references/tooling.md) | YouMind、Seed Audio、Open Montage 的接入与恢复 |
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |
