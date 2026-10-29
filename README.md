@@ -4,7 +4,26 @@
 
 覆盖原画研究、讲解脚本、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
 
-本仓库提供制作方法与计划检查脚本，**不是一键渲染器**。媒体服务与剪辑软件需要使用者自己的访问权限；本仓库不包含凭据、原画、生成媒体或私人项目链接。
+本仓库提供制作方法与计划检查脚本，**不是一键渲染器**。媒体服务与剪辑软件需要使用者自己的访问权限；本仓库不包含凭据、原画母版、生成媒体或私人项目链接。
+
+## 作品截图
+
+下面是 Gallery Mate 小红书《读画》已发布成片的静帧，取自横版播放画面，不是本地未完成的剪辑。三则笔记：
+
+- [山这么大，赶路的人在哪里？《溪山行旅图》](https://www.xiaohongshu.com/explore/6ae13ff5000000002a01cb13)
+- [郭熙的早春，原来藏在空白里](https://www.xiaohongshu.com/explore/6ae1f8a6000000002a01dd24)
+- [《雪中猎人》严冬里，生活仍在继续](https://www.xiaohongshu.com/explore/6ae2092700000000350213d0)
+
+| 《溪山行旅图》 | 《早春图》 | 《雪中猎人》 |
+| :---: | :---: | :---: |
+| <img src="docs/shots/xishan-cover.webp" alt="《溪山行旅图》片头" width="100%" /> | <img src="docs/shots/zaochun-cover.webp" alt="《早春图》片头" width="100%" /> | <img src="docs/shots/hunters-cover.webp" alt="《雪中猎人》片头" width="100%" /> |
+| <img src="docs/shots/xishan-frame-travelers.webp" alt="《溪山行旅图》行旅局部" width="100%" /> | <img src="docs/shots/zaochun-frame-mist.webp" alt="《早春图》烟岚局部" width="100%" /> | <img src="docs/shots/hunters-frame-dogs.webp" alt="《雪中猎人》猎人与猎犬局部" width="100%" /> |
+
+上一行是片头，下一行分别是行旅、山腰烟岚、猎人与猎犬。
+
+《溪山行旅图》与《早春图》的画面来自国立故宫博物院（台北）公开数据；《早春图》按案例沿用馆方当时所示的 CC BY 4.0 署名。《雪中猎人》为维也纳艺术史博物馆藏，图像使用与案例相同的公有领域复制品（Google Art Project / Wikimedia Commons）。
+
+这些静帧只说明成片画面。仓库仍不附带完整视频，也不附带博物馆原图母版。
 
 ## 安装与使用
 
