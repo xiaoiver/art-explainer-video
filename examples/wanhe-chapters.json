@@ -1,0 +1,19 @@
+{
+  "artwork": "李唐《万壑松风图》",
+  "video": {"width": 1080, "height": 1920, "fps": 24, "duration_seconds": 123},
+  "chapters": [
+    {"id": "scale", "label": "尺幅", "start": 0, "end": 27.469},
+    {"id": "pines", "label": "松近山远", "start": 27.469, "end": 55.7991},
+    {"id": "path", "label": "循径入山", "start": 55.7991, "end": 65.728},
+    {"id": "stone-water", "label": "石硬水活", "start": 65.728, "end": 93.88334},
+    {"id": "signature", "label": "远峰留款", "start": 93.88334, "end": 123}
+  ],
+  "style": {
+    "top": 139, "side": 68, "gap": 23.5, "fontSize": 24,
+    "fontFamily": "\"Songti SC\", \"STSong\", serif",
+    "activeColor": "#EEE8D5", "mutedColor": "#B5B59E",
+    "activeLineColor": "#B6A77F", "mutedLineColor": "#59604F",
+    "inactiveOpacity": 0.36
+  },
+  "notes": "本地交付v4的章节与时码，不代表已发布。等宽分段表达叙事章节，不表达章节时长比例；这是叠加层配置，不是validate_plan.py的输入。"
+}

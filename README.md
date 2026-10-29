@@ -54,6 +54,7 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [SKILL.md](SKILL.md) | 智能体入口与工作流 |
 | [画面与脚本](references/art-direction.md) | 证据、资料优先级、原画定位、尺幅、表面细节、叙事节奏、同作者对照与生成提示词 |
 | [尺幅参照人物](references/scale-reference.md) | 自然站姿透明 PNG、可见身高边界、等比缩放脚本与横竖版合成方法 |
+| [顶部章节导航](references/chapter-navigation.md) | 竖版固定章节栏、当前段高亮、React组件与《万壑松风图》实际时码示例 |
 | [题跋与印章](references/inscriptions-and-seals.md) | 从题名、后人观看与收藏流传中选取有依据的故事 |
 | [工具接入](references/tooling.md) | YouMind、Seed Audio、Open Montage 的接入与恢复 |
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |

@@ -32,6 +32,8 @@
 
 封面独立配置：竖版视频仍可保留用户已选的4:3封面，不能因视频换方向就自动改封面或重新付费生图。
 
+多段竖版可选 [顶部章节导航](chapter-navigation.md)：固定短章名、当前段高亮，作为镜头之外的持久图层。换方向时重新排版，插段或删镜后同步校准章节时码。
+
 ## 计划与验收
 
 计划中 `video.orientation` 可选为 `landscape`、`portrait` 或 `square`，并与宽高一致；尺寸仍是实际渲染依据。不填写该字段的旧计划继续有效。示例见 [雪中猎人竖版计划](../examples/hunters-in-snow-portrait-plan.json)。
