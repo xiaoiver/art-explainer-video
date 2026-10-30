@@ -10,9 +10,9 @@
 
 下面是 Gallery Mate 小红书《读画》已发布成片的静帧，取自横版播放画面，不是本地未完成的剪辑。三则笔记：
 
-- [山这么大，赶路的人在哪里？《溪山行旅图》](https://www.xiaohongshu.com/explore/6ae13ff5000000002a01cb13)
-- [郭熙的早春，原来藏在空白里](https://www.xiaohongshu.com/explore/6ae1f8a6000000002a01dd24)
-- [《雪中猎人》严冬里，生活仍在继续](https://www.xiaohongshu.com/explore/6ae2092700000000350213d0)
+- [山这么大，赶路的人在哪里？《溪山行旅图》](https://www.xiaohongshu.com/explore/6ae13ff5000000002a01cb13?xsec_token=ABV6f6fcg56H4-f2MrOyRFP0C97prYFSvVe7o7cjgHNCU=&xsec_source=pc_user)
+- [郭熙的早春，原来藏在空白里](https://www.xiaohongshu.com/explore/6ae1f8a6000000002a01dd24?xsec_token=ABV6f6fcg56H4-f2MrOyRFP_pAh9MHbveqpeCp5SZzZ5o=&xsec_source=pc_user)
+- [《雪中猎人》严冬里，生活仍在继续](https://www.xiaohongshu.com/explore/6ae2092700000000350213d0?xsec_token=ABCJDknoN25ga1eqgRpuxIjeTF8xYnAehz8QzMHyEyONg=&xsec_source=pc_user)
 
 | 《溪山行旅图》 | 《早春图》 | 《雪中猎人》 |
 | :---: | :---: | :---: |
@@ -28,8 +28,6 @@
 | 第5秒：满宽浏览 | 第18秒：尺幅参照 |
 | :---: | :---: |
 | <img src="docs/shots/hangong-opening.webp" alt="汉宫春晓图本地v2第5秒，原画分段拼接后满宽浏览" width="100%" /> | <img src="docs/shots/hangong-scale.webp" alt="汉宫春晓图本地v2第18秒，完整画心与170厘米成人同比例示意" width="100%" /> |
-
-原画及资料：[台北故宫博物院馆藏档案3672](https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P)，The National Palace Museum, Taipei，CC BY 4.0，www.npm.gov.tw。静帧含原画裁切、几何拼接与图文叠加；参照人物为原创合成插画，非展厅实拍。图中约15秒的平移来自原画编排，不是AI生成动作。
 
 ## 安装与使用
 
