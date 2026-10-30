@@ -77,7 +77,7 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 
 ## 案例与示例
 
-以下是已完成制作的复盘与分镜计划示例，不是默认工作流地图。
+以下是已完成制作的复盘，以及可校验的分镜计划，不是默认工作流地图。
 
 | 文件 | 用途 |
 | --- | --- |
@@ -89,6 +89,8 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [汉宫春晓图案例](references/hangong-chunxiao-case.md) | 满宽开场、原画拼接、题记、声音复用与v2实际验收范围 |
 | [汉宫春晓图计划](examples/hangong-chunxiao-plan.json) | 16:9、146秒、20镜头与独立3:4封面，不含媒体 |
 | [汉宫开头参数](examples/hangong-opening.json) | 7621 × 1846原画浏览段与1920 × 780视窗，只适用于本片 |
+| [千里江山图案例](references/qianli-jiangshan-case.md) | 分青分绿的六色读法（公开色卡，非馆方色谱）；名画记定镜，下载与商用须故宫影像授权；默认零 AI。尚未成片，无发布静帧 |
+| [千里江山图计划](examples/qianli-jiangshan-plan.json) | 16:9、150秒、12镜头与独立3:4封面，不含媒体 |
 
 
 ## 本地检查
@@ -100,6 +102,7 @@ python3 scripts/validate_plan.py examples/xishan-plan.json
 python3 scripts/validate_plan.py examples/early-spring-plan.json
 python3 scripts/validate_plan.py examples/hunters-in-snow-portrait-plan.json
 python3 scripts/validate_plan.py examples/hangong-chunxiao-plan.json
+python3 scripts/validate_plan.py examples/qianli-jiangshan-plan.json
 python3 -m unittest discover -s tests -v
 ```
 
@@ -109,6 +112,6 @@ python3 -m unittest discover -s tests -v
 node --experimental-strip-types --test tests/test_long_scroll.mjs
 ```
 
-《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
+《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《千里江山图》是尚未制作的12镜计划。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
 
 制作环境的安装按需执行，不能因为调用此 skill 就默认安装整套工具。计划检查脚本已用本次实际成片与封面验证；尚未在全新机器上重跑完整制作。生成、试听、剪辑软件兼容性仍须在使用者环境中确认。

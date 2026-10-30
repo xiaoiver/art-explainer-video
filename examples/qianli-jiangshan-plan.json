@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "artwork": {
+    "title": "千里江山图",
+    "sources": [
+      "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "https://www.dpm.org.cn/collection/paint/228354.html",
+      "https://digicol.dpm.org.cn/cultural/detail?id=c01729e4fec24366916164f2106ed383",
+      "https://minghuaji.dpm.org.cn/page/copyright",
+      "https://minghuaji.dpm.org.cn/page/helpus",
+      "https://minghuaji.dpm.org.cn/page/applyimage",
+      "https://commons.wikimedia.org/wiki/File:Wang_Ximeng._A_Thousand_Li_of_Rivers_and_Mountains._(Complete,_51,3x1191,5_cm)._1113._Palace_museum,_Beijing.jpg",
+      "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E5%B8%8C%E5%AD%9F%E5%8D%83%E9%87%8C%E6%B1%9F%E5%B1%B1%E5%9B%BE%E5%8D%B7.png"
+    ],
+    "dimensions_cm": {
+      "height": 51.5,
+      "width": 1191.5,
+      "scope": "本幅，绢本设色；故宫博物院藏品页纵51.5×横1191.5厘米，文物号新00146004。Commons 文件说明中的51.3厘米不采用",
+      "accessed": "2026-10-30"
+    }
+  },
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 150
+  },
+  "cover": {
+    "width": 1728,
+    "height": 2304
+  },
+  "assets": [
+    {
+      "id": "opening-passage",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "notes": "开场满宽浏览：一段青绿主峰与江面，自右向左，非整卷加速。优先名画记定镜。工作底图可用 Commons 39,974×1,600 JPEG（来源 Guoxue.zynews.com，非故宫授权包）。1.85GB 名画记来源 PNG 不默认使用。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "whole-scroll",
+      "kind": "original",
+      "source_url": "https://www.dpm.org.cn/collection/paint/228354.html",
+      "notes": "s02 尺幅主画面：全卷缩小，剪辑中叠加自然站姿 170cm 成人剪影，同一厘米比例，标「按馆方尺寸示意」。画心高 51.5cm 约为该参照身高的 30%。馆方尺寸纵 51.5×横 1,191.5 cm，文物号新00146004，检索 2026-10-30：https://www.dpm.org.cn/collection/paint/228354.html 。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "layer-overview",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "notes": "中景山体，至少两档青绿叠压，用于一句讲清分青分绿。第一段持续局部自 s03 起。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "touqing",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "notes": "头青：山顶或远脊最深青。普及色卡近似 #2B5085，对应蓝铜矿所制石青的深档；不是馆方色号，也不是测色值。须为名画记上指认得见的原图。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "sanqing",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "notes": "三青：山腰或水边浅青灰。普及近似 #95B4D6，非馆方色号。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "toulv",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "notes": "头绿：近山主体的深翠绿。普及近似 #5C8C5F，对应孔雀石所制石绿的深档；非馆方色号。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "sanlv",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "notes": "三绿：山脚林木的浅黄绿。普及近似 #B5C9A8，非馆方色号。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "zheshi",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "notes": "赭石：山脚土色暖底，不是青。普及近似 #A8643D。对应馆方所说赭色衬托，不是馆方色号。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "yuebai",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "notes": "月白：绢地浅底上的江水、雾气或天空，不是另一罐颜料，也不是青。普及近似 #F2EAD6。水面若有一笔笔水纹，保留原迹，不用生成填白。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "caijing-colophon",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "notes": "卷后蔡京跋局部。若工作底图没有跋书，改以全卷缩小叠加馆方藏品说明引录，不另造跋书照片。政和三年、年十八、亲授其法见 https://www.dpm.org.cn/collection/paint/228354.html 。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "layered-mid",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
+      "notes": "收束中景：多层青绿同框。六色短名可叠在画面外，不写成馆方色谱。Supply your own permitted local file; media is not distributed."
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 12,
+      "asset_id": "opening-passage",
+      "purpose": "title",
+      "notes": "满宽原画自右向左慢移一段。旁白：远看一片宝石绿——近了，你能数出几层青？标「原画浏览 · 从右向左」。非整卷。无生成画面。"
+    },
+    {
+      "id": "s02",
+      "start": 12,
+      "end": 22,
+      "asset_id": "whole-scroll",
+      "purpose": "analysis",
+      "notes": "尺幅必须在 s03 与六色局部之前。全卷缩小加 170cm 成人同比例。纵 51.5×横 1,191.5 cm，故宫新00146004，检索 2026-10-30。标「按馆方尺寸示意」。"
+    },
+    {
+      "id": "s03",
+      "start": 22,
+      "end": 32,
+      "asset_id": "layer-overview",
+      "purpose": "analysis",
+      "notes": "第一段持续局部：分青分绿——同路石青、石绿拆成深浅。画面上至少两档叠压。不称馆方六色色谱。"
+    },
+    {
+      "id": "s04",
+      "start": 32,
+      "end": 44,
+      "asset_id": "touqing",
+      "purpose": "analysis",
+      "notes": "六色① 头青：山顶最深青。屏上短标「头青」。证据为原图。"
+    },
+    {
+      "id": "s05",
+      "start": 44,
+      "end": 56,
+      "asset_id": "sanqing",
+      "purpose": "analysis",
+      "notes": "六色② 三青：山腰或水边浅青灰。标「三青」。"
+    },
+    {
+      "id": "s06",
+      "start": 56,
+      "end": 68,
+      "asset_id": "toulv",
+      "purpose": "analysis",
+      "notes": "六色③ 头绿：近山主体。标「头绿」。"
+    },
+    {
+      "id": "s07",
+      "start": 68,
+      "end": 80,
+      "asset_id": "sanlv",
+      "purpose": "analysis",
+      "notes": "六色④ 三绿：山脚林木浅黄绿。标「三绿」。"
+    },
+    {
+      "id": "s08",
+      "start": 80,
+      "end": 92,
+      "asset_id": "zheshi",
+      "purpose": "analysis",
+      "notes": "六色⑤ 赭石：山脚暖底。不是青。标「赭石」。"
+    },
+    {
+      "id": "s09",
+      "start": 92,
+      "end": 104,
+      "asset_id": "yuebai",
+      "purpose": "analysis",
+      "notes": "六色⑥ 月白：绢地浅底上的江、雾或天。不是青，也不是新画的白。标「月白」。"
+    },
+    {
+      "id": "s10",
+      "start": 104,
+      "end": 122,
+      "asset_id": "caijing-colophon",
+      "purpose": "analysis",
+      "notes": "馆方事实：王希孟，蔡京跋，政和三年，年十八；本幅纵 51.5×横 1,191.5 cm；故宫博物院藏，新00146004。不讲籍贯与早逝定论，不说永不褪色。"
+    },
+    {
+      "id": "s11",
+      "start": 122,
+      "end": 138,
+      "asset_id": "layered-mid",
+      "purpose": "analysis",
+      "notes": "本片解读：青与绿拆开，赭石垫底，月白留空，将近十二米才像千里。可轻叠六色短名，不写成馆方色谱。"
+    },
+    {
+      "id": "s12",
+      "start": 138,
+      "end": 150,
+      "asset_id": "whole-scroll",
+      "purpose": "title",
+      "notes": "全卷静止后黑场落版。馆藏署名与本幅尺寸。默认无 AI，无填缝，无穿搭。"
+    }
+  ]
+}
