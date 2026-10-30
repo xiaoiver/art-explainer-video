@@ -1,5 +1,8 @@
 # Art Explainer Video · 画作赏析视频
 
+![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
+![Codex](https://img.shields.io/badge/Codex-Supported-222222?style=flat-square)
+
 把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》《雪中猎人》与《汉宫春晓图》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
 覆盖原画研究、讲解脚本、让手机观众看见原作尺幅的一拍、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
