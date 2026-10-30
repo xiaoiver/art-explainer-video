@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "artwork": {
+    "title": "汉宫春晓图",
+    "sources": [
+      "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "https://theme.npm.gov.tw/selection/Article.aspx?sNo=04000980",
+      "https://theme.npm.gov.tw/exh112/npm_anime/SpringDawn/ch/"
+    ],
+    "dimensions_cm": {
+      "height": 30.6,
+      "width": 574.1,
+      "scope": "本幅，不含装裱"
+    }
+  },
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 146
+  },
+  "cover": {
+    "width": 1728,
+    "height": 2304
+  },
+  "assets": [
+    {
+      "id": "chess-board.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "chess-court.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "chess-looks.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "chess.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "garden-motion-last.jpg",
+      "kind": "ai-image",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "garden-motion-reference.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "garden-motion.mp4",
+      "kind": "ai-video",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "makeup-hands.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "makeup.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "music.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "portrait-court.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "portrait-painter.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "portrait.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "price-location.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "whole.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "s02 follows the opening tour and precedes sustained detail analysis. Original whole painting plus independent natural170cm adult at a common scale; museum body dimensions574.1x30.6cm, not mounting. Supply your own permitted file."
+    },
+    {
+      "id": "willows-motion-last.jpg",
+      "kind": "ai-image",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "willows-motion.mp4",
+      "kind": "ai-video",
+      "notes": "Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "opening-panorama.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P",
+      "notes": "Supply your own permitted local file; media is not distributed. Opening uses adjacent museum photographs12–14 aligned with similarity transforms and feathered overlap; browsing passage,not entire handscroll. All later detail evidence remains single official photographs."
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 15.22,
+      "asset_id": "opening-panorama.jpg",
+      "purpose": "title",
+      "notes": "Full-width original passage, right-to-left camera tour; not the whole scroll and not generated motion. See hangong-opening.json."
+    },
+    {
+      "id": "s02",
+      "start": 15.22,
+      "end": 21.22,
+      "asset_id": "whole.jpg",
+      "purpose": "analysis",
+      "notes": "Whole body and170cm adult scale diagram; visible dimensions574.1x30.6cm while narration states length and height."
+    },
+    {
+      "id": "s03",
+      "start": 21.22,
+      "end": 30.086,
+      "asset_id": "garden-motion-reference.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s04",
+      "start": 30.086,
+      "end": 36.086,
+      "asset_id": "garden-motion.mp4",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展"
+    },
+    {
+      "id": "s05",
+      "start": 36.086,
+      "end": 36.436,
+      "asset_id": "garden-motion-last.jpg",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展"
+    },
+    {
+      "id": "s06",
+      "start": 36.436,
+      "end": 45.436,
+      "asset_id": "makeup.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s07",
+      "start": 45.436,
+      "end": 51.436,
+      "asset_id": "makeup-hands.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s08",
+      "start": 51.436,
+      "end": 59.436,
+      "asset_id": "chess-court.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s09",
+      "start": 59.436,
+      "end": 67.136,
+      "asset_id": "portrait-court.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s10",
+      "start": 67.136,
+      "end": 75.136,
+      "asset_id": "chess.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s11",
+      "start": 75.136,
+      "end": 84.136,
+      "asset_id": "chess-looks.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s12",
+      "start": 84.136,
+      "end": 90.598,
+      "asset_id": "chess-board.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s13",
+      "start": 90.598,
+      "end": 96.598,
+      "asset_id": "willows-motion.mp4",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展"
+    },
+    {
+      "id": "s14",
+      "start": 96.598,
+      "end": 96.948,
+      "asset_id": "willows-motion-last.jpg",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展"
+    },
+    {
+      "id": "s15",
+      "start": 96.948,
+      "end": 104.948,
+      "asset_id": "portrait.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s16",
+      "start": 104.948,
+      "end": 114.948,
+      "asset_id": "portrait-painter.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s17",
+      "start": 114.948,
+      "end": 125.948,
+      "asset_id": "price-location.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s18",
+      "start": 125.948,
+      "end": 127.948,
+      "asset_id": "whole.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s19",
+      "start": 127.948,
+      "end": 135.948,
+      "asset_id": "music.jpg",
+      "purpose": "analysis"
+    },
+    {
+      "id": "s20",
+      "start": 135.948,
+      "end": 146,
+      "asset_id": "whole.jpg",
+      "purpose": "analysis"
+    }
+  ]
+}

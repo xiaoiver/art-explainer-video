@@ -1,6 +1,6 @@
 # Art Explainer Video · 画作赏析视频
 
-把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》与《雪中猎人》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
+把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》《雪中猎人》与《汉宫春晓图》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
 覆盖原画研究、讲解脚本、让手机观众看见原作尺幅的一拍、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
 
@@ -25,6 +25,16 @@
 
 这些静帧只说明成片画面。仓库仍不附带完整视频，也不附带博物馆原图母版。
 
+### 长卷开头示例：《汉宫春晓图》
+
+以下来自2026-10-30的本地v2成片，尚未上传或发布社交平台。开头约15秒满宽缓慢浏览连续的一段原画，文字退为辅助；随后6秒交代完整尺幅，再进入局部讲解。仅浏览一段，不在短开场快速扫完整卷。方法见 [长卷开头](references/long-scroll-opening.md)，实际制作见 [案例](references/hangong-chunxiao-case.md)。
+
+| 第5秒：满宽浏览 | 第18秒：尺幅参照 |
+| :---: | :---: |
+| <img src="docs/shots/hangong-opening.webp" alt="汉宫春晓图本地v2第5秒，原画分段拼接后满宽浏览" width="100%" /> | <img src="docs/shots/hangong-scale.webp" alt="汉宫春晓图本地v2第18秒，完整画心与170厘米成人同比例示意" width="100%" /> |
+
+原画及资料：[台北故宫博物院馆藏档案3672](https://digitalarchive.npm.gov.tw/Collection/Detail/3672?dep=P)，The National Palace Museum, Taipei，CC BY 4.0，www.npm.gov.tw。静帧含原画裁切、几何拼接与图文叠加；参照人物为原创合成插画，非展厅实拍。图中约15秒的平移来自原画编排，不是AI生成动作。
+
 ## 安装与使用
 
 例如，在 Codex 中安装（私有仓库需要有权限的 GitHub 登录）：
@@ -47,12 +57,16 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 
 横转竖需要重新取景与排版，不是整片居中裁切。方法见 [横竖版](references/formats.md)。
 
+> 制作一支长卷赏析：开头让高清原画满宽缓慢浏览，先选能看清细节的一段，随后短暂交代整卷尺幅。不要把整卷缩成细带配大标题，沿用已选声音和后续素材。
+
 ## 文件导航
 
 | 文件 | 用途 |
 | --- | --- |
 | [SKILL.md](SKILL.md) | 智能体入口与工作流 |
 | [画面与脚本](references/art-direction.md) | 证据、资料优先级、原画定位、尺幅、表面细节、叙事节奏、同作者对照与生成提示词 |
+| [长卷开头](references/long-scroll-opening.md) | 满宽慢移、观看顺序、高清分段拼接、接尺幅与转场检查 |
+| [长卷组件](assets/long-scroll/LongScrollPan.tsx) | 可选Remotion等比平移组件，配套几何函数与参数示例 |
 | [尺幅参照人物](references/scale-reference.md) | 自然站姿透明 PNG、可见身高边界、等比缩放脚本与横竖版合成方法 |
 | [顶部章节导航](references/chapter-navigation.md) | 竖版固定章节栏、当前段高亮、React组件与《万壑松风图》实际时码示例 |
 | [题跋与印章](references/inscriptions-and-seals.md) | 从题名、后人观看与收藏流传中选取有依据的故事 |
@@ -66,6 +80,9 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [早春图分镜计划](examples/early-spring-plan.json) | 对应修订版的 25 个主画面镜头，不含媒体 |
 | [雪中猎人案例](references/hunters-in-snow-case.md) | 西方绘画、授权配乐与独立竖版重构 |
 | [雪中猎人竖版计划](examples/hunters-in-snow-portrait-plan.json) | 9:16视频与独立4:3封面，23个主画面镜头，不含媒体 |
+| [汉宫春晓图案例](references/hangong-chunxiao-case.md) | 满宽开场、原画拼接、题记、声音复用与v2实际验收范围 |
+| [汉宫春晓图计划](examples/hangong-chunxiao-plan.json) | 16:9、146秒、20镜头与独立3:4封面，不含媒体 |
+| [汉宫开头参数](examples/hangong-opening.json) | 7621 × 1846原画浏览段与1920 × 780视窗，只适用于本片 |
 
 ## 本地检查
 
@@ -75,9 +92,16 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 python3 scripts/validate_plan.py examples/xishan-plan.json
 python3 scripts/validate_plan.py examples/early-spring-plan.json
 python3 scripts/validate_plan.py examples/hunters-in-snow-portrait-plan.json
+python3 scripts/validate_plan.py examples/hangong-chunxiao-plan.json
 python3 -m unittest discover -s tests -v
 ```
 
-《溪山行旅图》示例是简化重建计划，《早春图》示例保留修订版的25镜头时间线；均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
+可选长卷组件依赖使用者现有的React / Remotion环境；几何测试另用Node.js 22.18+：
+
+```bash
+node --experimental-strip-types --test tests/test_long_scroll.mjs
+```
+
+《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
 
 制作环境的安装按需执行，不能因为调用此 skill 就默认安装整套工具。计划检查脚本已用本次实际成片与封面验证；尚未在全新机器上重跑完整制作。生成、试听、剪辑软件兼容性仍须在使用者环境中确认。
