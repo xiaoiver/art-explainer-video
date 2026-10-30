@@ -72,6 +72,7 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [题跋与印章](references/inscriptions-and-seals.md) | 从题名、后人观看与收藏流传中选取有依据的故事 |
 | [工具接入](references/tooling.md) | YouMind、Seed Audio、Open Montage 的接入与恢复 |
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |
+| [字体与文字层级](references/typography.md) | 宋体字幕、得意黑短标题、黑体导航标注，以及实际字体加载与封面独立排字 |
 | [剪辑与交付](references/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
 | [横竖版与重新构图](references/formats.md) | 方向选择、原画局部、宽幅全景、字幕安全区与素材复用 |
 | [计划文件格式](references/project-format.md) | 可选 JSON 格式与检查命令 |
