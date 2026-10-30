@@ -77,7 +77,7 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 
 ## 案例与示例
 
-以下是已完成制作的复盘与分镜计划示例，不是默认工作流地图。
+以下是已完成制作的复盘，以及可校验的分镜计划，不是默认工作流地图。
 
 | 文件 | 用途 |
 | --- | --- |
@@ -89,6 +89,8 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [汉宫春晓图案例](references/hangong-chunxiao-case.md) | 满宽开场、原画拼接、题记、声音复用与v2实际验收范围 |
 | [汉宫春晓图计划](examples/hangong-chunxiao-plan.json) | 16:9、146秒、20镜头与独立3:4封面，不含媒体 |
 | [汉宫开头参数](examples/hangong-opening.json) | 7621 × 1846原画浏览段与1920 × 780视窗，只适用于本片 |
+| [富春山居图案例](references/fuchun-shanju-case.md) | 剩山图与无用师卷：1650火后分藏、2011台北同柜并列（未重裱）、右向左对位；证据与 AI 分开。尚未成片，无发布静帧 |
+| [富春山居图计划](examples/fuchun-shanju-plan.json) | 16:9、140秒、16镜头与独立3:4封面，不含媒体 |
 
 
 ## 本地检查
@@ -100,6 +102,7 @@ python3 scripts/validate_plan.py examples/xishan-plan.json
 python3 scripts/validate_plan.py examples/early-spring-plan.json
 python3 scripts/validate_plan.py examples/hunters-in-snow-portrait-plan.json
 python3 scripts/validate_plan.py examples/hangong-chunxiao-plan.json
+python3 scripts/validate_plan.py examples/fuchun-shanju-plan.json
 python3 -m unittest discover -s tests -v
 ```
 
@@ -109,6 +112,6 @@ python3 -m unittest discover -s tests -v
 node --experimental-strip-types --test tests/test_long_scroll.mjs
 ```
 
-《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
+《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》是尚未制作的16镜计划。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
 
 制作环境的安装按需执行，不能因为调用此 skill 就默认安装整套工具。计划检查脚本已用本次实际成片与封面验证；尚未在全新机器上重跑完整制作。生成、试听、剪辑软件兼容性仍须在使用者环境中确认。

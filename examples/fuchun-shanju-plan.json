@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "artwork": {
+    "title": "富春山居图",
+    "sources": [
+      "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000975",
+      "https://www.zhejiangmuseum.com/cn/",
+      "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E5%89%A9%E5%B1%B1%E5%9C%96).jpg",
+      "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E7%84%A1%E7%94%A8%E5%B8%AB%E5%8D%B7).jpg"
+    ],
+    "dimensions_cm": {
+      "shengshan": {
+        "height": 31.8,
+        "width": 51.4,
+        "scope": "剩山图本幅，浙江省博物馆"
+      },
+      "wuyong": {
+        "height": 33.0,
+        "width": 636.9,
+        "scope": "无用师卷本幅，不含拖尾；国立故宫博物院 故畫001016"
+      },
+      "accessed": "2026-10-30"
+    }
+  },
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 140
+  },
+  "cover": {
+    "width": 1728,
+    "height": 2304
+  },
+  "assets": [
+    {
+      "id": "shengshan",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E5%89%A9%E5%B1%B1%E5%9C%96).jpg",
+      "notes": "剩山图。优先浙博授权扫描；公开拼合底图可用 2011 合璧展 Commons 约 7260×900。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "wuyong",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "无用师卷。优先故宫中阶 CC BY 4.0；备选 Commons 约 26134×900。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "joined-true-seam",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "s07 尺幅主画面：合璧缩小，剪辑中叠加自然站姿 170cm 成人剪影，同一厘米比例，标「按馆方尺寸示意」。剩山在右、无用在左；沿江岸对齐，勿把剩山 31.8cm 硬拉到 33cm；接缝保持可见。馆方尺寸见 artwork.dimensions_cm，检索 2026-10-30：https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P 与浙博藏品说明。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "seal-join",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "吴之矩骑缝印两半，真图几何对位，非生成。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "fire-scar",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "接缝火痕特写。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "wuyong-hemp",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "无用师卷披麻皴局部。第一段持续局部讲解从 s08 开始。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "wuyong-alum-moss",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "矾头与苔点局部。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "wuyong-river-figures",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "江岸小树或渔父等可见人尺度局部。画内尺度不代替 s07 尺幅。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "wuyong-colophon",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "卷末黄公望自跋局部。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "ai-seam-fill",
+      "kind": "ai-image",
+      "notes": "仅填两半之间厘米级窄缝；不作披麻、矾头或苔点证据。待生成。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "ai-lost-opening",
+      "kind": "ai-image",
+      "notes": "据子明卷示意剩山右侧已焚起手；不证明原迹技法。待生成。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "ziming-ref",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E5%AD%90%E6%98%8E%E5%8D%B7).jpg",
+      "notes": "子明卷，明人仿本。仅助 AI 卷首结构，不进入原迹证据镜头。可选。Supply your own permitted local file; media is not distributed."
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 5,
+      "asset_id": "shengshan",
+      "purpose": "title",
+      "notes": "黑场后剩山满高，自右极缓移。旁白：这两段山——凭什么说，是同一卷？"
+    },
+    {
+      "id": "s02",
+      "start": 5,
+      "end": 9,
+      "asset_id": "joined-true-seam",
+      "purpose": "analysis",
+      "notes": "同速接无用卷首，切口停半拍。屏上：1650 · 火后分藏 · 此处为历史切口。"
+    },
+    {
+      "id": "s03",
+      "start": 9,
+      "end": 14,
+      "asset_id": "seal-join",
+      "purpose": "analysis",
+      "notes": "吴之矩骑缝印两半几何合拢。真图对位，非生成。"
+    },
+    {
+      "id": "s04",
+      "start": 14,
+      "end": 20,
+      "asset_id": "joined-true-seam",
+      "purpose": "analysis",
+      "notes": "拉开合璧全貌，接缝仍可见。2011 台北同柜合展；影像再合一次，不假装重裱。"
+    },
+    {
+      "id": "s05",
+      "start": 20,
+      "end": 24,
+      "asset_id": "ai-seam-fill",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展 · 非原迹",
+      "notes": "窄缝填补淡入后立刻切回真缝。中间焦掉的纸回不来。"
+    },
+    {
+      "id": "s06",
+      "start": 24,
+      "end": 42,
+      "asset_id": "joined-true-seam",
+      "purpose": "title",
+      "notes": "满宽慢移，从右向左越过真接缝。标「原画合璧浏览 · 从右向左」。起问之后的浏览，尚未进入持续技法局部。"
+    },
+    {
+      "id": "s07",
+      "start": 42,
+      "end": 50,
+      "asset_id": "joined-true-seam",
+      "purpose": "analysis",
+      "notes": "尺幅必须在 s08 之前。合璧缩小加 170cm 成人同比例。剩山 31.8×51.4 cm，浙江省博物馆；无用师卷本幅 33×636.9 cm，台北故宫。检索 2026-10-30。标「按馆方尺寸示意」。"
+    },
+    {
+      "id": "s08",
+      "start": 50,
+      "end": 58,
+      "asset_id": "wuyong-hemp",
+      "purpose": "analysis",
+      "notes": "第一段持续局部讲解：无用师卷披麻皴。"
+    },
+    {
+      "id": "s09",
+      "start": 58,
+      "end": 66,
+      "asset_id": "wuyong-alum-moss",
+      "purpose": "analysis",
+      "notes": "矾头与山脚苔点。"
+    },
+    {
+      "id": "s10",
+      "start": 66,
+      "end": 74,
+      "asset_id": "wuyong-river-figures",
+      "purpose": "analysis",
+      "notes": "江岸人与树的画内尺度。"
+    },
+    {
+      "id": "s11",
+      "start": 74,
+      "end": 84,
+      "asset_id": "wuyong-colophon",
+      "purpose": "analysis",
+      "notes": "卷末黄公望自跋。至正十年，写给无用师。"
+    },
+    {
+      "id": "s12",
+      "start": 84,
+      "end": 92,
+      "asset_id": "joined-true-seam",
+      "purpose": "analysis",
+      "notes": "馆方事实：元黄公望，纸本墨笔。剩山在杭州，无用师卷在台北，故畫001016。1650 火后分装。"
+    },
+    {
+      "id": "s13",
+      "start": 92,
+      "end": 102,
+      "asset_id": "fire-scar",
+      "purpose": "analysis",
+      "notes": "真缝火痕与半印。能合上的是还在的纸。"
+    },
+    {
+      "id": "s14",
+      "start": 102,
+      "end": 115,
+      "asset_id": "joined-true-seam",
+      "purpose": "analysis",
+      "notes": "本片解读：合上不是假装完整，断口也是这幅画的一部分。接缝仍在画内。"
+    },
+    {
+      "id": "s15",
+      "start": 115,
+      "end": 122,
+      "asset_id": "ai-lost-opening",
+      "purpose": "atmosphere",
+      "ai_label": "AI 想象演绎 · 据临本示意",
+      "notes": "卷首佚失短示意后切回真迹剩山右缘。可删，不影响证据链。"
+    },
+    {
+      "id": "s16",
+      "start": 122,
+      "end": 140,
+      "asset_id": "joined-true-seam",
+      "purpose": "title",
+      "notes": "真迹合璧静止后黑场落版。馆藏署名与 AI 使用范围。旁白可静。"
+    }
+  ]
+}
