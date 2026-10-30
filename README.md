@@ -21,10 +21,6 @@
 
 上一行是片头，下一行分别是原画行旅局部、原画山腰烟岚局部，以及《雪中猎人》猎人与猎犬的 **AI 想象演绎静帧**。生成静帧不作为原作细节证据。
 
-以下署名针对制作所用的原画素材，AI 演绎静帧不属于原画复制品。《溪山行旅图》与《早春图》的原画来自国立故宫博物院（台北）公开数据；《早春图》按案例沿用馆方当时所示的 CC BY 4.0 署名。《雪中猎人》为维也纳艺术史博物馆藏，原画图像使用与案例相同的公有领域复制品（Google Art Project / Wikimedia Commons）。
-
-这些静帧只说明成片画面。仓库仍不附带完整视频，也不附带博物馆原图母版。
-
 ### 长卷开头示例：《汉宫春晓图》
 
 以下来自2026-10-30的本地v2成片，尚未上传或发布社交平台。开头约15秒满宽缓慢浏览连续的一段原画，文字退为辅助；随后6秒交代完整尺幅，再进入局部讲解。仅浏览一段，不在短开场快速扫完整卷。方法见 [长卷开头](references/long-scroll-opening.md)，实际制作见 [案例](references/hangong-chunxiao-case.md)。
@@ -76,6 +72,14 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [剪辑与交付](references/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
 | [横竖版与重新构图](references/formats.md) | 方向选择、原画局部、宽幅全景、字幕安全区与素材复用 |
 | [计划文件格式](references/project-format.md) | 可选 JSON 格式与检查命令 |
+
+
+## 案例与示例
+
+以下是已完成制作的复盘与分镜计划示例，不是默认工作流地图。
+
+| 文件 | 用途 |
+| --- | --- |
 | [溪山行旅图案例](references/xishan-case.md) | 已完成案例的选择、指标与限制 |
 | [早春图案例](references/early-spring-case.md) | 题款题诗、开场声音修订与 146 秒成片复盘 |
 | [早春图分镜计划](examples/early-spring-plan.json) | 对应修订版的 25 个主画面镜头，不含媒体 |
@@ -84,6 +88,7 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [汉宫春晓图案例](references/hangong-chunxiao-case.md) | 满宽开场、原画拼接、题记、声音复用与v2实际验收范围 |
 | [汉宫春晓图计划](examples/hangong-chunxiao-plan.json) | 16:9、146秒、20镜头与独立3:4封面，不含媒体 |
 | [汉宫开头参数](examples/hangong-opening.json) | 7621 × 1846原画浏览段与1920 × 780视窗，只适用于本片 |
+
 
 ## 本地检查
 
