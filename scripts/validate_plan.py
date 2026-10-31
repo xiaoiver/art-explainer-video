@@ -12,6 +12,197 @@ import sys
 
 KINDS = {"original", "ai-image", "ai-video", "audio", "graphic"}
 PURPOSES = {"analysis", "atmosphere", "title"}
+REGISTRY_PATH = Path(__file__).resolve().parents[1] / "references" / "style-registry.json"
+
+
+def load_style_registry():
+    return json.loads(REGISTRY_PATH.read_text(encoding="utf-8"))
+
+
+def normalize_token(value):
+    return "".join(str(value).split()).casefold()
+
+
+def finite_interval(shot):
+    if not isinstance(shot, dict):
+        return None
+    start, end = shot.get("start"), shot.get("end")
+    if (type(start) not in (int, float) or type(end) not in (int, float)
+            or not math.isfinite(start) or not math.isfinite(end)
+            or start < 0 or end <= start):
+        return None
+    return start, end
+
+
+def union_seconds(intervals):
+    if not intervals:
+        return 0
+    ordered = sorted(intervals)
+    total = 0
+    start, end = ordered[0]
+    for nxt, stop in ordered[1:]:
+        if nxt > end:
+            total += end - start
+            start, end = nxt, stop
+        else:
+            end = max(end, stop)
+    return total + end - start
+
+
+def resolve_style(data, errors, result):
+    """Missing style stays on classic Ken Burns. Only a registered id adds rules."""
+    try:
+        registry = load_style_registry()
+    except (OSError, ValueError) as exc:
+        errors.append(f"style registry is unreadable ({type(exc).__name__})")
+        return None, None
+    styles = registry.get("styles") if isinstance(registry, dict) else None
+    default = registry.get("default") if isinstance(registry, dict) else None
+    if not isinstance(styles, dict) or not isinstance(default, str) or default not in styles:
+        errors.append("style registry is invalid")
+        return None, None
+    if "style" not in data:
+        result["style"] = default
+        return default, styles[default]
+    style_id = data.get("style")
+    if not isinstance(style_id, str) or style_id not in styles:
+        errors.append("style must be a registered style id")
+        return None, None
+    result["style"] = style_id
+    return style_id, styles[style_id]
+
+
+def validate_evidence_dialogue(data, shots, by_id, errors, warnings, spec):
+    duration = data.get("video", {}).get("duration_seconds") if isinstance(data.get("video"), dict) else None
+    window = spec.get("duration_seconds") if isinstance(spec.get("duration_seconds"), dict) else {}
+    low, high = window.get("min"), window.get("max")
+    if positive_number(duration) and (not positive_number(low) or not positive_number(high)
+                                       or duration < low or duration > high):
+        errors.append("evidence-dialogue duration must stay within the registered window around 60 seconds")
+    idea = data.get("idea")
+    if not isinstance(idea, str) or not idea.strip():
+        errors.append("evidence-dialogue requires idea")
+    elif len(idea.strip()) > 80:
+        warnings.append("evidence-dialogue idea is longer than one short sentence")
+
+    labels = spec.get("readable_ai_labels")
+    readable = {normalize_token(item) for item in labels} if isinstance(labels, list) else set()
+    forbidden = set(spec.get("cameras_forbidden") or [])
+    beat_cameras = spec.get("beat_cameras") if isinstance(spec.get("beat_cameras"), dict) else {}
+    beat_order = spec.get("beat_order") if isinstance(spec.get("beat_order"), list) else []
+    ready = []
+    for index, shot in enumerate(shots):
+        if not isinstance(shot, dict):
+            continue
+        label = f"shots[{index}]"
+        asset = by_id.get(shot.get("asset_id")) if isinstance(shot.get("asset_id"), str) else None
+        kind = asset.get("kind") if isinstance(asset, dict) else None
+        if kind in ("ai-image", "ai-video"):
+            label_text = shot.get("ai_label")
+            if isinstance(label_text, str) and label_text.strip() and normalize_token(label_text) not in readable:
+                errors.append(f"{label} ai_label must be a readable on-screen disclosure")
+        camera = shot.get("camera")
+        if isinstance(camera, str) and camera in forbidden:
+            errors.append(f"{label} forbids a landscape first-person viewpoint")
+        beat = shot.get("beat")
+        if not isinstance(beat, str) or beat not in beat_cameras:
+            errors.append(f"{label} beat is not registered for evidence-dialogue")
+            continue
+        if finite_interval(shot) is None:
+            continue
+        allowed = beat_cameras.get(beat) or []
+        if beat == "motion":
+            if not isinstance(camera, str) or camera not in allowed:
+                if not (isinstance(camera, str) and camera in forbidden):
+                    errors.append(f"{label} motion camera must stay on the picture plane")
+        elif camera is not None and camera not in allowed and camera not in forbidden:
+            errors.append(f"{label} camera is not allowed for this beat")
+        ready.append(shot)
+
+    for asset_id, asset in by_id.items():
+        if not isinstance(asset, dict) or asset.get("kind") != "ai-video":
+            continue
+        generator = normalize_token(asset.get("generator", ""))
+        if not generator.startswith("seedance"):
+            errors.append(f"asset {asset_id} generator must be seedance")
+
+    if not beat_order:
+        errors.append("style registry is missing evidence-dialogue beat order")
+        return
+    first_start = {}
+    for beat in beat_order:
+        starts = [shot["start"] for shot in ready if shot.get("beat") == beat]
+        if not starts:
+            errors.append(f"evidence-dialogue requires beat {beat}")
+        else:
+            first_start[beat] = min(starts)
+    if len(first_start) == len(beat_order):
+        for previous, nxt in zip(beat_order, beat_order[1:]):
+            if first_start[nxt] <= first_start[previous]:
+                errors.append("evidence-dialogue beats must run open-still, motion, scale, evidence, return-still")
+                break
+    order_index = {beat: index for index, beat in enumerate(beat_order)}
+    last_index = -1
+    for shot in sorted(ready, key=lambda item: (item["start"], order_index.get(item.get("beat"), 99))):
+        index = order_index.get(shot.get("beat"), 99)
+        if index < last_index:
+            errors.append("evidence-dialogue beats must stay in open-still, motion, scale, evidence, return-still order")
+            break
+        last_index = index
+
+    originals = set()
+    evidence_count = 0
+    for shot in ready:
+        beat = shot.get("beat")
+        asset = by_id.get(shot.get("asset_id"))
+        kind = asset.get("kind") if isinstance(asset, dict) else None
+        purpose = shot.get("purpose")
+        if beat == "motion":
+            if kind != "ai-video" or purpose != "atmosphere":
+                errors.append(f"shot {shot.get('id', '?')} motion must be seedance atmosphere")
+        elif beat in ("open-still", "return-still", "scale", "evidence"):
+            if kind != "original":
+                errors.append(f"shot {shot.get('id', '?')} {beat} must use the original painting")
+            else:
+                originals.add(shot.get("asset_id"))
+            if beat in ("scale", "evidence") and purpose != "analysis":
+                errors.append(f"shot {shot.get('id', '?')} {beat} must be analysis")
+            if beat in ("open-still", "return-still") and purpose not in ("title", "analysis"):
+                errors.append(f"shot {shot.get('id', '?')} {beat} purpose is unsupported")
+        if beat == "evidence":
+            evidence_count += 1
+    if len(originals) > 1:
+        errors.append("evidence-dialogue stays on one original painting")
+    minimum = spec.get("evidence_min_shots")
+    if type(minimum) is int and evidence_count < minimum:
+        errors.append("evidence-dialogue needs two original evidence shots")
+
+    def span(beat):
+        selected = [shot for shot in ready if shot.get("beat") == beat]
+        if not selected:
+            return 0
+        return max(shot["end"] for shot in selected) - min(shot["start"] for shot in selected)
+
+    still_min = spec.get("still_seconds_min")
+    if positive_number(still_min):
+        for beat in ("open-still", "scale", "return-still"):
+            if beat in first_start and span(beat) + 1e-6 < still_min:
+                errors.append(f"evidence-dialogue {beat} must hold long enough to read")
+    opens = [shot for shot in ready if shot.get("beat") == "open-still"]
+    if opens and min(shot["start"] for shot in opens) > 1e-6:
+        errors.append("evidence-dialogue must open on a still")
+    returns = [shot for shot in ready if shot.get("beat") == "return-still"]
+    if positive_number(duration) and returns and max(shot["end"] for shot in returns) < duration - 1e-6:
+        errors.append("evidence-dialogue must end on a return still")
+    motion = [(shot["start"], shot["end"]) for shot in ready if shot.get("beat") == "motion"]
+    motion_total = union_seconds(motion)
+    motion_min = spec.get("motion_seconds_min")
+    ratio = spec.get("motion_ratio_min")
+    floor = motion_min if positive_number(motion_min) else 0
+    if positive_number(duration) and positive_number(ratio):
+        floor = max(floor, ratio * duration)
+    if motion and motion_total + 1e-6 < floor:
+        errors.append("evidence-dialogue motion must be the main moving picture")
 
 
 def positive_number(value):
@@ -211,6 +402,10 @@ def validate_plan(data, base_dir, check_files=False, probe=False):
                 errors.append("deliverables.video duration differs from plan")
             if positive_number(fps) and abs(measured.get("fps", -1) - fps) > 0.02:
                 errors.append("deliverables.video fps differs from plan")
+
+    style_id, spec = resolve_style(data, errors, result)
+    if style_id == "evidence-dialogue" and isinstance(spec, dict):
+        validate_evidence_dialogue(data, shots, by_id, errors, warnings, spec)
     return result
 
 

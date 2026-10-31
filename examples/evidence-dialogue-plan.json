@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "style": "evidence-dialogue",
+  "idea": "槽位：一个能在这幅原画上核对的问题",
+  "artwork": {
+    "title": "待替换画作",
+    "sources": [],
+    "notes": "骨架。换成真实画名，并写入馆藏作品页 URL。时间只说明 60 秒节拍，不是任何一件真迹的考据。"
+  },
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 60,
+    "orientation": "landscape"
+  },
+  "cover": {"width": 2304, "height": 1728},
+  "assets": [
+    {
+      "id": "painting",
+      "kind": "original",
+      "notes": "自行取得馆藏高清并确认使用条件后填写 path 与 source_url。尺幅镜 scale 用本素材作主画面，按馆方厘米叠成人剪影；图形不作为该镜主素材。尺寸页 URL 与访问日期写在这里。"
+    },
+    {
+      "id": "viewer",
+      "kind": "graphic",
+      "notes": "人尺剪影只叠在 scale 上。见 references/scale-reference.md。"
+    },
+    {
+      "id": "motion-a",
+      "kind": "ai-video",
+      "generator": "seedance",
+      "notes": "气氛与构图，画面平面内。不作为皴法、颜料或尺寸证据。成片 mp4 进 Remotion OffthreadVideo。"
+    },
+    {
+      "id": "motion-b",
+      "kind": "ai-video",
+      "generator": "seedance",
+      "notes": "同一视觉想法的第二刀，与上一镜连贯。"
+    },
+    {
+      "id": "motion-c",
+      "kind": "ai-video",
+      "generator": "seedance",
+      "notes": "运动收住，准备切回原画静帧。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "open",
+      "start": 0,
+      "end": 6,
+      "asset_id": "painting",
+      "purpose": "title",
+      "beat": "open-still",
+      "camera": "still",
+      "notes": "开静。只提出 idea 里的那一个问题。"
+    },
+    {
+      "id": "motion-1",
+      "start": 6,
+      "end": 16,
+      "asset_id": "motion-a",
+      "purpose": "atmosphere",
+      "beat": "motion",
+      "camera": "picture-plane",
+      "ai_label": "AI 笔墨延展"
+    },
+    {
+      "id": "motion-2",
+      "start": 16,
+      "end": 26,
+      "asset_id": "motion-b",
+      "purpose": "atmosphere",
+      "beat": "motion",
+      "camera": "multi-shot",
+      "ai_label": "AI 笔墨延展"
+    },
+    {
+      "id": "motion-3",
+      "start": 26,
+      "end": 36,
+      "asset_id": "motion-c",
+      "purpose": "atmosphere",
+      "beat": "motion",
+      "camera": "push-in",
+      "ai_label": "AI 笔墨延展"
+    },
+    {
+      "id": "scale",
+      "start": 36,
+      "end": 44,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "beat": "scale",
+      "camera": "still",
+      "notes": "人尺。早于下面两处原画细读。馆方厘米上屏。"
+    },
+    {
+      "id": "evidence-a",
+      "start": 44,
+      "end": 48,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "beat": "evidence",
+      "camera": "still",
+      "notes": "槽位：观众能在原画上核对的第一处。"
+    },
+    {
+      "id": "evidence-b",
+      "start": 48,
+      "end": 52,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "beat": "evidence",
+      "camera": "push-in",
+      "notes": "槽位：另一处原画局部如何回答上一处。仍是同一件作品。"
+    },
+    {
+      "id": "close",
+      "start": 52,
+      "end": 60,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "beat": "return-still",
+      "camera": "still",
+      "notes": "收静。回到开场的问题。感受最多一句，并标明是本片解读。"
+    }
+  ]
+}

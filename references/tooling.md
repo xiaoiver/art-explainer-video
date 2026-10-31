@@ -38,6 +38,27 @@ CLI 路线先用帮助发现功能，再通过 `youmind info` 查看目标操作
 
 依赖环境缺失时先完成脚本、分镜等独立工作；安装仅限所选路线需要的组件，不能因自动安装脚本失败就运行来源不明的替代包。
 
+## Seedance 成片接入
+
+只在风格 `evidence-dialogue` 里把 Seedance 当作主要运动画面。原画静帧和缓推仍走本仓库已有的时间线。不要把 OpenMontage 的工具复制进这个仓库。
+
+生成用已经安装的入口，调用前读当前 schema：
+
+- OpenMontage 的 `video_selector`，`preferred_provider` 设为 `seedance`；必须绕过选择器时才直接调用 `seedance_video`。模型、时长和画幅以该工具当时的参数为准。
+- 没有 OpenMontage 时，沿用上面的 YouMind。自然语言交给平台调度 Seedance，以返回的工具名、参数和媒体元数据为准。
+
+得到的 mp4 记入计划：`kind` 为 `ai-video`，`generator` 为 `seedance`，`path` 指向本地文件。Remotion 的公开目录使用真实文件，不用符号链接。运动镜头用 `OffthreadVideo` 播放；原画用 `Img` 或 [LongScrollPan](../assets/long-scroll/LongScrollPan.tsx)。字幕、「AI 笔墨延展」或「AI 想象演绎」、人尺都叠在视频组件外面，不要烤进生成画面。
+
+```tsx
+import {OffthreadVideo, Sequence, staticFile} from 'remotion';
+
+<Sequence from={startFrame} durationInFrames={durationInFrames}>
+  <OffthreadVideo src={staticFile('motion-a.mp4')} />
+</Sequence>
+```
+
+Seedance 的口型和人物对白不进入这一风格。旁白仍用 Seed Audio。只有需要环境声时才打开生成音频，这段声音不充当讲解。可选的剪映精剪见下一节，步骤不变。
+
 ## 剪映 / CapCut
 
 可用路线：[capcut-cli 的 capcut-edit](https://github.com/renezander030/capcut-cli)。它是第三方项目；安装前核对当前来源、版本与平台兼容性。它与剪映原生桌面软件分别检测。

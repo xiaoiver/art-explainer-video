@@ -48,12 +48,15 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 
 > 制作一支长卷赏析：开头让高清原画满宽缓慢浏览，先选能看清细节的一段，随后短暂交代整卷尺幅。不要把整卷缩成细带配大标题，沿用已选声音和后续素材。
 
+> 用 `evidence-dialogue` 做一支约 60 秒的中国画短片。一条能在原画上核对的问题，开场和结尾都是原画静帧，运动画面用 Seedance，技法回到馆藏原图，并在细读前给人尺。先给脚本和计划。
+
 ## 文件导航
 
 | 文件 | 用途 |
 | --- | --- |
 | [SKILL.md](SKILL.md) | 智能体入口与工作流 |
 | [画面与脚本](references/art-direction.md) | 证据、资料优先级、原画定位、尺幅、表面细节、叙事节奏、同作者对照与生成提示词 |
+| [风格登记](references/style-registry.md) | 经典读画 `ken-burns` 与约 60 秒的可视证据对白 `evidence-dialogue`。未写风格的计划仍按经典读画检查 |
 | [长卷开头](references/long-scroll-opening.md) | 满宽慢移、观看顺序、高清分段拼接、接尺幅与转场检查 |
 | [长卷组件](assets/long-scroll/LongScrollPan.tsx) | 可选Remotion等比平移组件，配套几何函数与参数示例 |
 | [尺幅参照人物](references/scale-reference.md) | 自然站姿透明 PNG、可见身高边界、等比缩放脚本与横竖版合成方法 |
@@ -86,6 +89,8 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [富春山居图计划](examples/fuchun-shanju-plan.json) | 16:9、132秒、22镜头与独立4:3封面，不含媒体 |
 | [千里江山图案例与原提案](references/qianli-jiangshan-case.md) | 已交付136秒成片与4:3融合封面；保留原提案的资料依据和使用条件，非最终时间线 |
 | [千里江山图原提案计划](examples/qianli-jiangshan-plan.json) | 制作前150秒、12镜头与3:4封面的预估示例，不含媒体；与最终成片不同 |
+| [可视证据对白](references/styles/evidence-dialogue.md) | 约 60 秒风格说明：开静、Seedance 运动、人尺、两处原画对答、收静 |
+| [可视证据对白骨架](examples/evidence-dialogue-plan.json) | 60 秒、8 镜的计划骨架，待替换画名与馆藏 URL，不含媒体 |
 
 
 ## 本地检查
@@ -99,6 +104,7 @@ python3 scripts/validate_plan.py examples/hunters-in-snow-portrait-plan.json
 python3 scripts/validate_plan.py examples/hangong-chunxiao-plan.json
 python3 scripts/validate_plan.py examples/fuchun-shanju-plan.json
 python3 scripts/validate_plan.py examples/qianli-jiangshan-plan.json
+python3 scripts/validate_plan.py examples/evidence-dialogue-plan.json
 python3 -m unittest discover -s tests -v
 ```
 

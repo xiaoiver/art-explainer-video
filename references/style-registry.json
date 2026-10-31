@@ -1,0 +1,30 @@
+{
+  "default": "ken-burns",
+  "styles": {
+    "ken-burns": {
+      "title": "经典读画",
+      "summary": "原画静帧缓推与局部讲解。生成画面只作短气氛。缺省风格；不增加计划必填字段。"
+    },
+    "evidence-dialogue": {
+      "title": "可视证据对白",
+      "doc": "references/styles/evidence-dialogue.md",
+      "duration_seconds": {"min": 45, "max": 75, "target": 60},
+      "motion_seconds_min": 24,
+      "motion_ratio_min": 0.4,
+      "still_seconds_min": 4,
+      "evidence_min_shots": 2,
+      "generator": "seedance",
+      "readable_ai_labels": ["AI笔墨延展", "AI想象演绎"],
+      "beat_order": ["open-still", "motion", "scale", "evidence", "return-still"],
+      "cameras_forbidden": ["first-person", "pov", "landscape-pov"],
+      "beat_cameras": {
+        "open-still": ["still"],
+        "return-still": ["still"],
+        "scale": ["still"],
+        "evidence": ["still", "push-in"],
+        "motion": ["picture-plane", "push-in", "multi-shot"]
+      },
+      "motion_required_camera": true
+    }
+  }
+}
