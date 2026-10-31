@@ -120,6 +120,75 @@ class PlanChecks(unittest.TestCase):
         self.assertTrue(any("deliverables.video" in error for error in result["errors"]))
         self.assertTrue(any("deliverables.cover" in error for error in result["errors"]))
 
+    def test_classic_plans_stay_on_ken_burns(self):
+        for path in sorted((ROOT / "examples").glob("*-plan.json")):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            result = MODULE.validate_plan(data, path.parent)
+            self.assertEqual(result["errors"], [], path.name)
+            if data.get("style", "ken-burns") == "ken-burns":
+                self.assertEqual(result["style"], "ken-burns", path.name)
+            else:
+                self.assertEqual(result["style"], data["style"], path.name)
+        self.plan["shots"][1]["ai_label"] = "generated"
+        self.plan["shots"][1]["camera"] = "landscape-pov"
+        self.plan["style"] = "ken-burns"
+        result = self.validate()
+        self.assertEqual(result["errors"], [])
+        self.assertEqual(result["style"], "ken-burns")
+        self.plan["style"] = {"id": "ken-burns"}
+        self.assertTrue(self.validate()["errors"])
+
+    def test_evidence_dialogue_skeleton_and_guards(self):
+        skeleton = json.loads((ROOT / "examples/evidence-dialogue-plan.json").read_text(encoding="utf-8"))
+        result = MODULE.validate_plan(skeleton, ROOT)
+        self.assertEqual(result["errors"], [])
+        self.assertEqual(result["style"], "evidence-dialogue")
+        self.assertTrue(result["warnings"])
+
+        portrait = copy.deepcopy(skeleton)
+        portrait["video"].update(width=1080, height=1920, orientation="portrait")
+        self.assertEqual(MODULE.validate_plan(portrait, ROOT)["errors"], [])
+
+        classic = copy.deepcopy(skeleton)
+        classic["style"] = "ken-burns"
+        classic["video"]["duration_seconds"] = 90
+        classic["shots"][-1]["end"] = 90
+        self.assertEqual(MODULE.validate_plan(classic, ROOT)["errors"], [])
+
+        too_long = copy.deepcopy(skeleton)
+        too_long["video"]["duration_seconds"] = 90
+        too_long["shots"][-1]["end"] = 90
+        self.assertTrue(MODULE.validate_plan(too_long, ROOT)["errors"])
+
+        unlabeled = copy.deepcopy(skeleton)
+        unlabeled["shots"][1]["ai_label"] = "AI"
+        self.assertTrue(any("readable" in item for item in MODULE.validate_plan(unlabeled, ROOT)["errors"]))
+        labeled = copy.deepcopy(skeleton)
+        labeled["shots"][1]["ai_label"] = "AI 想象演绎"
+        self.assertEqual(MODULE.validate_plan(labeled, ROOT)["errors"], [])
+
+        cosplay = copy.deepcopy(skeleton)
+        cosplay["shots"][1]["camera"] = "landscape-pov"
+        self.assertTrue(any("first-person" in item for item in MODULE.validate_plan(cosplay, ROOT)["errors"]))
+
+        other_engine = copy.deepcopy(skeleton)
+        other_engine["assets"][2]["generator"] = "kling"
+        self.assertTrue(any("seedance" in item for item in MODULE.validate_plan(other_engine, ROOT)["errors"]))
+
+        second_painting = copy.deepcopy(skeleton)
+        second_painting["assets"].append({"id": "other", "kind": "original"})
+        second_painting["shots"][5]["asset_id"] = "other"
+        self.assertTrue(any("one original" in item for item in MODULE.validate_plan(second_painting, ROOT)["errors"]))
+
+        missing_idea = copy.deepcopy(skeleton)
+        missing_idea.pop("idea")
+        self.assertTrue(any("idea" in item for item in MODULE.validate_plan(missing_idea, ROOT)["errors"]))
+
+        reordered = copy.deepcopy(skeleton)
+        reordered["shots"][0]["start"], reordered["shots"][0]["end"] = 6, 12
+        reordered["shots"][1]["start"], reordered["shots"][1]["end"] = 0, 6
+        self.assertTrue(MODULE.validate_plan(reordered, ROOT)["errors"])
+
 
 if __name__ == "__main__":
     unittest.main()
