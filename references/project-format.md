@@ -18,7 +18,7 @@
 
 尺幅示意镜头记成时间线上的一镜：`asset_id` 仍引用原画全幅的 `original` 素材，`purpose` 为 `analysis`。成人、门或手机轮廓在实际编辑工程中叠加；可将轮廓另列为 `graphic` 素材，但不要把它用作该分析镜头的主素材。在所引用 `original` 的 `notes` 写明尺幅镜头 ID、叠加方式和馆方尺寸页面。计划检查不判断对照是否符合厘米比例，也不能代替 [画面与脚本](art-direction.md) 里的尺幅要求。
 
-示例见简化的 [xishan-plan.json](../examples/xishan-plan.json)、保留25镜头时间线的 [early-spring-plan.json](../examples/early-spring-plan.json)，[雪中猎人竖版计划](../examples/hunters-in-snow-portrait-plan.json)，[汉宫春晓图20镜计划](../examples/hangong-chunxiao-plan.json)，以及实际132秒的 [富春山居图22镜计划](../examples/fuchun-shanju-plan.json)。长卷开场的原画慢移可记作 `title`，尺幅及后续原作讲解仍为 `analysis`；平移本身不属于 AI 动态。同一作品的不同方向各存一个计划，避免覆盖原版。复制后修改作品、时间、来源与文件路径，不能把案例坐标和素材当作其他画作的依据。
+示例见简化的 [xishan-plan.json](../examples/xishan-plan.json)、保留25镜头时间线的 [early-spring-plan.json](../examples/early-spring-plan.json)，[雪中猎人竖版计划](../examples/hunters-in-snow-portrait-plan.json)，[汉宫春晓图20镜计划](../examples/hangong-chunxiao-plan.json)，实际132秒的 [富春山居图22镜计划](../examples/fuchun-shanju-plan.json)，以及尚未制作的 [千里江山图12镜计划](../examples/qianli-jiangshan-plan.json)。长卷开场的原画慢移可记作 `title`，尺幅及后续原作讲解仍为 `analysis`；平移本身不属于 AI 动态。同一作品的不同方向各存一个计划，避免覆盖原版。复制后修改作品、时间、来源与文件路径，不能把案例坐标和素材当作其他画作的依据。
 
 ```bash
 python3 scripts/validate_plan.py examples/xishan-plan.json

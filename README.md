@@ -105,6 +105,8 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [汉宫开头参数](examples/hangong-opening.json) | 7621 × 1846原画浏览段与1920 × 780视窗，只适用于本片 |
 | [富春山居图案例](references/fuchun-shanju-case.md) | 已完成且用户确认发布；半印与断口、原图与气氛动态、读音和配乐v2修订 |
 | [富春山居图计划](examples/fuchun-shanju-plan.json) | 16:9、132秒、22镜头与独立4:3封面，不含媒体 |
+| [千里江山图方案](references/qianli-jiangshan-case.md) | 待制作：青绿层次、设计示意色与原图观察分开；图源使用条件；本计划不设AI镜头 |
+| [千里江山图计划](examples/qianli-jiangshan-plan.json) | 16:9、150秒、12镜头与独立3:4封面，时码为预估，不含媒体 |
 
 
 ## 本地检查
@@ -117,6 +119,7 @@ python3 scripts/validate_plan.py examples/early-spring-plan.json
 python3 scripts/validate_plan.py examples/hunters-in-snow-portrait-plan.json
 python3 scripts/validate_plan.py examples/hangong-chunxiao-plan.json
 python3 scripts/validate_plan.py examples/fuchun-shanju-plan.json
+python3 scripts/validate_plan.py examples/qianli-jiangshan-plan.json
 python3 -m unittest discover -s tests -v
 ```
 
@@ -126,6 +129,6 @@ python3 -m unittest discover -s tests -v
 node --experimental-strip-types --test tests/test_long_scroll.mjs
 ```
 
-《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
+《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排；《千里江山图》是尚未制作的150秒、12镜计划。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
 
 制作环境的安装按需执行，不能因为调用此 skill 就默认安装整套工具。计划检查脚本已用本次实际成片与封面验证；尚未在全新机器上重跑完整制作。生成、试听、剪辑软件兼容性仍须在使用者环境中确认。
