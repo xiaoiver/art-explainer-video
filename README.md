@@ -113,7 +113,7 @@ node --experimental-strip-types --test tests/test_long_scroll.mjs
 
 ## 更多案例
 
-###《汉宫春晓图》
+### 《汉宫春晓图》
 
 开头约15秒满宽缓慢浏览连续的一段原画，文字退为辅助；随后6秒交代完整尺幅，再进入局部讲解。仅浏览一段，不在短开场快速扫完整卷。方法见 [长卷开头](references/long-scroll-opening.md)，实际制作见 [案例](references/hangong-chunxiao-case.md)。
 
@@ -121,7 +121,7 @@ node --experimental-strip-types --test tests/test_long_scroll.mjs
 | :---: | :---: |
 | <img src="docs/shots/hangong-opening.webp" alt="汉宫春晓图本地v2第5秒，原画分段拼接后满宽浏览" width="100%" /> | <img src="docs/shots/hangong-scale.webp" alt="汉宫春晓图本地v2第18秒，完整画心与170厘米成人同比例示意" width="100%" /> |
 
-###《富春山居图》
+### 《富春山居图》
 
 [案例复盘](references/fuchun-shanju-case.md)记录原画半印、长卷局部浏览、尺幅、水墨气氛动态，以及“藏”读cáng和配乐换轨的修订。
 
