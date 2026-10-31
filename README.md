@@ -54,6 +54,7 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | --- | --- |
 | [SKILL.md](SKILL.md) | 智能体入口与工作流 |
 | [画面与脚本](references/art-direction.md) | 证据、资料优先级、原画定位、尺幅、表面细节、叙事节奏、同作者对照与生成提示词 |
+| [Arte《奇趣美术馆》](references/arte-musee-craft.md) | 「假如名画会说话」的手艺取舍，以及下一集可复用的脚本骨架 |
 | [长卷开头](references/long-scroll-opening.md) | 满宽慢移、观看顺序、高清分段拼接、接尺幅与转场检查 |
 | [长卷组件](assets/long-scroll/LongScrollPan.tsx) | 可选Remotion等比平移组件，配套几何函数与参数示例 |
 | [尺幅参照人物](references/scale-reference.md) | 自然站姿透明 PNG、可见身高边界、等比缩放脚本与横竖版合成方法 |
