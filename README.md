@@ -3,7 +3,7 @@
 ![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
 ![Codex](https://img.shields.io/badge/Codex-Supported-222222?style=flat-square)
 
-把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》《雪中猎人》与《汉宫春晓图》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
+把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》《雪中猎人》《汉宫春晓图》与《富春山居图》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
 覆盖原画研究、讲解脚本、让手机观众看见原作尺幅的一拍、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
 
@@ -32,9 +32,23 @@
 | :---: | :---: |
 | <img src="docs/shots/hangong-opening.webp" alt="汉宫春晓图本地v2第5秒，原画分段拼接后满宽浏览" width="100%" /> | <img src="docs/shots/hangong-scale.webp" alt="汉宫春晓图本地v2第18秒，完整画心与170厘米成人同比例示意" width="100%" /> |
 
+### 新增已发布案例：《富春山居图》
+
+用户于2026-10-31确认本集已发布，公开笔记链接尚未登记。最后交付v2为**16:9、132秒、22镜头**，封面独立**4:3**；[案例复盘](references/fuchun-shanju-case.md)记录原画半印、长卷局部浏览、尺幅、水墨气氛动态，以及“藏”读cáng和配乐换轨的修订。
+
+<img src="docs/shots/fuchun-cover.webp" alt="富春山居图4:3独立封面：纸断了，山水还在。意境底图与真实得意黑排字，非原画复制品" width="640" />
+
+上图是独立封面，标有“封面意境演绎”，不是原画证据。下图来自实际成片：
+
+| 第17秒：原画与成人尺幅 | 第41秒：原图半印对照 |
+| :---: | :---: |
+| <img src="docs/shots/fuchun-scale.webp" alt="富春山居图第17秒，两幅画心与170厘米成人按厘米比例示意" width="100%" /> | <img src="docs/shots/fuchun-seal.webp" alt="富春山居图第41秒，原画旧藏印局部及现代印文标注" width="100%" /> |
+
+尺幅和半印静帧含原画裁切及图文叠加，来源与使用说明见[案例](references/fuchun-shanju-case.md#半印自跋与原图边界)。两段水墨气氛动态另有片内标识，不用于证明印文或笔法。
+
 ## 安装与使用
 
-例如，在 Codex 中安装（私有仓库需要有权限的 GitHub 登录）：
+例如，在 Codex 中安装：
 
 ```bash
 gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
@@ -89,8 +103,8 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [汉宫春晓图案例](references/hangong-chunxiao-case.md) | 满宽开场、原画拼接、题记、声音复用与v2实际验收范围 |
 | [汉宫春晓图计划](examples/hangong-chunxiao-plan.json) | 16:9、146秒、20镜头与独立3:4封面，不含媒体 |
 | [汉宫开头参数](examples/hangong-opening.json) | 7621 × 1846原画浏览段与1920 × 780视窗，只适用于本片 |
-| [富春山居图案例](references/fuchun-shanju-case.md) | 剩山图与无用师卷：1650火后分藏、2011台北同柜并列（未重裱）、右向左对位；证据与 AI 分开。尚未成片，无发布静帧 |
-| [富春山居图计划](examples/fuchun-shanju-plan.json) | 16:9、140秒、16镜头与独立3:4封面，不含媒体 |
+| [富春山居图案例](references/fuchun-shanju-case.md) | 已完成且用户确认发布；半印与断口、原图与气氛动态、读音和配乐v2修订 |
+| [富春山居图计划](examples/fuchun-shanju-plan.json) | 16:9、132秒、22镜头与独立4:3封面，不含媒体 |
 
 
 ## 本地检查
@@ -112,6 +126,6 @@ python3 -m unittest discover -s tests -v
 node --experimental-strip-types --test tests/test_long_scroll.mjs
 ```
 
-《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》是尚未制作的16镜计划。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
+《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
 
 制作环境的安装按需执行，不能因为调用此 skill 就默认安装整套工具。计划检查脚本已用本次实际成片与封面验证；尚未在全新机器上重跑完整制作。生成、试听、剪辑软件兼容性仍须在使用者环境中确认。

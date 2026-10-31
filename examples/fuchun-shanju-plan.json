@@ -4,10 +4,10 @@
     "title": "富春山居图",
     "sources": [
       "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
-      "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000975",
-      "https://www.zhejiangmuseum.com/cn/",
-      "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E5%89%A9%E5%B1%B1%E5%9C%96).jpg",
-      "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E7%84%A1%E7%94%A8%E5%B8%AB%E5%8D%B7).jpg"
+      "https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=2510",
+      "https://www.dpm.org.cn/journal/246830.html",
+      "https://www.dpm.org.cn/explode/others/209703.html",
+      "https://www.npm.gov.tw/ChineseArt-Content.aspx?a=2938&idstr=03012531&l=1&sno=04012587&type=2011"
     ],
     "dimensions_cm": {
       "shengshan": {
@@ -16,9 +16,9 @@
         "scope": "剩山图本幅，浙江省博物馆"
       },
       "wuyong": {
-        "height": 33.0,
+        "height": 33,
         "width": 636.9,
-        "scope": "无用师卷本幅，不含拖尾；国立故宫博物院 故畫001016"
+        "scope": "无用师卷本幅，不含拖尾；台北故宫博物院 故畫001016"
       },
       "accessed": "2026-10-30"
     }
@@ -28,214 +28,280 @@
     "width": 1920,
     "height": 1080,
     "fps": 24,
-    "duration_seconds": 140
+    "duration_seconds": 132
   },
   "cover": {
-    "width": 1728,
-    "height": 2304
+    "width": 2304,
+    "height": 1728
   },
   "assets": [
     {
-      "id": "shengshan",
+      "id": "brushwork.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "fisherman.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "ink-dots.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "joined-opening.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 两段原图按共同像素/厘米等比排版，只示意卷首附近局部；18px间隔为版式参数，非缺损测量；非完整全卷，不生成填缝。 实际底图来自本例列出的剩山、无用两件Commons文件，source_url为作品档案；完整来源见案例。"
+    },
+    {
+      "id": "open-water.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "river-motion-first.jpg",
+      "kind": "ai-image",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
+    },
+    {
+      "id": "river-motion-last.jpg",
+      "kind": "ai-image",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
+    },
+    {
+      "id": "river-motion.mp4",
+      "kind": "ai-video",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
+    },
+    {
+      "id": "self-inscription.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "shengshan.jpg",
       "kind": "original",
       "source_url": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E5%89%A9%E5%B1%B1%E5%9C%96).jpg",
-      "notes": "剩山图。优先浙博授权扫描；公开拼合底图可用 2011 合璧展 Commons 约 7260×900。Supply your own permitted local file; media is not distributed."
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
     },
     {
-      "id": "wuyong",
-      "kind": "original",
-      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
-      "notes": "无用师卷。优先故宫中阶 CC BY 4.0；备选 Commons 约 26134×900。Supply your own permitted local file; media is not distributed."
-    },
-    {
-      "id": "joined-true-seam",
-      "kind": "original",
-      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
-      "notes": "s07 尺幅主画面：合璧缩小，剪辑中叠加自然站姿 170cm 成人剪影，同一厘米比例，标「按馆方尺寸示意」。剩山在右、无用在左；沿江岸对齐，勿把剩山 31.8cm 硬拉到 33cm；接缝保持可见。馆方尺寸见 artwork.dimensions_cm，检索 2026-10-30：https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P 与浙博藏品说明。Supply your own permitted local file; media is not distributed."
-    },
-    {
-      "id": "seal-join",
-      "kind": "original",
-      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
-      "notes": "吴之矩骑缝印两半，真图几何对位，非生成。Supply your own permitted local file; media is not distributed."
-    },
-    {
-      "id": "fire-scar",
-      "kind": "original",
-      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
-      "notes": "接缝火痕特写。Supply your own permitted local file; media is not distributed."
-    },
-    {
-      "id": "wuyong-hemp",
-      "kind": "original",
-      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
-      "notes": "无用师卷披麻皴局部。第一段持续局部讲解从 s08 开始。Supply your own permitted local file; media is not distributed."
-    },
-    {
-      "id": "wuyong-alum-moss",
-      "kind": "original",
-      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
-      "notes": "矾头与苔点局部。Supply your own permitted local file; media is not distributed."
-    },
-    {
-      "id": "wuyong-river-figures",
-      "kind": "original",
-      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
-      "notes": "江岸小树或渔父等可见人尺度局部。画内尺度不代替 s07 尺幅。Supply your own permitted local file; media is not distributed."
-    },
-    {
-      "id": "wuyong-colophon",
-      "kind": "original",
-      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
-      "notes": "卷末黄公望自跋局部。Supply your own permitted local file; media is not distributed."
-    },
-    {
-      "id": "ai-seam-fill",
+      "id": "water-motion-first.jpg",
       "kind": "ai-image",
-      "notes": "仅填两半之间厘米级窄缝；不作披麻、矾头或苔点证据。待生成。Supply your own permitted local file; media is not distributed."
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
     },
     {
-      "id": "ai-lost-opening",
+      "id": "water-motion-last.jpg",
       "kind": "ai-image",
-      "notes": "据子明卷示意剩山右侧已焚起手；不证明原迹技法。待生成。Supply your own permitted local file; media is not distributed."
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
     },
     {
-      "id": "ziming-ref",
+      "id": "water-motion.mp4",
+      "kind": "ai-video",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
+    },
+    {
+      "id": "wuyong-seal.jpg",
       "kind": "original",
-      "source_url": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E5%AD%90%E6%98%8E%E5%8D%B7).jpg",
-      "notes": "子明卷，明人仿本。仅助 AI 卷首结构，不进入原迹证据镜头。可选。Supply your own permitted local file; media is not distributed."
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "wuyong.jpg",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E7%84%A1%E7%94%A8%E5%B8%AB%E5%8D%B7).jpg",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 s02尺幅主画面，剪辑另叠剩山原图及170cm自然站姿成人；同为2.15px/cm，不拉平两段高度差。馆方尺寸、URL与访问日期见artwork。"
     }
   ],
   "shots": [
     {
       "id": "s01",
       "start": 0,
-      "end": 5,
-      "asset_id": "shengshan",
+      "end": 13.6,
+      "asset_id": "joined-opening.jpg",
       "purpose": "title",
-      "notes": "黑场后剩山满高，自右极缓移。旁白：这两段山——凭什么说，是同一卷？"
+      "notes": "两段山，凭什么说是同一卷？；满宽原画局部慢移，非完整全卷。"
     },
     {
       "id": "s02",
-      "start": 5,
-      "end": 9,
-      "asset_id": "joined-true-seam",
+      "start": 13.6,
+      "end": 22.716,
+      "asset_id": "wuyong.jpg",
       "purpose": "analysis",
-      "notes": "同速接无用卷首，切口停半拍。屏上：1650 · 火后分藏 · 此处为历史切口。"
+      "notes": "接近七米，只有三十多厘米高；原图与成人独立叠层，同比例；早于s06半印持续细读。"
     },
     {
       "id": "s03",
-      "start": 9,
-      "end": 14,
-      "asset_id": "seal-join",
-      "purpose": "analysis",
-      "notes": "吴之矩骑缝印两半几何合拢。真图对位，非生成。"
+      "start": 22.716,
+      "end": 25.616,
+      "asset_id": "river-motion-first.jpg",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展",
+      "notes": "江岸，也有风声"
     },
     {
       "id": "s04",
-      "start": 14,
-      "end": 20,
-      "asset_id": "joined-true-seam",
-      "purpose": "analysis",
-      "notes": "拉开合璧全貌，接缝仍可见。2011 台北同柜合展；影像再合一次，不假装重裱。"
+      "start": 25.616,
+      "end": 31.616,
+      "asset_id": "river-motion.mp4",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展",
+      "notes": "江岸，也有风声"
     },
     {
       "id": "s05",
-      "start": 20,
-      "end": 24,
-      "asset_id": "ai-seam-fill",
+      "start": 31.616,
+      "end": 32.316,
+      "asset_id": "river-motion-last.jpg",
       "purpose": "atmosphere",
-      "ai_label": "AI 笔墨延展 · 非原迹",
-      "notes": "窄缝填补淡入后立刻切回真缝。中间焦掉的纸回不来。"
+      "ai_label": "AI 笔墨延展",
+      "notes": "江岸，也有风声"
     },
     {
       "id": "s06",
-      "start": 24,
-      "end": 42,
-      "asset_id": "joined-true-seam",
-      "purpose": "title",
-      "notes": "满宽慢移，从右向左越过真接缝。标「原画合璧浏览 · 从右向左」。起问之后的浏览，尚未进入持续技法局部。"
+      "start": 32.316,
+      "end": 35.316,
+      "asset_id": "shengshan.jpg",
+      "purpose": "analysis",
+      "notes": "先找到这枚旧藏印"
     },
     {
       "id": "s07",
-      "start": 42,
-      "end": 50,
-      "asset_id": "joined-true-seam",
+      "start": 35.316,
+      "end": 47.316,
+      "asset_id": "wuyong-seal.jpg",
       "purpose": "analysis",
-      "notes": "尺幅必须在 s08 之前。合璧缩小加 170cm 成人同比例。剩山 31.8×51.4 cm，浙江省博物馆；无用师卷本幅 33×636.9 cm，台北故宫。检索 2026-10-30。标「按馆方尺寸示意」。"
+      "notes": "半枚旧印，留下线索"
     },
     {
       "id": "s08",
-      "start": 50,
-      "end": 58,
-      "asset_id": "wuyong-hemp",
+      "start": 47.316,
+      "end": 53.316,
+      "asset_id": "joined-opening.jpg",
       "purpose": "analysis",
-      "notes": "第一段持续局部讲解：无用师卷披麻皴。"
+      "notes": "清初，经火以后"
     },
     {
       "id": "s09",
-      "start": 58,
-      "end": 66,
-      "asset_id": "wuyong-alum-moss",
+      "start": 53.316,
+      "end": 57.316,
+      "asset_id": "joined-opening.jpg",
       "purpose": "analysis",
-      "notes": "矾头与山脚苔点。"
+      "notes": "2011 · 曾在同一展柜相见"
     },
     {
       "id": "s10",
-      "start": 66,
-      "end": 74,
-      "asset_id": "wuyong-river-figures",
+      "start": 57.316,
+      "end": 64.324,
+      "asset_id": "joined-opening.jpg",
       "purpose": "analysis",
-      "notes": "江岸人与树的画内尺度。"
+      "notes": "保留断口，让两段山水相见"
     },
     {
       "id": "s11",
-      "start": 74,
-      "end": 84,
-      "asset_id": "wuyong-colophon",
+      "start": 64.324,
+      "end": 72.324,
+      "asset_id": "brushwork.jpg",
       "purpose": "analysis",
-      "notes": "卷末黄公望自跋。至正十年，写给无用师。"
+      "notes": "沿着山势，看笔墨"
     },
     {
       "id": "s12",
-      "start": 84,
-      "end": 92,
-      "asset_id": "joined-true-seam",
+      "start": 72.324,
+      "end": 77.524,
+      "asset_id": "ink-dots.jpg",
       "purpose": "analysis",
-      "notes": "馆方事实：元黄公望，纸本墨笔。剩山在杭州，无用师卷在台北，故畫001016。1650 火后分装。"
+      "notes": "墨点，让树林有了疏密"
     },
     {
       "id": "s13",
-      "start": 92,
-      "end": 102,
-      "asset_id": "fire-scar",
+      "start": 77.524,
+      "end": 83.124,
+      "asset_id": "fisherman.jpg",
       "purpose": "analysis",
-      "notes": "真缝火痕与半印。能合上的是还在的纸。"
+      "notes": "人家很小，江水很宽"
     },
     {
       "id": "s14",
-      "start": 102,
-      "end": 115,
-      "asset_id": "joined-true-seam",
+      "start": 83.124,
+      "end": 87.048,
+      "asset_id": "open-water.jpg",
       "purpose": "analysis",
-      "notes": "本片解读：合上不是假装完整，断口也是这幅画的一部分。接缝仍在画内。"
+      "notes": "一段接着一段，走进眼前"
     },
     {
       "id": "s15",
-      "start": 115,
-      "end": 122,
-      "asset_id": "ai-lost-opening",
+      "start": 87.048,
+      "end": 87.848,
+      "asset_id": "water-motion-first.jpg",
       "purpose": "atmosphere",
-      "ai_label": "AI 想象演绎 · 据临本示意",
-      "notes": "卷首佚失短示意后切回真迹剩山右缘。可删，不影响证据链。"
+      "ai_label": "AI 笔墨延展",
+      "notes": "让江水，再流一会儿"
     },
     {
       "id": "s16",
-      "start": 122,
-      "end": 140,
-      "asset_id": "joined-true-seam",
+      "start": 87.848,
+      "end": 93.848,
+      "asset_id": "water-motion.mp4",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展",
+      "notes": "让江水，再流一会儿"
+    },
+    {
+      "id": "s17",
+      "start": 93.848,
+      "end": 94.648,
+      "asset_id": "water-motion-last.jpg",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展",
+      "notes": "让江水，再流一会儿"
+    },
+    {
+      "id": "s18",
+      "start": 94.648,
+      "end": 104.648,
+      "asset_id": "self-inscription.jpg",
+      "purpose": "analysis",
+      "notes": "卷末，黄公望留下自己的话"
+    },
+    {
+      "id": "s19",
+      "start": 104.648,
+      "end": 110.648,
+      "asset_id": "self-inscription.jpg",
+      "purpose": "analysis",
+      "notes": "无用师，请他先在卷尾题记"
+    },
+    {
+      "id": "s20",
+      "start": 110.648,
+      "end": 116.648,
+      "asset_id": "joined-opening.jpg",
+      "purpose": "analysis",
+      "notes": "从一段担忧，到一场火"
+    },
+    {
+      "id": "s21",
+      "start": 116.648,
+      "end": 126.264,
+      "asset_id": "joined-opening.jpg",
+      "purpose": "analysis",
+      "notes": "纸断了，山水还在"
+    },
+    {
+      "id": "s22",
+      "start": 126.264,
+      "end": 132,
+      "asset_id": "joined-opening.jpg",
       "purpose": "title",
-      "notes": "真迹合璧静止后黑场落版。馆藏署名与 AI 使用范围。旁白可静。"
+      "notes": "纸断了，山水还在；馆藏、图源署名及生成范围。"
     }
   ]
 }
