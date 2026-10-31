@@ -3,7 +3,7 @@
 ![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
 ![Codex](https://img.shields.io/badge/Codex-Supported-222222?style=flat-square)
 
-把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》《雪中猎人》《汉宫春晓图》与《富春山居图》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
+把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》《雪中猎人》《汉宫春晓图》《富春山居图》与《千里江山图》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
 覆盖原画研究、讲解脚本、让手机观众看见原作尺幅的一拍、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
 
@@ -61,7 +61,8 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [题跋与印章](references/inscriptions-and-seals.md) | 从题名、后人观看与收藏流传中选取有依据的故事 |
 | [工具接入](references/tooling.md) | YouMind、Seed Audio、Open Montage 的接入与恢复 |
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |
-| [字体与文字层级](references/typography.md) | 宋体字幕、得意黑短标题、黑体导航标注，以及实际字体加载与封面独立排字 |
+| [字体与文字层级](references/typography.md) | 宋体字幕、得意黑视频短标题、黑体导航标注，以及实际字体加载与文字层可编辑性 |
+| [封面的画字融合](references/cover-design.md) | 古画传统字体、纸绢留白、参考图生图与独立排字的选择，以及两次封面修订 |
 | [剪辑与交付](references/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
 | [横竖版与重新构图](references/formats.md) | 方向选择、原画局部、宽幅全景、字幕安全区与素材复用 |
 | [计划文件格式](references/project-format.md) | 可选 JSON 格式与检查命令 |
@@ -83,8 +84,8 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [汉宫开头参数](examples/hangong-opening.json) | 7621 × 1846原画浏览段与1920 × 780视窗，只适用于本片 |
 | [富春山居图案例](references/fuchun-shanju-case.md) | 已完成且用户确认发布；半印与断口、原图与气氛动态、读音和配乐v2修订 |
 | [富春山居图计划](examples/fuchun-shanju-plan.json) | 16:9、132秒、22镜头与独立4:3封面，不含媒体 |
-| [千里江山图方案](references/qianli-jiangshan-case.md) | 待制作：青绿层次、设计示意色与原图观察分开；图源使用条件；本计划不设AI镜头 |
-| [千里江山图计划](examples/qianli-jiangshan-plan.json) | 16:9、150秒、12镜头与独立3:4封面，时码为预估，不含媒体 |
+| [千里江山图案例与原提案](references/qianli-jiangshan-case.md) | 已交付136秒成片与4:3融合封面；保留原提案的资料依据和使用条件，非最终时间线 |
+| [千里江山图原提案计划](examples/qianli-jiangshan-plan.json) | 制作前150秒、12镜头与3:4封面的预估示例，不含媒体；与最终成片不同 |
 
 
 ## 本地检查
@@ -107,7 +108,7 @@ python3 -m unittest discover -s tests -v
 node --experimental-strip-types --test tests/test_long_scroll.mjs
 ```
 
-《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排；《千里江山图》是尚未制作的150秒、12镜计划。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
+《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排；《千里江山图》JSON保留制作前150秒、12镜原提案，最终成片另为136秒、18镜，见案例页。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
 
 制作环境的安装按需执行，不能因为调用此 skill 就默认安装整套工具。计划检查脚本已用本次实际成片与封面验证；尚未在全新机器上重跑完整制作。生成、试听、剪辑软件兼容性仍须在使用者环境中确认。
 
@@ -125,12 +126,20 @@ node --experimental-strip-types --test tests/test_long_scroll.mjs
 
 [案例复盘](references/fuchun-shanju-case.md)记录原画半印、长卷局部浏览、尺幅、水墨气氛动态，以及“藏”读cáng和配乐换轨的修订。
 
-<img src="docs/shots/fuchun-cover.webp" alt="富春山居图4:3独立封面：纸断了，山水还在。意境底图与真实得意黑排字，非原画复制品" width="640" />
-
-上图是独立封面，标有“封面意境演绎”，不是原画证据。下图来自实际成片：
+最新独立封面见下方画字融合示例；下图来自实际成片：
 
 | 第17秒：原画与成人尺幅 | 第41秒：原图半印对照 |
 | :---: | :---: |
 | <img src="docs/shots/fuchun-scale.webp" alt="富春山居图第17秒，两幅画心与170厘米成人按厘米比例示意" width="100%" /> | <img src="docs/shots/fuchun-seal.webp" alt="富春山居图第41秒，原画旧藏印局部及现代印文标注" width="100%" /> |
 
 尺幅和半印静帧含原画裁切及图文叠加，来源与使用说明见[案例](references/fuchun-shanju-case.md#半印自跋与原图边界)。两段水墨气氛动态另有片内标识，不用于证明印文或笔法。
+
+### 封面画字融合示例
+
+本系列古画封面优先传统字体，让文字自然落在纸绢留白，与山水共同构图。需要重构时用参考图生图；需要准确字体文件或可编辑文字时，采用无字底图加独立排字。方法见[封面的画字融合](references/cover-design.md)。视频短标题与底部字幕仍按各自角色选择字体。
+
+| 《富春山居图》横版封面v3 | 《千里江山图》封面v2 |
+| :---: | :---: |
+| <img src="docs/shots/fuchun-cover.webp" alt="富春山居图4:3生成封面：纸断了，山水还在。宋体风格文字融入暖米白纸本水墨留白" width="100%" /> | <img src="docs/shots/qianli-cover.webp" alt="千里江山图4:3生成封面：一卷青绿，如何铺开千里江山？宋体风格文字融入青绿山水绢底" width="100%" /> |
+
+这是2026-10-31后续重做的本地封面预览，尚未替换已发布笔记的封面。两张均通过YouMind的GPT Image 2参考生成，原图各为2304×1728，已核对文字、缩略图和Board可见性。封面属于创意重构，非原画复制品；随图文字不是准确字体文件或独立文字层。实际做法见[富春山居图案例](references/fuchun-shanju-case.md#后续封面v3传统字体融入纸本水墨)与[千里江山图案例](references/qianli-jiangshan-case.md#当前交付与融合封面2026-10-31)。
