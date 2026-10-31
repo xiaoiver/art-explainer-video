@@ -53,37 +53,37 @@
       "id": "touqing",
       "kind": "original",
       "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
-      "notes": "头青：山顶或远脊最深青。普及色卡近似 #2B5085，对应蓝铜矿所制石青的深档；不是馆方色号，也不是测色值。须为名画记上指认得见的原图。Supply your own permitted local file; media is not distributed."
+      "notes": "深青：原图较深蓝色段，位置待定；不能据此认定头青等级。 设计示意色#2B5085，不是馆方色谱、取样或材料鉴定。Supply your own permitted local file; media is not distributed."
     },
     {
       "id": "sanqing",
       "kind": "original",
       "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
-      "notes": "三青：山腰或水边浅青灰。普及近似 #95B4D6，非馆方色号。Supply your own permitted local file; media is not distributed."
+      "notes": "浅青：与深青对看的较浅蓝段；不据电子图认定三青等级。 设计示意色#95B4D6，不是馆方色谱、取样或材料鉴定。Supply your own permitted local file; media is not distributed."
     },
     {
       "id": "toulv",
       "kind": "original",
       "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
-      "notes": "头绿：近山主体的深翠绿。普及近似 #5C8C5F，对应孔雀石所制石绿的深档；非馆方色号。Supply your own permitted local file; media is not distributed."
+      "notes": "深绿：原图较深绿段，位置待定；不认定头绿等级。 设计示意色#5C8C5F，不是馆方色谱、取样或材料鉴定。Supply your own permitted local file; media is not distributed."
     },
     {
       "id": "sanlv",
       "kind": "original",
       "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
-      "notes": "三绿：山脚林木的浅黄绿。普及近似 #B5C9A8，非馆方色号。Supply your own permitted local file; media is not distributed."
+      "notes": "浅绿：与深绿对看的较浅绿段；不认定三绿等级。 设计示意色#B5C9A8，不是馆方色谱、取样或材料鉴定。Supply your own permitted local file; media is not distributed."
     },
     {
       "id": "zheshi",
       "kind": "original",
       "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
-      "notes": "赭石：山脚土色暖底，不是青。普及近似 #A8643D。对应馆方所说赭色衬托，不是馆方色号。Supply your own permitted local file; media is not distributed."
+      "notes": "赭色：可见暖色与青绿相衬；不推断每层施色先后。 设计示意色#A8643D，不是馆方色谱、取样或材料鉴定。Supply your own permitted local file; media is not distributed."
     },
     {
       "id": "yuebai",
       "kind": "original",
       "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
-      "notes": "月白：绢地浅底上的江水、雾气或天空，不是另一罐颜料，也不是青。普及近似 #F2EAD6。水面若有一笔笔水纹，保留原迹，不用生成填白。Supply your own permitted local file; media is not distributed."
+      "notes": "浅底：保留江面等原水纹；月白仅设计名，不据电子图鉴定留绢或白颜料。 设计示意色#F2EAD6，不是馆方色谱、取样或材料鉴定。Supply your own permitted local file; media is not distributed."
     },
     {
       "id": "caijing-colophon",
@@ -95,7 +95,7 @@
       "id": "layered-mid",
       "kind": "original",
       "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=b0a15b3767a5c12089ec45563741112b",
-      "notes": "收束中景：多层青绿同框。六色短名可叠在画面外，不写成馆方色谱。Supply your own permitted local file; media is not distributed."
+      "notes": "原图青绿、暖色与浅底关系同框。只讲可见关系，不推断颜料等级或施色先后。Supply your own permitted local file; media is not distributed."
     }
   ],
   "shots": [
@@ -121,7 +121,7 @@
       "end": 32,
       "asset_id": "layer-overview",
       "purpose": "analysis",
-      "notes": "第一段持续局部：分青分绿——同路石青、石绿拆成深浅。画面上至少两档叠压。不称馆方六色色谱。"
+      "notes": "第一段持续局部：分青分绿，先把画面可见深浅分开看。图像色彩不直接等于具体颜料等级。"
     },
     {
       "id": "s04",
@@ -129,7 +129,7 @@
       "end": 44,
       "asset_id": "touqing",
       "purpose": "analysis",
-      "notes": "六色① 头青：山顶最深青。屏上短标「头青」。证据为原图。"
+      "notes": "短标深青：原图较深蓝色段，位置待定；不能据此认定头青等级。 如用色点，注明设计示意。"
     },
     {
       "id": "s05",
@@ -137,7 +137,7 @@
       "end": 56,
       "asset_id": "sanqing",
       "purpose": "analysis",
-      "notes": "六色② 三青：山腰或水边浅青灰。标「三青」。"
+      "notes": "短标浅青：与深青对看的较浅蓝段；不据电子图认定三青等级。 如用色点，注明设计示意。"
     },
     {
       "id": "s06",
@@ -145,7 +145,7 @@
       "end": 68,
       "asset_id": "toulv",
       "purpose": "analysis",
-      "notes": "六色③ 头绿：近山主体。标「头绿」。"
+      "notes": "短标深绿：原图较深绿段，位置待定；不认定头绿等级。 如用色点，注明设计示意。"
     },
     {
       "id": "s07",
@@ -153,7 +153,7 @@
       "end": 80,
       "asset_id": "sanlv",
       "purpose": "analysis",
-      "notes": "六色④ 三绿：山脚林木浅黄绿。标「三绿」。"
+      "notes": "短标浅绿：与深绿对看的较浅绿段；不认定三绿等级。 如用色点，注明设计示意。"
     },
     {
       "id": "s08",
@@ -161,7 +161,7 @@
       "end": 92,
       "asset_id": "zheshi",
       "purpose": "analysis",
-      "notes": "六色⑤ 赭石：山脚暖底。不是青。标「赭石」。"
+      "notes": "短标赭色：可见暖色与青绿相衬；不推断每层施色先后。 如用色点，注明设计示意。"
     },
     {
       "id": "s09",
@@ -169,7 +169,7 @@
       "end": 104,
       "asset_id": "yuebai",
       "purpose": "analysis",
-      "notes": "六色⑥ 月白：绢地浅底上的江、雾或天。不是青，也不是新画的白。标「月白」。"
+      "notes": "短标浅底：保留江面等原水纹；月白仅设计名，不据电子图鉴定留绢或白颜料。 如用色点，注明设计示意。"
     },
     {
       "id": "s10",
@@ -185,7 +185,7 @@
       "end": 138,
       "asset_id": "layered-mid",
       "purpose": "analysis",
-      "notes": "本片解读：青与绿拆开，赭石垫底，月白留空，将近十二米才像千里。可轻叠六色短名，不写成馆方色谱。"
+      "notes": "本片解读：青绿深浅、暖色与浅底相衬，将近十二米才像千里。设计示意色不推断颜料等级或施色先后。"
     },
     {
       "id": "s12",

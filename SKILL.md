@@ -95,6 +95,7 @@ python3 scripts/validate_plan.py /path/to/project.json --check-files --probe
 - [《早春图》](references/early-spring-case.md)：原画与临摹参考的区分、作者自题与后人题诗、开场声音修订，以及成片插段后的版本管理。
 - [《雪中猎人》](references/hunters-in-snow-case.md)：西方绘画、授权配乐、横版转竖版与原画重新取景。
 - [《汉宫春晓图》](references/hangong-chunxiao-case.md)：长卷满宽慢移、官方分段拼接、早期尺幅镜头与独立 v2 修订。
-- [《千里江山图》](references/qianli-jiangshan-case.md)：名画记定镜与故宫影像授权；先浏览、再尺幅，再用公开色卡的六格讲分青分绿。六格不是馆方色谱。尚未成片。
+- [《富春山居图》](references/fuchun-shanju-case.md)：132秒已完成案例：两段原图与半印证据、早期尺幅、两段水墨动态、多音字与配乐修订、4:3独立封面。用户确认已发布。
+- [《千里江山图》方案](references/qianli-jiangshan-case.md)：尚未制作；先浏览、再尺幅，再讲青绿层次。设计色卡不用于鉴定原作颜料等级或留白材料，图源使用条件单独核对。
 
 案例中的时长、声音、构图坐标和技术参数不能直接套用到其他画作。

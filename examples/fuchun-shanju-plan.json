@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "artwork": {
+    "title": "富春山居图",
+    "sources": [
+      "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=2510",
+      "https://www.dpm.org.cn/journal/246830.html",
+      "https://www.dpm.org.cn/explode/others/209703.html",
+      "https://www.npm.gov.tw/ChineseArt-Content.aspx?a=2938&idstr=03012531&l=1&sno=04012587&type=2011"
+    ],
+    "dimensions_cm": {
+      "shengshan": {
+        "height": 31.8,
+        "width": 51.4,
+        "scope": "剩山图本幅，浙江省博物馆"
+      },
+      "wuyong": {
+        "height": 33,
+        "width": 636.9,
+        "scope": "无用师卷本幅，不含拖尾；台北故宫博物院 故畫001016"
+      },
+      "accessed": "2026-10-30"
+    }
+  },
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 132
+  },
+  "cover": {
+    "width": 2304,
+    "height": 1728
+  },
+  "assets": [
+    {
+      "id": "brushwork.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "fisherman.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "ink-dots.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "joined-opening.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 两段原图按共同像素/厘米等比排版，只示意卷首附近局部；18px间隔为版式参数，非缺损测量；非完整全卷，不生成填缝。 实际底图来自本例列出的剩山、无用两件Commons文件，source_url为作品档案；完整来源见案例。"
+    },
+    {
+      "id": "open-water.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "river-motion-first.jpg",
+      "kind": "ai-image",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
+    },
+    {
+      "id": "river-motion-last.jpg",
+      "kind": "ai-image",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
+    },
+    {
+      "id": "river-motion.mp4",
+      "kind": "ai-video",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
+    },
+    {
+      "id": "self-inscription.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "shengshan.jpg",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E5%89%A9%E5%B1%B1%E5%9C%96).jpg",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "water-motion-first.jpg",
+      "kind": "ai-image",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
+    },
+    {
+      "id": "water-motion-last.jpg",
+      "kind": "ai-image",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
+    },
+    {
+      "id": "water-motion.mp4",
+      "kind": "ai-video",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 Seedance2.0气氛镜头或其首末帧，全段标AI笔墨延展；不作为原画细节或历史证据。"
+    },
+    {
+      "id": "wuyong-seal.jpg",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/1194?dep=P",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。"
+    },
+    {
+      "id": "wuyong.jpg",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E6%98%A5%E5%B1%B1%E5%B1%85%E5%9C%96(%E7%84%A1%E7%94%A8%E5%B8%AB%E5%8D%B7).jpg",
+      "notes": "实际132秒成片使用的素材角色；仓库不分发媒体，复用时提供自己的获准本地文件。 s02尺幅主画面，剪辑另叠剩山原图及170cm自然站姿成人；同为2.15px/cm，不拉平两段高度差。馆方尺寸、URL与访问日期见artwork。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 13.6,
+      "asset_id": "joined-opening.jpg",
+      "purpose": "title",
+      "notes": "两段山，凭什么说是同一卷？；满宽原画局部慢移，非完整全卷。"
+    },
+    {
+      "id": "s02",
+      "start": 13.6,
+      "end": 22.716,
+      "asset_id": "wuyong.jpg",
+      "purpose": "analysis",
+      "notes": "接近七米，只有三十多厘米高；原图与成人独立叠层，同比例；早于s06半印持续细读。"
+    },
+    {
+      "id": "s03",
+      "start": 22.716,
+      "end": 25.616,
+      "asset_id": "river-motion-first.jpg",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展",
+      "notes": "江岸，也有风声"
+    },
+    {
+      "id": "s04",
+      "start": 25.616,
+      "end": 31.616,
+      "asset_id": "river-motion.mp4",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展",
+      "notes": "江岸，也有风声"
+    },
+    {
+      "id": "s05",
+      "start": 31.616,
+      "end": 32.316,
+      "asset_id": "river-motion-last.jpg",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展",
+      "notes": "江岸，也有风声"
+    },
+    {
+      "id": "s06",
+      "start": 32.316,
+      "end": 35.316,
+      "asset_id": "shengshan.jpg",
+      "purpose": "analysis",
+      "notes": "先找到这枚旧藏印"
+    },
+    {
+      "id": "s07",
+      "start": 35.316,
+      "end": 47.316,
+      "asset_id": "wuyong-seal.jpg",
+      "purpose": "analysis",
+      "notes": "半枚旧印，留下线索"
+    },
+    {
+      "id": "s08",
+      "start": 47.316,
+      "end": 53.316,
+      "asset_id": "joined-opening.jpg",
+      "purpose": "analysis",
+      "notes": "清初，经火以后"
+    },
+    {
+      "id": "s09",
+      "start": 53.316,
+      "end": 57.316,
+      "asset_id": "joined-opening.jpg",
+      "purpose": "analysis",
+      "notes": "2011 · 曾在同一展柜相见"
+    },
+    {
+      "id": "s10",
+      "start": 57.316,
+      "end": 64.324,
+      "asset_id": "joined-opening.jpg",
+      "purpose": "analysis",
+      "notes": "保留断口，让两段山水相见"
+    },
+    {
+      "id": "s11",
+      "start": 64.324,
+      "end": 72.324,
+      "asset_id": "brushwork.jpg",
+      "purpose": "analysis",
+      "notes": "沿着山势，看笔墨"
+    },
+    {
+      "id": "s12",
+      "start": 72.324,
+      "end": 77.524,
+      "asset_id": "ink-dots.jpg",
+      "purpose": "analysis",
+      "notes": "墨点，让树林有了疏密"
+    },
+    {
+      "id": "s13",
+      "start": 77.524,
+      "end": 83.124,
+      "asset_id": "fisherman.jpg",
+      "purpose": "analysis",
+      "notes": "人家很小，江水很宽"
+    },
+    {
+      "id": "s14",
+      "start": 83.124,
+      "end": 87.048,
+      "asset_id": "open-water.jpg",
+      "purpose": "analysis",
+      "notes": "一段接着一段，走进眼前"
+    },
+    {
+      "id": "s15",
+      "start": 87.048,
+      "end": 87.848,
+      "asset_id": "water-motion-first.jpg",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展",
+      "notes": "让江水，再流一会儿"
+    },
+    {
+      "id": "s16",
+      "start": 87.848,
+      "end": 93.848,
+      "asset_id": "water-motion.mp4",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展",
+      "notes": "让江水，再流一会儿"
+    },
+    {
+      "id": "s17",
+      "start": 93.848,
+      "end": 94.648,
+      "asset_id": "water-motion-last.jpg",
+      "purpose": "atmosphere",
+      "ai_label": "AI 笔墨延展",
+      "notes": "让江水，再流一会儿"
+    },
+    {
+      "id": "s18",
+      "start": 94.648,
+      "end": 104.648,
+      "asset_id": "self-inscription.jpg",
+      "purpose": "analysis",
+      "notes": "卷末，黄公望留下自己的话"
+    },
+    {
+      "id": "s19",
+      "start": 104.648,
+      "end": 110.648,
+      "asset_id": "self-inscription.jpg",
+      "purpose": "analysis",
+      "notes": "无用师，请他先在卷尾题记"
+    },
+    {
+      "id": "s20",
+      "start": 110.648,
+      "end": 116.648,
+      "asset_id": "joined-opening.jpg",
+      "purpose": "analysis",
+      "notes": "从一段担忧，到一场火"
+    },
+    {
+      "id": "s21",
+      "start": 116.648,
+      "end": 126.264,
+      "asset_id": "joined-opening.jpg",
+      "purpose": "analysis",
+      "notes": "纸断了，山水还在"
+    },
+    {
+      "id": "s22",
+      "start": 126.264,
+      "end": 132,
+      "asset_id": "joined-opening.jpg",
+      "purpose": "title",
+      "notes": "纸断了，山水还在；馆藏、图源署名及生成范围。"
+    }
+  ]
+}
