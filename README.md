@@ -3,11 +3,11 @@
 ![Skill](https://img.shields.io/badge/Skill-Agent-111111?style=flat-square)
 ![Codex](https://img.shields.io/badge/Codex-Supported-222222?style=flat-square)
 
-把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》《雪中猎人》《汉宫春晓图》《富春山居图》与《千里江山图》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
+把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》《雪中猎人》《汉宫春晓图》《富春山居图》《千里江山图》以及「名画开小差」片头与《美国哥特式》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
-覆盖原画研究、讲解脚本、让手机观众看见原作尺幅的一拍、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
+支持原画赏析和画中人物虚构对白小剧场，覆盖原画研究、讲解脚本、让手机观众看见原作尺幅的一拍、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
 
-本仓库提供制作方法与计划检查脚本，**不是一键渲染器**。媒体服务与剪辑软件需要使用者自己的访问权限；本仓库不包含凭据、原画母版、完整视频或音频素材、私人项目链接。附带下述成片示例静帧，以及可复用的原创合成人物尺幅素材。
+本仓库提供制作方法与计划检查脚本，**不是一键渲染器**。媒体服务与剪辑软件需要使用者自己的访问权限；本仓库不包含凭据、单集原画母版、完整单集视频或私人项目链接。附带示例静帧、原创合成人物尺幅素材，以及可直接使用的「名画开小差」片头MP4和音乐/音效分轨。
 
 ## 作品截图
 
@@ -48,11 +48,27 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 
 > 制作一支长卷赏析：开头让高清原画满宽缓慢浏览，先选能看清细节的一段，随后短暂交代整卷尺幅。不要把整卷缩成细带配大标题，沿用已选声音和后续素材。
 
+也可以制作人物小剧场：
+
+> 使用 $art-explainer-video 做一集「名画开小差」。参考《美国哥特式》的展厅推进、人物对白和退回原画结构，为新画作写一个有原画事实依据的冷面笑话。沿用已确认片头，视频16:9、封面4:3。
+
+只给已完成正片加片头，不重新调用生成服务：
+
+```bash
+python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
+  --output /path/to/episode-with-intro.mp4 --subtitles /path/to/episode.srt
+```
+
+详见[片头复用](references/series-intro.md)。脚本需要FFmpeg/ffprobe，会按叠化重叠量计算字幕顺延；不修改剪映工程，不向平台上传。
+
 ## 文件导航
 
 | 文件 | 用途 |
 | --- | --- |
 | [SKILL.md](SKILL.md) | 智能体入口与工作流 |
+| [名画小剧场](references/painting-theatre.md) | 原创对白、真实展厅照片与虚构画心、同源首尾帧、Seedance原生音画与回归原画 |
+| [统一片头](references/series-intro.md) | 「名画开小差」4秒/1.5秒MP4、声音分轨、思源宋体字标、可选源码与字幕顺延 |
+| [片头拼接脚本](scripts/prepend_intro.py) | 保持正片画幅和帧率，音画叠化，统一移动SRT，拒绝覆盖输入 |
 | [画面与脚本](references/art-direction.md) | 证据、资料优先级、原画定位、尺幅、表面细节、叙事节奏、同作者对照与生成提示词 |
 | [长卷开头](references/long-scroll-opening.md) | 满宽慢移、观看顺序、高清分段拼接、接尺幅与转场检查 |
 | [长卷组件](assets/long-scroll/LongScrollPan.tsx) | 可选Remotion等比平移组件，配套几何函数与参数示例 |
@@ -74,6 +90,8 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 
 | 文件 | 用途 |
 | --- | --- |
+| [美国哥特式案例](references/american-gothic-case.md) | 人物小剧场、剪映v4与带片头v5、原画回归、4:3封面和致敬文案 |
+| [美国哥特式时间线](examples/american-gothic-theatre.json) | 已交付31.25秒的阶段与同源素材关系，不含整集媒体 |
 | [溪山行旅图案例](references/xishan-case.md) | 已完成案例的选择、指标与限制 |
 | [早春图案例](references/early-spring-case.md) | 题款题诗、开场声音修订与 146 秒成片复盘 |
 | [早春图分镜计划](examples/early-spring-plan.json) | 对应修订版的 25 个主画面镜头，不含媒体 |
@@ -99,6 +117,7 @@ python3 scripts/validate_plan.py examples/hunters-in-snow-portrait-plan.json
 python3 scripts/validate_plan.py examples/hangong-chunxiao-plan.json
 python3 scripts/validate_plan.py examples/fuchun-shanju-plan.json
 python3 scripts/validate_plan.py examples/qianli-jiangshan-plan.json
+python3 scripts/validate_plan.py examples/american-gothic-theatre.json
 python3 -m unittest discover -s tests -v
 ```
 
@@ -143,3 +162,19 @@ node --experimental-strip-types --test tests/test_long_scroll.mjs
 | <img src="docs/shots/fuchun-cover.webp" alt="富春山居图4:3生成封面：纸断了，山水还在。宋体风格文字融入暖米白纸本水墨留白" width="100%" /> | <img src="docs/shots/qianli-cover.webp" alt="千里江山图4:3生成封面：一卷青绿，如何铺开千里江山？宋体风格文字融入青绿山水绢底" width="100%" /> |
 
 这是2026-10-31后续重做的本地封面预览，尚未替换已发布笔记的封面。两张均通过YouMind的GPT Image 2参考生成，原图各为2304×1728，已核对文字、缩略图和Board可见性。封面属于创意重构，非原画复制品；随图文字不是准确字体文件或独立文字层。实际做法见[富春山居图案例](references/fuchun-shanju-case.md#后续封面v3传统字体融入纸本水墨)与[千里江山图案例](references/qianli-jiangshan-case.md#当前交付与融合封面2026-10-31)。
+
+## 「名画开小差」与《美国哥特式》
+
+这是用户已确认的本地交付案例，尚无已发布笔记的核实链接。[制作复盘](references/american-gothic-case.md)保留了参考节目结构与本片原创对白的区别、展厅照片署名、Seed Audio参考声音与Seedance原生音轨的关系，以及v4原生导出、v5外部拼接的边界。
+
+| 固定片头：思源宋体版 | 本集：原画风格的4:3封面 |
+| :---: | :---: |
+| <img src="docs/shots/minghua-intro.webp" alt="名画开小差固定片头，三幅古金画框与思源宋体字标" width="100%" /> | <img src="docs/shots/american-gothic-cover.webp" alt="美国哥特式生成封面：合着，我是背景？人物、尖拱窗与古典文字共同构图" width="100%" /> |
+
+| 开头：展厅画框内已是演员复景 | 退出：完整画框露出后回到原画 |
+| :---: | :---: |
+| <img src="docs/shots/american-gothic-gallery.webp" alt="美国哥特式展厅照片重构，画框内为生成演员复景" width="100%" /> | <img src="docs/shots/american-gothic-return.webp" alt="美国哥特式退出后的原画回归与片尾署名" width="100%" /> |
+
+展厅静帧改编自Kevin Dooley的2017年照片，CC BY 2.0；来源、处理方式及完整署名见[案例来源](references/american-gothic-case.md#素材与声音)。封面和片头人物是生成的艺术化重构，不作为原画细节证据。
+
+可直接复用的[4秒片头](assets/series-intro/intro-4s-v2.mp4)、[1.5秒短版](assets/series-intro/intro-short-v2.mp4)、[音乐](assets/series-intro/music.wav)与[音效](assets/series-intro/sfx.wav)随库提供。MP4已经混音；不要再叠分轨。只需加片头时无需重生成；修改角色或画幅则使用自己的透明母版与字体，详见[片头源码所需素材](references/series-intro.md#素材生成与可编辑源)。

@@ -1,0 +1,26 @@
+{
+  "version": "v2",
+  "approvedOn": "2026-11-01",
+  "series": "名画开小差",
+  "files": {
+    "music.wav": {
+      "bytes": 768044,
+      "sha256": "9114f70f9024f65425ff24bc82a027cd218fec614c2c9d36ec95601f7468082b"
+    },
+    "intro-short-v2.mp4": {
+      "bytes": 440070,
+      "sha256": "3ce5bf1c44443f13eb367c9d39ec8d9e962fa0fca395cab059fb1c4fab67ecbb"
+    },
+    "sfx.wav": {
+      "bytes": 768044,
+      "sha256": "d0e810e1a9d78eac80108e9f8e2bfe1e6301dd2f61f43134a632dae88a5618c3"
+    },
+    "intro-4s-v2.mp4": {
+      "bytes": 2064343,
+      "sha256": "310045184d6e331a5948d814e957c75f04c2db3ac4c6e4f732d09548a22cd2d2"
+    }
+  },
+  "sourceRequiresExternalMedia": true,
+  "mediaProvenance": "Project-generated GPT Image 2, Seedance 2.0 and Seed Audio 1.0; no reference-program footage or music",
+  "font": "Source Han Serif CN SemiBold; font not bundled, obtain upstream with its OFL license"
+}

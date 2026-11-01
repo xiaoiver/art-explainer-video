@@ -1,0 +1,24 @@
+{
+  "tiles": [
+    {
+      "src": "left-alpha.mov",
+      "width": 426,
+      "height": 720,
+      "subjectHeight": 475
+    },
+    {
+      "src": "middle-alpha.mov",
+      "width": 427,
+      "height": 720,
+      "subjectHeight": 475
+    },
+    {
+      "src": "right-alpha.mov",
+      "width": 427,
+      "height": 720,
+      "subjectHeight": 475
+    }
+  ],
+  "audio": true,
+  "short": true
+}

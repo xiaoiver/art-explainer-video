@@ -43,3 +43,7 @@ ffmpeg -hide_banner -i final.mp4 -af loudnorm=I=-16:TP=-1.5:LRA=11:print_format=
 ```
 
 最后一条用于分析，不覆盖文件。完整解码和响度数据仍不能证明发音、音乐与画面情绪符合要求；这些列入实际试听验收。
+
+## 人物对白短剧
+
+Seed Audio对白可在供应商支持时作为Seedance参考音频；生成后以选定视频的原生音轨与画面成对剪辑，不用干参考声覆盖后仍宣称保留原生同步。当前接口先探测、短句先验；本例没有验证独立ElevenLabs口型流程。具体见[名画小剧场](painting-theatre.md)。固定片头的音乐、木响与短版另见[系列片头](series-intro.md)。
