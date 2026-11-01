@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "artwork": {
+    "title": "美国哥特式 / American Gothic",
+    "sources": [
+      "https://artsandculture.google.com/asset/american-gothic/5QEPm0jCc183Aw?hl=en"
+    ]
+  },
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 28,
+    "orientation": "landscape"
+  },
+  "assets": [
+    {
+      "id": "painting",
+      "kind": "original",
+      "source_url": "https://artsandculture.google.com/asset/american-gothic/5QEPm0jCc183Aw?hl=en",
+      "notes": "待获取馆方高清与核对使用说明。尺寸78 × 65.3 cm取该馆方作品页，查阅2026-11-01；s01同比例成人轮廓叠加，s04为尖窗原画证据。实际高清获取后标定画心坐标。"
+    },
+    {
+      "id": "man-speaking",
+      "kind": "ai-video",
+      "notes": "仅计划；尚未生成、测试口型或试听。"
+    },
+    {
+      "id": "woman-speaking",
+      "kind": "ai-video",
+      "notes": "仅计划；尚未生成、测试口型或试听。"
+    },
+    {
+      "id": "two-shot",
+      "kind": "ai-video",
+      "notes": "仅计划；尚未生成、测试口型或试听。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 3,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "原画全幅；按78 × 65.3 cm叠加假定170 cm成人轮廓，标按馆方尺寸示意；作品名、作者、年代。"
+    },
+    {
+      "id": "s02",
+      "start": 3,
+      "end": 8,
+      "asset_id": "man-speaking",
+      "purpose": "atmosphere",
+      "notes": "男子中近景，说完留半秒，女子侧目但不开口。",
+      "ai_label": "AI 想象演绎 · 原创虚构对白"
+    },
+    {
+      "id": "s03",
+      "start": 8,
+      "end": 13,
+      "asset_id": "woman-speaking",
+      "purpose": "atmosphere",
+      "notes": "女子中近景，目光示意背后尖窗；男子闭嘴听。",
+      "ai_label": "AI 想象演绎 · 原创虚构对白"
+    },
+    {
+      "id": "s04",
+      "start": 13,
+      "end": 17,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "未改动原画上方中央尖拱窗局部；标Carpenter Gothic；女子画外音，原画不改嘴。"
+    },
+    {
+      "id": "s05",
+      "start": 17,
+      "end": 21,
+      "asset_id": "man-speaking",
+      "purpose": "atmosphere",
+      "notes": "男子略抬眉准备挪身，持叉的手不变形。",
+      "ai_label": "AI 想象演绎 · 原创虚构对白"
+    },
+    {
+      "id": "s06",
+      "start": 21,
+      "end": 25,
+      "asset_id": "two-shot",
+      "purpose": "atmosphere",
+      "notes": "双人反应镜头；仅女子说话，男子听后僵住；恢复原画姿态。",
+      "ai_label": "AI 想象演绎 · 原创虚构对白"
+    },
+    {
+      "id": "s07",
+      "start": 25,
+      "end": 28,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "未改动原画全幅收静，保留资料来源。"
+    }
+  ],
+  "performance": {
+    "mode": "talking-painting-comedy",
+    "premise": "谁才是合照主角？持叉男子想下班，女子要他维持站姿。",
+    "detail": "右侧男子手里的叉、两人的站位与背后上方中央的尖拱窗。",
+    "conflict": "男子把持叉当成加班；女子用画名关联的建筑把注意力引向房子。",
+    "payoff": "男子要让房子拿叉替班，女子把房子的尖顶说成它已经带来的工作工具。",
+    "characters": [
+      {
+        "id": "man",
+        "painting_location": "画面右侧，持叉男子；不指定真人模特关系。",
+        "want": "结束摆拍，下班。",
+        "tactic": "以自带工具为理由申请离场。",
+        "voice": "原创合成男声，中低音，疲惫但认真；实际音色待试样。"
+      },
+      {
+        "id": "woman",
+        "painting_location": "画面左侧女子；保持原服装与视线方向。",
+        "want": "让男子站稳，维持合照。",
+        "tactic": "借尖窗和画名转移争执，再回扣打卡。",
+        "voice": "原创合成女声，中音，干脆克制；实际音色待试样。"
+      }
+    ],
+    "facts": [
+      {
+        "id": "f-title",
+        "claim": "画名American Gothic关联背景农舍的Carpenter Gothic建筑风格。",
+        "source_url": "https://artsandculture.google.com/asset/american-gothic/5QEPm0jCc183Aw?hl=en",
+        "accessed_on": "2026-11-01",
+        "original_location": "背景房屋上方中央的尖拱窗；坐标须在实际获取高清后标定。",
+        "evidence_shot_id": "s04"
+      }
+    ],
+    "lines": [
+      {
+        "id": "l01",
+        "shot_id": "s02",
+        "speaker": "man",
+        "start": 3.2,
+        "end": 7.5,
+        "text": "拍个合照还得自带工具？我申请远程站岗。",
+        "delivery": "疲惫但认真；句后留半秒反应。",
+        "kind": "fiction",
+        "framing": "on-screen",
+        "fact_ids": []
+      },
+      {
+        "id": "l02",
+        "shot_id": "s03",
+        "speaker": "woman",
+        "start": 8.3,
+        "end": 12.5,
+        "text": "你先别挪，后面那扇尖窗才是主角。",
+        "delivery": "干脆纠正，重音在尖窗；目光指向房子。",
+        "kind": "fiction",
+        "framing": "on-screen",
+        "fact_ids": []
+      },
+      {
+        "id": "l03",
+        "shot_id": "s04",
+        "speaker": "woman",
+        "start": 13.2,
+        "end": 16.5,
+        "text": "画名里的哥特式，说的是房子。",
+        "delivery": "画外音，放慢让观众看窗。",
+        "kind": "fact",
+        "framing": "off-screen",
+        "fact_ids": [
+          "f-title"
+        ]
+      },
+      {
+        "id": "l04",
+        "shot_id": "s05",
+        "speaker": "man",
+        "start": 17.3,
+        "end": 20.3,
+        "text": "那让房子拿叉，我下班。",
+        "delivery": "像认真提出解决方案；句末等回应。",
+        "kind": "fiction",
+        "framing": "on-screen",
+        "fact_ids": []
+      },
+      {
+        "id": "l05",
+        "shot_id": "s06",
+        "speaker": "woman",
+        "start": 21.2,
+        "end": 24.5,
+        "text": "它已经把尖顶带来了，就差你打卡。",
+        "delivery": "平静回击；男子停住半秒。",
+        "kind": "fiction",
+        "framing": "on-screen",
+        "fact_ids": []
+      }
+    ]
+  },
+  "notes": "原创待制作示范，纸面28秒含反应停顿；没有媒体、实测音频或已验证口型。人物动机、远程站岗、下班与打卡均为虚构。不设置style；performance独立记录人物表演，基础计划继续使用既有素材与用途。"
+}

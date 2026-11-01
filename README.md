@@ -50,6 +50,12 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 
 ## 文件导航
 
+可选“名画会说话”模式：
+
+> 使用 $art-explainer-video 写一段 20–30 秒、双角色的名画喜剧。人物要有不同目的，围绕原画中的一个细节互怼，把一个可核对的知识点写进冲突。先交原创对白、分镜和事实来源，不生成媒体。
+
+见 [模式与 28 秒原创样例](references/talking-painting-comedy.md) 及 [可校验计划](examples/american-gothic-comedy-plan.json)。这是待制作的脚本示范，尚未测试配音、口型或视频生成。
+
 | 文件 | 用途 |
 | --- | --- |
 | [SKILL.md](SKILL.md) | 智能体入口与工作流 |
@@ -66,6 +72,7 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 | [剪辑与交付](references/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
 | [横竖版与重新构图](references/formats.md) | 方向选择、原画局部、宽幅全景、字幕安全区与素材复用 |
 | [计划文件格式](references/project-format.md) | 可选 JSON 格式与检查命令 |
+| [名画喜剧模式](references/talking-painting-comedy.md) | 可选人物动机、画中细节冲突、原创对白、表演镜头与事实核验 |
 
 
 ## 案例与示例

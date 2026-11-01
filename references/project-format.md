@@ -31,3 +31,26 @@ python3 scripts/validate_plan.py /path/to/project.json --check-files --probe
 - `--probe` 隐含 `--check-files`，调用 `ffprobe` 检查交付视频的实际分辨率、帧率、时长，以及封面像素。要求交付视频路径；配置了封面尺寸时也要求封面路径。
 - 视频时长容差为 0.25 秒，帧率容差为 0.02 fps，允许常见封装尾部。它不检查像素宽高比、声音内容、解码完整性、字幕或图像语义，完整验收仍按 [剪辑与交付](editing-delivery.md) 进行。
 - 返回码 `0` 表示这些检查没有发现错误，`1` 表示存在错误；警告不阻止计划继续完善。没有输出“整片验收通过”的含义。
+
+## 可选人物喜剧记录
+
+选择 [名画喜剧模式](talking-painting-comedy.md) 时，在同一个计划增加 `performance`，基础素材、镜头和交付字段不变。它是独立的表演记录，不用新增顶层 `style`，也不套用可视证据对白的节拍。现有计划不需要补字段；普通 `validate_plan.py` 不检查人物表演。
+
+| `performance` 字段 | 含义 |
+| --- | --- |
+| `mode` | `talking-painting-comedy` |
+| `premise`、`detail`、`conflict`、`payoff` | 一句情境、原画细节、人物目的如何相撞、如何回扣；均为非空文字 |
+| `characters` | 至少两名角色，各有唯一 `id`、`painting_location`、`want`、`tactic`、`voice`；身份和动机的虚构范围另写清 |
+| `facts` | 至少一个知识点，各有唯一 `id`、`claim`、公开 `source_url`、`accessed_on`（YYYY-MM-DD）、`original_location`、`evidence_shot_id`；证据镜头引用 `original` 且为 `analysis` |
+| `lines` | 每句有唯一 `id`、`shot_id`、`speaker`（角色 id）、`text`、`delivery`、全片秒数 `start` / `end`、`kind`（`fiction` / `fact`）、`framing`（`on-screen` / `off-screen`）；事实句另列非空 `fact_ids` |
+
+一句话同时含事实与包袱时标 `fact` 并列出事实引用；这不表示包袱也有史料依据。仅虚构的句子标 `fiction`。每条已列事实至少关联一句台词；片头尺寸等资料卡仍在镜头 `notes` 记录来源、访问日期和布局。
+
+台词时间须落在其镜头内；当前检查器按一镜一句的工作流拒绝对白重叠。至少两名角色须有 `on-screen` 台词，对应 `ai-video` / `atmosphere`，不能在原画证据上假做口型。生成主画面标记需包含可读的 `AI 想象演绎` 或 `AI dramatization`；实际剪辑再叠加“原创虚构对白”。未改动原画可承接 `off-screen` 角色声音。
+
+```bash
+python3 scripts/validate_comedy.py examples/american-gothic-comedy-plan.json
+python3 scripts/validate_comedy.py /path/to/project.json --check-files --probe
+```
+
+独立检查器复用基础计划检查，并增加上述表演关系检查；参数、路径解析与退出码沿用基础检查器。它不下载、生成或渲染媒体，不核实来源网页内容，也不证明幽默、音色、口型、标记可读性或实际节奏合格。
