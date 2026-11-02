@@ -202,3 +202,7 @@ node --experimental-strip-types --test tests/test_long_scroll.mjs
 展厅静帧改编自Kevin Dooley的2017年照片，CC BY 2.0；来源、处理方式及完整署名见[案例来源](references/american-gothic-case.md#素材与声音)。封面和片头人物是生成的艺术化重构，不作为原画细节证据。
 
 可直接复用的[4秒片头](assets/series-intro/intro-4s-v2.mp4)、[1.5秒短版](assets/series-intro/intro-short-v2.mp4)、[音乐](assets/series-intro/music.wav)与[音效](assets/series-intro/sfx.wav)随库提供。MP4已经混音；不要再叠分轨。只需加片头时无需重生成；修改角色或画幅则使用自己的透明母版与字体，详见[片头源码所需素材](references/series-intro.md#素材生成与可编辑源)。
+
+### 莫迪里阿尼：多作品趣味艺术史
+
+2026-11-03本地完成71.125秒9:16短片，三件原作围绕姿态、线条与人物关系接力，采用已获认可的展示字/手写吐槽/宋体字幕分工。包含真实语速测量、多音字改写及可编辑剪映字幕的[制作复盘](references/modigliani-case.md)；未把本地影片或他人参考视频打包进技能。

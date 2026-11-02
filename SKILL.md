@@ -101,6 +101,8 @@ python3 scripts/validate_plan.py /path/to/project.json --check-files --probe
 
 按任务选择案例：
 
+- [莫迪里阿尼多作品趣味解读](references/modigliani-case.md)：9:16竖版、已选设计字体、实测语速、35镜头素材接力、多音字改写和可编辑字幕；省略身高对比。
+
 - [「名画开小差」片头](references/series-intro.md)：已确认的思源宋体字标、独立音乐音效、现成MP4、可选源码与字幕偏移脚本。
 - [《美国哥特式》](references/american-gothic-case.md)：展厅进出画、Seed Audio参考驱动的Seedance表演、剪映v4与加片头v5、画字融合封面及Amusee致敬文案。
 - [《溪山行旅图》](references/xishan-case.md)：水墨风格与音色迭代、首次制作、剪映精剪。
