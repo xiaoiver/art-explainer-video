@@ -14,7 +14,7 @@
 
 素材路径和交付路径相对于计划文件目录解析，也接受执行者自己的绝对路径。计划中不要放密钥、临时签名 URL；公开案例仅含公开资料链接。
 
-每个 `shot` 表示主画面，允许为转场短暂重叠；字幕、图形叠加和声音轨仍保留在实际编辑工程中。时间线不得有未覆盖的空段。`analysis` 指对原作视觉证据的讲解，引用 `original`；生成画面应用于延展。脚本检查这种标记关系，不判断讲解事实是否正确。
+每个 `shot` 表示主画面，允许为转场短暂重叠；字幕、图形叠加和声音轨仍保留在实际编辑工程中。时间线不得有未覆盖的空段。多作品可用下述扩展。`analysis` 指对原作视觉证据的讲解，所有主画面引用均为 `original`；生成画面应用于延展。脚本检查这种标记关系，不判断讲解事实是否正确。
 
 尺幅示意镜头记成时间线上的一镜：`asset_id` 仍引用原画全幅的 `original` 素材，`purpose` 为 `analysis`。成人、门或手机轮廓在实际编辑工程中叠加；可将轮廓另列为 `graphic` 素材，但不要把它用作该分析镜头的主素材。在所引用 `original` 的 `notes` 写明尺幅镜头 ID、叠加方式和馆方尺寸页面。计划检查不判断对照是否符合厘米比例，也不能代替 [画面与脚本](art-direction.md) 里的尺幅要求。
 
@@ -31,3 +31,11 @@ python3 scripts/validate_plan.py /path/to/project.json --check-files --probe
 - `--probe` 隐含 `--check-files`，调用 `ffprobe` 检查交付视频的实际分辨率、帧率、时长，以及封面像素。要求交付视频路径；配置了封面尺寸时也要求封面路径。
 - 视频时长容差为 0.25 秒，帧率容差为 0.02 fps，允许常见封装尾部。它不检查像素宽高比、声音内容、解码完整性、字幕或图像语义，完整验收仍按 [剪辑与交付](editing-delivery.md) 进行。
 - 返回码 `0` 表示这些检查没有发现错误，`1` 表示存在错误；警告不阻止计划继续完善。没有输出“整片验收通过”的含义。
+
+## 多作品与剪辑风格扩展
+
+旧单画计划继续有效，无需迁移。多作品以顶层`artworks`数组替代`artwork`，每件有唯一`id`、`title`、`artist`和`sources`；`comparison`含`mode`（`same-artist/cross-artist/relationships`）、`question`及非空`axes`。原图与AI图像/视频素材各用`artwork_id`绑定归属。
+
+镜头以`asset_id`表示单主画面，或以`asset_ids`数组表示并置的原画证据，二者不能同时填写。不同作品的分析并置声明`comparison_axis`与`labels`（作品ID到屏幕身份文字）。贴纸、字幕、运镜与声音写进镜头`notes`及实际编辑工程，不混入原画证据数组。
+
+顶层`editing_style`可选`contemplative`或`playful-art-history`。示例见[双画趣味比较草案](../examples/multi-artwork-playful-plan.json)，选材与镜头规范见[多作品解读](multi-artwork.md)和[趣味剪辑](playful-editing.md)。校验只检查已声明的结构、引用和标签，不核实馆藏事实、历史影响、尺幅几何、实际标签、贴纸运动或阅读速度。

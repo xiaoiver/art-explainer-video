@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "artworks": [
+    {
+      "id": "xishan",
+      "title": "溪山行旅图",
+      "artist": "范宽",
+      "sources": [
+        "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959"
+      ],
+      "dimensions_cm": {
+        "height": 206.3,
+        "width": 103.3
+      },
+      "checked_on": "2026-11-02"
+    },
+    {
+      "id": "early-spring",
+      "title": "早春图",
+      "artist": "郭熙",
+      "sources": [
+        "https://digitalarchive.npm.gov.tw/Collection/Detail/47?dep=P"
+      ],
+      "dimensions_cm": {
+        "height": 158.3,
+        "width": 108.1
+      },
+      "checked_on": "2026-11-02"
+    }
+  ],
+  "comparison": {
+    "mode": "cross-artist",
+    "question": "同样画大山，视线怎样走进去？",
+    "axes": [
+      "视线入口",
+      "山体与空间的转折"
+    ]
+  },
+  "editing_style": "playful-art-history",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 90,
+    "orientation": "landscape"
+  },
+  "cover": {
+    "width": 2304,
+    "height": 1728
+  },
+  "assets": [
+    {
+      "id": "xishan-original",
+      "kind": "original",
+      "artwork_id": "xishan",
+      "source_url": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959",
+      "notes": "画心原图，路径与裁切坐标待使用自己的高清文件填写；共有尺度板用206.3×103.3厘米。"
+    },
+    {
+      "id": "early-spring-original",
+      "kind": "original",
+      "artwork_id": "early-spring",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/47?dep=P",
+      "notes": "画心原图，路径与裁切坐标待使用自己的高清文件填写；共有尺度板用158.3×108.1厘米。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "question",
+      "start": 0,
+      "end": 3,
+      "asset_ids": [
+        "xishan-original",
+        "early-spring-original"
+      ],
+      "purpose": "analysis",
+      "comparison_axis": "视线的进入方式",
+      "labels": {
+        "xishan": "范宽｜溪山行旅图",
+        "early-spring": "郭熙｜早春图"
+      },
+      "notes": "全貌快速配对；本片吐槽贴纸“导航路线不太一样？”弹入，落点轻短响，随后落稳。先给问题，不在三秒里做完整分析。"
+    },
+    {
+      "id": "scale",
+      "start": 3,
+      "end": 8,
+      "asset_ids": [
+        "xishan-original",
+        "early-spring-original"
+      ],
+      "purpose": "analysis",
+      "comparison_axis": "实物尺幅",
+      "labels": {
+        "xishan": "范宽｜溪山行旅图",
+        "early-spring": "郭熙｜早春图"
+      },
+      "notes": "共同像素/厘米比例，两件全幅与170厘米自然人物同板；馆方厘米数字上屏。此镜在两件作品首次持续细读之前。"
+    },
+    {
+      "id": "entry-a",
+      "start": 8,
+      "end": 18,
+      "asset_id": "xishan-original",
+      "purpose": "analysis",
+      "notes": "先全貌再聚焦行旅所在局部，箭头画出观看入口；现代贴纸“人在哪？”先作轻松提问，落稳后给看清时间。原图坐标须实测。"
+    },
+    {
+      "id": "entry-b",
+      "start": 18,
+      "end": 28,
+      "asset_id": "early-spring-original",
+      "purpose": "analysis",
+      "notes": "身份提示先更新，聚焦可见河谷与人物所在局部；沿相同观看问题继续，不另讲一遍画家传记。圈线与短响依次出现。"
+    },
+    {
+      "id": "entries",
+      "start": 28,
+      "end": 44,
+      "asset_ids": [
+        "xishan-original",
+        "early-spring-original"
+      ],
+      "purpose": "analysis",
+      "comparison_axis": "视线入口",
+      "labels": {
+        "xishan": "范宽｜溪山行旅图",
+        "early-spring": "郭熙｜早春图"
+      },
+      "notes": "左右并置或竖版上下/交替放大；依次点亮两个入口；构图对照为独立缩放，明确非同比例。贴纸语气“从这里进去”，不是作者原话。"
+    },
+    {
+      "id": "paths",
+      "start": 44,
+      "end": 60,
+      "asset_ids": [
+        "xishan-original",
+        "early-spring-original"
+      ],
+      "purpose": "analysis",
+      "comparison_axis": "视线怎样往山中走",
+      "labels": {
+        "xishan": "范宽｜溪山行旅图",
+        "early-spring": "郭熙｜早春图"
+      },
+      "notes": "先甲后乙的观看路线示意箭头，分别依原画可见转折定位；标“本片观看路线示意”，不冒充实地登山GPS。准备、落点、刹车后留阅读停留，不让两条线路同时乱飞。"
+    },
+    {
+      "id": "return-a",
+      "start": 60,
+      "end": 69,
+      "asset_id": "xishan-original",
+      "purpose": "analysis",
+      "notes": "回到完整关系，收束一项由局部支持的观察；减少装饰，让观众看画。"
+    },
+    {
+      "id": "return-b",
+      "start": 69,
+      "end": 78,
+      "asset_id": "early-spring-original",
+      "purpose": "analysis",
+      "notes": "用同一个问题回看全貌；不据并置断言师承、影响或技法优劣。"
+    },
+    {
+      "id": "answer",
+      "start": 78,
+      "end": 90,
+      "asset_ids": [
+        "xishan-original",
+        "early-spring-original"
+      ],
+      "purpose": "analysis",
+      "comparison_axis": "回到共同问题",
+      "labels": {
+        "xishan": "范宽｜溪山行旅图",
+        "early-spring": "郭熙｜早春图"
+      },
+      "notes": "并置回望，用有证据的观看差异作回答；结尾贴纸可轻巧收束，保留作品出处。无需为凑密度持续播放音效。"
+    }
+  ],
+  "notes": "仅为多画比较与趣味剪辑的制作前草案；没有下载媒体、生成声音、剪辑或渲染本片。正式脚本须以实际高清局部和音频校正，不保证本示例时码可直接套用。贴纸、声音在独立图层/声轨中编排，非原作证据。"
+}

@@ -5,7 +5,7 @@
 
 把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》《雪中猎人》《汉宫春晓图》《富春山居图》《千里江山图》以及「名画开小差」片头与《美国哥特式》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
-支持原画赏析和画中人物虚构对白小剧场，覆盖原画研究、讲解脚本、让手机观众看见原作尺幅的一拍、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
+支持单画赏析、同一或不同艺术家的多作品解读，以及画中人物虚构对白小剧场；剪辑可选沉静赏析或快节奏、丰富贴纸与音效的趣味艺术史。覆盖原画研究、讲解脚本、让手机观众看见原作尺幅的一拍、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
 
 本仓库提供制作方法与计划检查脚本，**不是一键渲染器**。媒体服务与剪辑软件需要使用者自己的访问权限；本仓库不包含凭据、单集原画母版、完整单集视频或私人项目链接。附带示例静帧、原创合成人物尺幅素材，以及可直接使用的「名画开小差」片头MP4和音乐/音效分轨。
 
@@ -52,6 +52,12 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 
 > 使用 $art-explainer-video 做一集「名画开小差」。参考《美国哥特式》的展厅推进、人物对白和退回原画结构，为新画作写一个有原画事实依据的冷面笑话。沿用已确认片头，视频16:9、封面4:3。
 
+多作品也可以围绕一个共同问题制作：
+
+> 比较范宽《溪山行旅图》和郭熙《早春图》：同样画大山，视线怎样走进去？做一支趣味艺术史短片，节奏快些，多用贴纸、圈线和音效揭示差异；原画证据和作品身份保持清楚。先给比较问题、取材表和短样，再按已有授权继续。
+
+方法见[多作品解读](references/multi-artwork.md)与[趣味艺术史剪辑](references/playful-editing.md)。后者借鉴vibe-motion的主动作、分层和刹车节奏，不自动安装合集或改变现有渲染路线；不将原画变形成特效来证明构图或笔法。
+
 只给已完成正片加片头，不重新调用生成服务：
 
 ```bash
@@ -66,6 +72,8 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | 文件 | 用途 |
 | --- | --- |
 | [SKILL.md](SKILL.md) | 智能体入口与工作流 |
+| [多作品解读](references/multi-artwork.md) | 同艺术家系列、跨作者同题比较、作品关联叙事与独立来源/尺幅 |
+| [趣味艺术史剪辑](references/playful-editing.md) | 快推、贴纸、圈线、漫画气泡、声音击点、阅读停留与帧级编排 |
 | [名画小剧场](references/painting-theatre.md) | 原创对白、真实展厅照片与虚构画心、同源首尾帧、Seedance原生音画与回归原画 |
 | [统一片头](references/series-intro.md) | 「名画开小差」4秒/1.5秒MP4、声音分轨、思源宋体字标、可选源码与字幕顺延 |
 | [片头拼接脚本](scripts/prepend_intro.py) | 保持正片画幅和帧率，音画叠化，统一移动SRT，拒绝覆盖输入 |
@@ -92,6 +100,7 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 
 | 文件 | 用途 |
 | --- | --- |
+| [双画趣味比较草案](examples/multi-artwork-playful-plan.json) | 范宽/郭熙两幅山水围绕视线入口比较；含贴纸/运镜/声音提示，90秒预估，无媒体或成片 |
 | [瑞鹤图音效选材草案](examples/ruihe-sound-draft.json) | 下一版真实风声/鹤鸣的待选时码示例，不含录音、不改写既有生成音轨来源 |
 | [美国哥特式案例](references/american-gothic-case.md) | 人物小剧场、剪映v4与带片头v5、原画回归、4:3封面和致敬文案 |
 | [美国哥特式时间线](examples/american-gothic-theatre.json) | 已交付31.25秒的阶段与同源素材关系，不含整集媒体 |
@@ -121,6 +130,7 @@ python3 scripts/validate_plan.py examples/hangong-chunxiao-plan.json
 python3 scripts/validate_plan.py examples/fuchun-shanju-plan.json
 python3 scripts/validate_plan.py examples/qianli-jiangshan-plan.json
 python3 scripts/validate_plan.py examples/american-gothic-theatre.json
+python3 scripts/validate_plan.py examples/multi-artwork-playful-plan.json
 python3 scripts/validate_sound.py examples/ruihe-sound-draft.json
 python3 -m unittest discover -s tests -v
 ```

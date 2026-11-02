@@ -63,11 +63,54 @@ def validate_plan(data, base_dir, check_files=False, probe=False):
         return result
     if type(data.get("schema_version")) is not int or data["schema_version"] != 1:
         errors.append("schema_version must be 1")
-    artwork = data.get("artwork")
-    if not isinstance(artwork, dict) or not isinstance(artwork.get("title"), str) or not artwork["title"].strip():
-        errors.append("artwork.title is required")
-    elif not isinstance(artwork.get("sources"), list) or not artwork["sources"]:
-        warnings.append("artwork.sources has no references; verify provenance separately")
+    multi = "artworks" in data
+    works = {}
+    if multi:
+        if "artwork" in data:
+            errors.append("use artworks or the legacy artwork, not both")
+        entries = data["artworks"]
+        if not isinstance(entries, list) or len(entries) < 2:
+            errors.append("artworks needs at least two works")
+            entries = entries if isinstance(entries, list) else []
+        for index, work in enumerate(entries):
+            label = f"artworks[{index}]"
+            if not isinstance(work, dict):
+                errors.append(f"{label} must be an object")
+                continue
+            identifier = work.get("id")
+            if not isinstance(identifier, str) or not identifier.strip():
+                errors.append(f"{label}.id is required")
+                continue
+            if identifier in works:
+                errors.append(f"duplicate artwork id: {identifier}")
+            works[identifier] = work
+            for field in ("title", "artist"):
+                if not isinstance(work.get(field), str) or not work[field].strip():
+                    errors.append(f"{label}.{field} is required")
+            sources = work.get("sources")
+            if (not isinstance(sources, list) or not sources
+                    or any(not isinstance(x, str) or not x.strip() for x in sources)):
+                errors.append(f"{label}.sources needs source references")
+        comparison = data.get("comparison")
+        if not isinstance(comparison, dict):
+            errors.append("multi-work plan needs comparison")
+        else:
+            if comparison.get("mode") not in ("same-artist", "cross-artist", "relationships"):
+                errors.append("comparison.mode is unsupported")
+            if not isinstance(comparison.get("question"), str) or not comparison["question"].strip():
+                errors.append("comparison.question is required")
+            axes = comparison.get("axes")
+            if (not isinstance(axes, list) or not axes
+                    or any(not isinstance(x, str) or not x.strip() for x in axes)):
+                errors.append("comparison.axes needs nonempty comparison axes")
+    else:
+        artwork = data.get("artwork")
+        if not isinstance(artwork, dict) or not isinstance(artwork.get("title"), str) or not artwork["title"].strip():
+            errors.append("artwork.title is required")
+        elif not isinstance(artwork.get("sources"), list) or not artwork["sources"]:
+            warnings.append("artwork.sources has no references; verify provenance separately")
+    if "editing_style" in data and data["editing_style"] not in ("contemplative", "playful-art-history"):
+        errors.append("editing_style is unsupported")
 
     sizes = {}
     for key in ("video", "cover"):
@@ -130,6 +173,10 @@ def validate_plan(data, base_dir, check_files=False, probe=False):
         by_id[identifier] = asset
         if not isinstance(asset.get("kind"), str) or asset["kind"] not in KINDS:
             errors.append(f"{label}.kind is unsupported")
+        if multi and asset.get("kind") in ("original", "ai-image", "ai-video"):
+            work_id = asset.get("artwork_id")
+            if not isinstance(work_id, str) or work_id not in works:
+                errors.append(f"{label} must bind a declared artwork_id")
         if check_files or probe:
             local_file(asset.get("path"), label)
         elif not asset.get("path"):
@@ -160,22 +207,40 @@ def validate_plan(data, base_dir, check_files=False, probe=False):
             intervals.append((start, end))
             if positive_number(duration) and end > duration + 1e-6:
                 errors.append(f"{label} extends beyond video duration")
-        asset_id = shot.get("asset_id")
-        asset = by_id.get(asset_id) if isinstance(asset_id, str) else None
-        if asset is None:
+        if "asset_ids" in shot:
+            refs = shot["asset_ids"]
+            if ("asset_id" in shot or not isinstance(refs, list) or not refs
+                    or any(not isinstance(x, str) for x in refs)):
+                errors.append(f"{label} needs asset_id or a nonempty asset_ids array, not both")
+                continue
+            if len(refs) != len(set(refs)):
+                errors.append(f"{label} has duplicate asset references")
+        else:
+            refs = [shot.get("asset_id")]
+        pictures = [by_id[x] for x in refs if isinstance(x, str) and x in by_id]
+        if len(pictures) != len(refs):
             errors.append(f"{label} references an unknown asset")
             continue
         purpose = shot.get("purpose")
         if not isinstance(purpose, str) or purpose not in PURPOSES:
             errors.append(f"{label}.purpose is unsupported")
-        if purpose == "analysis" and asset.get("kind") != "original":
+        if purpose == "analysis" and any(a.get("kind") != "original" for a in pictures):
             errors.append(f"{label} analysis must reference original artwork")
-        if asset.get("kind") == "audio":
+        if any(a.get("kind") == "audio" for a in pictures):
             errors.append(f"{label} primary picture cannot be an audio asset")
-        if asset.get("kind") in ("ai-image", "ai-video"):
+        if any(a.get("kind") in ("ai-image", "ai-video") for a in pictures):
             label_text = shot.get("ai_label")
             if not isinstance(label_text, str) or not label_text.strip():
                 errors.append(f"{label} generated picture requires ai_label")
+        identities = {a["artwork_id"] for a in pictures
+                      if isinstance(a.get("artwork_id"), str)}
+        if multi and purpose == "analysis" and len(identities) > 1:
+            axis, labels = shot.get("comparison_axis"), shot.get("labels")
+            if not isinstance(axis, str) or not axis.strip():
+                errors.append(f"{label} needs comparison_axis for a multi-work comparison")
+            if not isinstance(labels, dict) or any(
+                    not isinstance(labels.get(k), str) or not labels[k].strip() for k in identities):
+                errors.append(f"{label} must label each compared artwork")
     covered_until = 0
     for start, end in sorted(intervals):
         if start > covered_until + 1e-6:
