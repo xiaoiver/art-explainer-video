@@ -77,6 +77,8 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [题跋与印章](references/inscriptions-and-seals.md) | 从题名、后人观看与收藏流传中选取有依据的故事 |
 | [工具接入](references/tooling.md) | YouMind、Seed Audio、Open Montage 的接入与恢复 |
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |
+| [音效选材与来源台账](references/sound-sourcing.md) | 外录/自录与生成声音的选择、逐镜头声音表、源片段、许可署名和跨集复用 |
+| [声音计划检查](scripts/validate_sound.py) | 可选本地音频探测、SHA-256、片段能量分析、CSV声音表与署名导出 |
 | [字体与文字层级](references/typography.md) | 宋体字幕、得意黑视频短标题、黑体导航标注，以及实际字体加载与文字层可编辑性 |
 | [封面的画字融合](references/cover-design.md) | 古画传统字体、纸绢留白、参考图生图与独立排字的选择，以及两次封面修订 |
 | [剪辑与交付](references/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
@@ -90,6 +92,7 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 
 | 文件 | 用途 |
 | --- | --- |
+| [瑞鹤图音效选材草案](examples/ruihe-sound-draft.json) | 下一版真实风声/鹤鸣的待选时码示例，不含录音、不改写既有生成音轨来源 |
 | [美国哥特式案例](references/american-gothic-case.md) | 人物小剧场、剪映v4与带片头v5、原画回归、4:3封面和致敬文案 |
 | [美国哥特式时间线](examples/american-gothic-theatre.json) | 已交付31.25秒的阶段与同源素材关系，不含整集媒体 |
 | [溪山行旅图案例](references/xishan-case.md) | 已完成案例的选择、指标与限制 |
@@ -118,8 +121,19 @@ python3 scripts/validate_plan.py examples/hangong-chunxiao-plan.json
 python3 scripts/validate_plan.py examples/fuchun-shanju-plan.json
 python3 scripts/validate_plan.py examples/qianli-jiangshan-plan.json
 python3 scripts/validate_plan.py examples/american-gothic-theatre.json
+python3 scripts/validate_sound.py examples/ruihe-sound-draft.json
 python3 -m unittest discover -s tests -v
 ```
+
+声音流程支持真实录音、自录、已有系列素材与生成音频。新增选材参考文档与项目台账，借鉴[vibe-motion/sound](https://github.com/vibe-motion/sound)的选材方法，未复制其脚本或引入其代理修复与推广流程。声音检查脚本默认仅验证草案；完成选材后可用以下命令生成本地校验报告、声音表和署名，详见[格式与限制](references/sound-sourcing.md#可选声音计划与检查脚本)：
+
+```bash
+python3 scripts/validate_sound.py /path/to/sound-plan.json \
+  --ready --analyze --report /path/to/sound-report.json \
+  --cue-sheet /path/to/cues.csv --credits /path/to/sound-credits.txt
+```
+
+`--ready`要求ffprobe，`--analyze`另需ffmpeg，均只读取本地媒体。校验不代表许可自动获准、人工试听或最终混音听感通过；未知来源在草案保留为警告，交付前检查会拒绝未选定或许可待核的被引用素材。脚本不联网搜索下载，不替代现有YouMind/Seed Audio生成或FFmpeg/剪映混音流程。
 
 可选长卷组件依赖使用者现有的React / Remotion环境；几何测试另用Node.js 22.18+：
 

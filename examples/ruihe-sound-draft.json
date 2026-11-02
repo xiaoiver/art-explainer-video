@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "title": "《瑞鹤图》下一版真实音效选材草案",
+  "status": "draft",
+  "usage": "public-release",
+  "duration_seconds": 128.125,
+  "notes": "这是未来选材草案，不含候选录音或媒体，不改写已交付成片的生成音效来源。取段和增益均待实际素材校正；旁白、BGM和已确认片头继续沿用自己的工程。",
+  "assets": [
+    {
+      "id": "wind",
+      "title": "轻风录音候选",
+      "origin": "recorded",
+      "status": "candidate",
+      "path": null,
+      "source_url": null,
+      "author": null,
+      "license": {
+        "id": null,
+        "url": null,
+        "reviewed": false,
+        "checked_on": null
+      },
+      "review": {
+        "audition": "not-listened",
+        "notes": "尚未检索或下载，不声称已有合适录音。"
+      }
+    },
+    {
+      "id": "crane",
+      "title": "远处鹤鸣录音候选",
+      "origin": "recorded",
+      "status": "candidate",
+      "path": null,
+      "source_url": null,
+      "author": null,
+      "license": {
+        "id": null,
+        "url": null,
+        "reviewed": false,
+        "checked_on": null
+      },
+      "review": {
+        "audition": "not-listened",
+        "notes": "尚未检索或下载，不声称已有合适录音。"
+      }
+    }
+  ],
+  "cues": [
+    {
+      "id": "wind-bed",
+      "scene": "开场至回望",
+      "asset_id": "wind",
+      "role": "ambience",
+      "intent": "轻铺空间，保留绢本观看的安静，不覆盖旁白",
+      "distance": "远",
+      "start": 0,
+      "end": 128.125,
+      "source_in": 0,
+      "source_out": 12,
+      "gain_db": 0,
+      "fade_in": 0.2,
+      "fade_out": 2,
+      "loop": true,
+      "loop_crossfade": 1.5,
+      "ducking": "获得素材后按实际响度调整，避免与既有风声重复叠加"
+    },
+    {
+      "id": "opening-call",
+      "scene": "开场或看画停顿",
+      "asset_id": "crane",
+      "role": "event",
+      "intent": "一声疏远鹤鸣；先核对物种、音色与环境，排除持续警报感",
+      "distance": "远",
+      "start": 0.3,
+      "end": 2.3,
+      "source_in": 0,
+      "source_out": 2,
+      "gain_db": 0,
+      "fade_in": 0.04,
+      "fade_out": 0.3,
+      "loop": false,
+      "ducking": "不覆盖作品名与关键信息，素材取得后再按实际起音调整"
+    },
+    {
+      "id": "flight-call",
+      "scene": "开场或看画停顿",
+      "asset_id": "crane",
+      "role": "event",
+      "intent": "一声疏远鹤鸣；先核对物种、音色与环境，排除持续警报感",
+      "distance": "远",
+      "start": 47.2,
+      "end": 49.2,
+      "source_in": 0,
+      "source_out": 2,
+      "gain_db": 0,
+      "fade_in": 0.04,
+      "fade_out": 0.3,
+      "loop": false,
+      "ducking": "不覆盖作品名与关键信息，素材取得后再按实际起音调整"
+    },
+    {
+      "id": "return-call",
+      "scene": "开场或看画停顿",
+      "asset_id": "crane",
+      "role": "event",
+      "intent": "一声疏远鹤鸣；先核对物种、音色与环境，排除持续警报感",
+      "distance": "远",
+      "start": 120.4,
+      "end": 122.4,
+      "source_in": 0,
+      "source_out": 2,
+      "gain_db": 0,
+      "fade_in": 0.04,
+      "fade_out": 0.3,
+      "loop": false,
+      "ducking": "不覆盖作品名与关键信息，素材取得后再按实际起音调整"
+    }
+  ]
+}
