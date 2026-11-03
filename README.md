@@ -74,12 +74,14 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [SKILL.md](SKILL.md) | 智能体入口与工作流 |
 | [多作品解读](references/multi-artwork.md) | 同艺术家系列、跨作者同题比较、作品关联叙事与独立来源/尺幅 |
 | [趣味艺术史剪辑](references/playful-editing.md) | 快推、贴纸、圈线、漫画气泡、声音击点、阅读停留与帧级编排 |
+| [编辑标注叠层](references/editorial-annotation.md) | 年份 / 馆藏 / 短引文的手绘标注，以及非画作档案的三层证据桌；不替换原画主流程 |
 | [名画小剧场](references/painting-theatre.md) | 原创对白、真实展厅照片与虚构画心、同源首尾帧、Seedance原生音画与回归原画 |
 | [统一片头](references/series-intro.md) | 「名画开小差」4秒/1.5秒MP4、声音分轨、思源宋体字标、可选源码与字幕顺延 |
 | [片头拼接脚本](scripts/prepend_intro.py) | 保持正片画幅和帧率，音画叠化，统一移动SRT，拒绝覆盖输入 |
 | [画面与脚本](references/art-direction.md) | 证据、资料优先级、原画定位、尺幅、表面细节、叙事节奏、同作者对照与生成提示词 |
 | [长卷开头](references/long-scroll-opening.md) | 满宽慢移、观看顺序、高清分段拼接、接尺幅与转场检查 |
 | [长卷组件](assets/long-scroll/LongScrollPan.tsx) | 可选Remotion等比平移组件，配套几何函数与参数示例 |
+| [编辑标注组件](assets/editorial-overlay/CitationMark.tsx) | 可选引用笔划与证据桌，时钟在 `timing.ts`；官方 rough-notation 只在使用者自己的 Remotion 工程里安装 |
 | [尺幅参照人物](references/scale-reference.md) | 自然站姿透明 PNG、可见身高边界、等比缩放脚本与横竖版合成方法 |
 | [顶部章节导航](references/chapter-navigation.md) | 竖版固定章节栏、当前段高亮、React组件与《万壑松风图》实际时码示例 |
 | [题跋与印章](references/inscriptions-and-seals.md) | 从题名、后人观看与收藏流传中选取有依据的故事 |
@@ -101,6 +103,7 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | 文件 | 用途 |
 | --- | --- |
 | [双画趣味比较草案](examples/multi-artwork-playful-plan.json) | 范宽/郭熙两幅山水围绕视线入口比较；含贴纸/运镜/声音提示，90秒预估，无媒体或成片 |
+| [编辑标注骨架](examples/editorial-annotation-plan.json) | 竖版 36 秒：原画上的年份与馆藏标注、一镜著录桌、硬切回高清，以及标明的笔墨延展。不含媒体 |
 | [瑞鹤图音效选材草案](examples/ruihe-sound-draft.json) | 下一版真实风声/鹤鸣的待选时码示例，不含录音、不改写既有生成音轨来源 |
 | [美国哥特式案例](references/american-gothic-case.md) | 人物小剧场、剪映v4与带片头v5、原画回归、4:3封面和致敬文案 |
 | [美国哥特式时间线](examples/american-gothic-theatre.json) | 已交付31.25秒的阶段与同源素材关系，不含整集媒体 |
@@ -131,6 +134,7 @@ python3 scripts/validate_plan.py examples/fuchun-shanju-plan.json
 python3 scripts/validate_plan.py examples/qianli-jiangshan-plan.json
 python3 scripts/validate_plan.py examples/american-gothic-theatre.json
 python3 scripts/validate_plan.py examples/multi-artwork-playful-plan.json
+python3 scripts/validate_plan.py examples/editorial-annotation-plan.json
 python3 scripts/validate_sound.py examples/ruihe-sound-draft.json
 python3 -m unittest discover -s tests -v
 ```
@@ -145,10 +149,11 @@ python3 scripts/validate_sound.py /path/to/sound-plan.json \
 
 `--ready`要求ffprobe，`--analyze`另需ffmpeg，均只读取本地媒体。校验不代表许可自动获准、人工试听或最终混音听感通过；未知来源在草案保留为警告，交付前检查会拒绝未选定或许可待核的被引用素材。脚本不联网搜索下载，不替代现有YouMind/Seed Audio生成或FFmpeg/剪映混音流程。
 
-可选长卷组件依赖使用者现有的React / Remotion环境；几何测试另用Node.js 22.18+：
+可选长卷组件和编辑标注时钟依赖使用者现有的React / Remotion环境；几何测试另用Node.js 22.18+：
 
 ```bash
 node --experimental-strip-types --test tests/test_long_scroll.mjs
+node --experimental-strip-types --test tests/test_editorial_overlay.mjs
 ```
 
 《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排；《千里江山图》JSON保留制作前150秒、12镜原提案，最终成片另为136秒、18镜，见案例页。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。

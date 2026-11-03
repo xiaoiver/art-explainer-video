@@ -11,11 +11,143 @@ import sys
 
 
 KINDS = {"original", "ai-image", "ai-video", "audio", "graphic"}
-PURPOSES = {"analysis", "atmosphere", "title"}
+PURPOSES = {"analysis", "atmosphere", "title", "context"}
+ANNOTATION_KINDS = {"underline", "circle", "highlight", "bracket"}
+ANNOTATION_ROLES = {"year", "museum-credit", "quote", "label"}
+ANNOTATION_KEYS = {"id", "kind", "role", "text", "source", "start", "end", "word_id"}
+WORD_KEYS = {"id", "text", "start", "end"}
+DESK_MATERIALS = {"map", "letter", "photo", "document"}
+DESK_LAYERS = ["desk", "cutout", "occlusion"]
+DESK_KEYS = {"material", "layers", "subject", "not_painting"}
+TIMING_KEYS = {"camera", "elements_fps", "cut", "entrance", "follow_red_line"}
+SOURCED_ROLES = {"year", "museum-credit", "quote"}
 
 
 def positive_number(value):
     return type(value) in (int, float) and math.isfinite(value) and value > 0
+
+
+def finite_number(value):
+    return type(value) in (int, float) and math.isfinite(value)
+
+
+def shot_refs(shot):
+    if "asset_ids" in shot and isinstance(shot["asset_ids"], list):
+        return shot["asset_ids"]
+    return [shot.get("asset_id")]
+
+
+def check_editorial(shot, label, pictures, purpose, errors, titles, video_fps, times_ok):
+    """Optional citation marks and a non-painting evidence desk. Absent means unchanged."""
+    generated = any(asset.get("kind") in ("ai-image", "ai-video") for asset in pictures)
+    words = {}
+    if "vo_words" in shot:
+        entries = shot["vo_words"]
+        if not isinstance(entries, list) or not entries:
+            errors.append(f"{label}.vo_words must be a nonempty array")
+            entries = []
+        for index, word in enumerate(entries):
+            word_label = f"{label}.vo_words[{index}]"
+            if not isinstance(word, dict) or any(key not in WORD_KEYS for key in word):
+                errors.append(f"{word_label} has unsupported fields")
+                continue
+            identifier = word.get("id")
+            if not isinstance(identifier, str) or not identifier.strip() or identifier in words:
+                errors.append(f"{word_label}.id must be a unique nonempty string")
+            elif not isinstance(word.get("text"), str) or not word["text"].strip():
+                errors.append(f"{word_label}.text is required")
+            else:
+                words[identifier] = word
+            start, end = word.get("start"), word.get("end")
+            if not finite_number(start) or not finite_number(end) or end <= start:
+                errors.append(f"{word_label} needs finite times with start < end")
+            elif times_ok and (start < shot["start"] or end > shot["end"]):
+                errors.append(f"{word_label} must stay inside the shot")
+    if "annotations" in shot:
+        notes = shot["annotations"]
+        if not isinstance(notes, list) or not notes:
+            errors.append(f"{label}.annotations must be a nonempty array")
+            notes = []
+        if generated or purpose == "atmosphere":
+            errors.append(f"{label} citations cannot sit on a generated shot")
+        seen = set()
+        for index, note in enumerate(notes):
+            note_label = f"{label}.annotations[{index}]"
+            if not isinstance(note, dict) or any(key not in ANNOTATION_KEYS for key in note):
+                errors.append(f"{note_label} has unsupported fields")
+                continue
+            identifier = note.get("id")
+            if not isinstance(identifier, str) or not identifier.strip() or identifier in seen:
+                errors.append(f"{note_label}.id must be a unique nonempty string")
+            else:
+                seen.add(identifier)
+            if note.get("kind") not in ANNOTATION_KINDS:
+                errors.append(f"{note_label}.kind is unsupported")
+            role = note.get("role")
+            if role not in ANNOTATION_ROLES:
+                errors.append(f"{note_label}.role is unsupported")
+            text = note.get("text")
+            if not isinstance(text, str) or not text.strip() or len(text.strip()) > 80:
+                errors.append(f"{note_label}.text must be a short citation")
+            if role in SOURCED_ROLES and (not isinstance(note.get("source"), str) or not note["source"].strip()):
+                errors.append(f"{note_label}.source is required for {role}")
+            if "source" in note and role not in SOURCED_ROLES:
+                if not isinstance(note.get("source"), str) or not note["source"].strip():
+                    errors.append(f"{note_label}.source must be a nonempty string")
+            start, end = note.get("start"), note.get("end")
+            if not finite_number(start) or not finite_number(end) or end <= start:
+                errors.append(f"{note_label} needs finite times with start < end")
+            elif times_ok and (start < shot["start"] or end > shot["end"]):
+                errors.append(f"{note_label} must stay inside the shot")
+            word_id = note.get("word_id")
+            if word_id is not None:
+                word = words.get(word_id)
+                if not isinstance(word_id, str) or word is None:
+                    errors.append(f"{note_label}.word_id must match a spoken word")
+                elif finite_number(start) and finite_number(word.get("start")) and abs(start - word["start"]) > 1e-6:
+                    errors.append(f"{note_label} must start when its spoken word starts")
+    desk = shot.get("evidence_desk")
+    if "evidence_desk" in shot:
+        if not isinstance(desk, dict) or any(key not in DESK_KEYS for key in desk):
+            errors.append(f"{label}.evidence_desk has unsupported fields")
+        else:
+            if desk.get("material") not in DESK_MATERIALS:
+                errors.append(f"{label}.evidence_desk.material is unsupported")
+            if desk.get("layers") != DESK_LAYERS:
+                errors.append(f"{label}.evidence_desk.layers must be desk, cutout, occlusion")
+            subject = desk.get("subject")
+            if not isinstance(subject, str) or not subject.strip() or subject.strip() in titles:
+                errors.append(f"{label}.evidence_desk.subject must name the archival item, not the painting")
+            if desk.get("not_painting") is not True:
+                errors.append(f"{label}.evidence_desk.not_painting must be true")
+            if purpose != "context":
+                errors.append(f"{label} evidence desk uses purpose context")
+            if any(asset.get("kind") != "graphic" for asset in pictures):
+                errors.append(f"{label} evidence desk only holds graphic archival scans")
+    elif purpose == "context":
+        errors.append(f"{label} context requires an evidence desk")
+    if "editorial_timing" in shot:
+        timing = shot["editorial_timing"]
+        if not isinstance(timing, dict) or any(key not in TIMING_KEYS for key in timing):
+            errors.append(f"{label}.editorial_timing has unsupported fields")
+        else:
+            if "camera" in timing and timing["camera"] != "smooth":
+                errors.append(f"{label}.editorial_timing.camera must stay smooth")
+            if "cut" in timing and timing["cut"] != "hard":
+                errors.append(f"{label}.editorial_timing.cut must be a hard cut")
+            if "entrance" in timing and timing["entrance"] != "spring":
+                errors.append(f"{label}.editorial_timing.entrance must be spring")
+            element_fps = timing.get("elements_fps")
+            if "elements_fps" in timing and (
+                    not positive_number(element_fps) or element_fps < 8 or element_fps > 15
+                    or (video_fps is not None and element_fps >= video_fps)):
+                errors.append(f"{label}.editorial_timing.elements_fps must be coarser than the camera, around 12")
+            if "follow_red_line" in timing and type(timing["follow_red_line"]) is not bool:
+                errors.append(f"{label}.editorial_timing.follow_red_line must be boolean")
+    if "music_duck" in shot and type(shot["music_duck"]) is not bool:
+        errors.append(f"{label}.music_duck must be boolean")
+    timing = shot.get("editorial_timing")
+    return bool(isinstance(timing, dict) and timing.get("follow_red_line") is True and times_ok)
 
 
 def aspect(width, height):
@@ -186,7 +318,13 @@ def validate_plan(data, base_dir, check_files=False, probe=False):
     if not isinstance(shots, list) or not shots:
         errors.append("shots must be a nonempty array")
         shots = []
-    intervals, shot_ids = [], set()
+    titles = set()
+    if multi:
+        titles.update(work.get("title", "").strip() for work in works.values() if isinstance(work.get("title"), str))
+    elif isinstance(data.get("artwork"), dict) and isinstance(data["artwork"].get("title"), str):
+        titles.add(data["artwork"]["title"].strip())
+    video_fps = fps if positive_number(fps) else None
+    intervals, shot_ids, follow_lines = [], set(), []
     for index, shot in enumerate(shots):
         label = f"shots[{index}]"
         if not isinstance(shot, dict):
@@ -241,6 +379,31 @@ def validate_plan(data, base_dir, check_files=False, probe=False):
             if not isinstance(labels, dict) or any(
                     not isinstance(labels.get(k), str) or not labels[k].strip() for k in identities):
                 errors.append(f"{label} must label each compared artwork")
+        times_ok = (type(start) in (int, float) and math.isfinite(start) and start >= 0
+                    and positive_number(end) and end > start)
+        if check_editorial(shot, label, pictures, purpose, errors, titles, video_fps, times_ok):
+            follow_lines.append((label, end))
+    for label, end in follow_lines:
+        followers = []
+        for shot in shots:
+            if not isinstance(shot, dict):
+                continue
+            start = shot.get("start")
+            follower_end = shot.get("end")
+            if not (finite_number(start) and positive_number(follower_end)):
+                continue
+            if start <= end + 1e-6 and follower_end > end + 1e-6:
+                followers.append(shot)
+        if len(followers) != 1:
+            errors.append(f"{label} follow_red_line needs one following shot")
+            continue
+        follower = followers[0]
+        if follower.get("purpose") != "analysis":
+            errors.append(f"{label} follow_red_line must cut to an original analysis shot")
+            continue
+        refs = [item for item in shot_refs(follower) if isinstance(item, str)]
+        if not refs or any(by_id.get(item, {}).get("kind") != "original" for item in refs):
+            errors.append(f"{label} follow_red_line must cut to the hi-res painting")
     covered_until = 0
     for start, end in sorted(intervals):
         if start > covered_until + 1e-6:
