@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "notes": "两分钟左右的双画制作计划，经用户要求扩充内容并选择原创磁性男声。当前为配音前120秒/22镜预估；实测时间另记。揭钵虾精已在F1909.400的FS-7461_22定位；鬼趣统一Met2009展出私藏本，同源Commons四图。封面改4:3，无品牌口播。仓库不含媒体或私人目录。",
+  "artworks": [
+    {
+      "id": "freer-jiebo",
+      "title": "揭钵图",
+      "artist": "Formerly attributed to Qiu Ying 仇英",
+      "attribution": "Freer Gallery of Art: Formerly attributed to Qiu Ying 仇英 (ca. 1494-1552); Qing dynasty, 1644-1911; ink and color on silk; handscroll; accession F1909.400. Not a confirmed Qiu Ying autograph.",
+      "sources": [
+        "https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1909.400/",
+        "https://asia-archive.si.edu/object/F1909.400/",
+        "https://collections.si.edu/search/detail/edanmdm:fsg_F1909.400",
+        "https://www.si.edu/object/fsg_F1909.400",
+        "https://www.si.edu/termsofuse"
+      ],
+      "dimensions_cm": {
+        "height": 27.4,
+        "width": 424,
+        "scope": "H x W (image), handscroll, ink and color on silk. Freer F1909.400 as printed on https://asia-archive.si.edu/object/F1909.400/ on 2026-11-03. Short scroll F1917.134 (29.1×138.3 cm) and Taipei NPM 故畫001611 are not this object.",
+        "accessed": "2026-11-03"
+      },
+      "checked_on": "2026-11-03"
+    },
+    {
+      "id": "luopin-guiqu",
+      "title": "鬼趣图",
+      "artist": "罗聘",
+      "attribution": "罗聘《鬼趣图》，统一采用Met2009展览图页所示约1766年私藏本；8图与题跋后装一卷。不是Met馆藏，也不与港艺、德基或檀香山本混用。",
+      "sources": [
+        "https://www.metmuseum.org/exhibitions/listings/2009/luo-ping/photo-gallery",
+        "https://commons.wikimedia.org/wiki/File:Ghost_Amusement_scroll_(2).jpg",
+        "https://commons.wikimedia.org/wiki/File:Ghost_Amusement_scroll_(3).jpg",
+        "https://commons.wikimedia.org/wiki/File:Ghost_Amusement_scroll_(4).jpg",
+        "https://commons.wikimedia.org/wiki/File:%E9%AC%BC%E8%B6%A3%E5%9B%BE_(%E5%A4%A7%E5%A4%B4).jpg"
+      ],
+      "dimensions_cm": {
+        "height": 35.5,
+        "width": 1500,
+        "scope": "Met2009展图页：Handscroll with8paintings and colophons，尺寸含8图与题跋；不当作单开画心。画面只作构图对照，不同比例。",
+        "accessed": "2026-11-03"
+      },
+      "checked_on": "2026-11-03"
+    }
+  ],
+  "comparison": {
+    "mode": "cross-artist",
+    "question": "古人怎么画鬼：潮穿搭小队，还是人间漫画？",
+    "axes": [
+      "鬼的造型气质",
+      "笔墨／设色手段",
+      "叙事功能（宗教故事与人的神态）"
+    ]
+  },
+  "editing_style": "playful-art-history",
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 120
+  },
+  "cover": {
+    "width": 2304,
+    "height": 1728
+  },
+  "assets": [
+    {
+      "id": "shrimp",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "长须、虾身与荷叶裙真实裁切。馆方IIIF FS-7461_22。Usage conditions apply，非CC0或书面商业授权。自行准备可用本地文件，仓库不分发媒体。"
+    },
+    {
+      "id": "shrimp-skirt",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "裙摆叶片、粉边的真实局部。馆方IIIF FS-7461_22。Usage conditions apply，非CC0或书面商业授权。自行准备可用本地文件，仓库不分发媒体。"
+    },
+    {
+      "id": "sea-cast",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "水族站姿与服饰。馆方IIIF FS-7461_22。Usage conditions apply，非CC0或书面商业授权。自行准备可用本地文件，仓库不分发媒体。"
+    },
+    {
+      "id": "fish-person",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "鱼头、人身与腿。馆方IIIF FS-7461_22。Usage conditions apply，非CC0或书面商业授权。自行准备可用本地文件，仓库不分发媒体。"
+    },
+    {
+      "id": "flags",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "举旗和持兵器的群像。馆方IIIF FS-7461_24。Usage conditions apply，非CC0或书面商业授权。自行准备可用本地文件，仓库不分发媒体。"
+    },
+    {
+      "id": "workers",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "抬钵群魔与木架。馆方IIIF FS-7461_26。Usage conditions apply，非CC0或书面商业授权。自行准备可用本地文件，仓库不分发媒体。"
+    },
+    {
+      "id": "pullers",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "弯腰与拽绳动作。馆方IIIF FS-7461_26。Usage conditions apply，非CC0或书面商业授权。自行准备可用本地文件，仓库不分发媒体。"
+    },
+    {
+      "id": "scaffold",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "木架上、旁的角色。馆方IIIF FS-7461_26。Usage conditions apply，非CC0或书面商业授权。自行准备可用本地文件，仓库不分发媒体。"
+    },
+    {
+      "id": "buddha",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "佛教故事中的坐佛原画局部。馆方IIIF FS-7461_27。Usage conditions apply，非CC0或书面商业授权。自行准备可用本地文件，仓库不分发媒体。"
+    },
+    {
+      "id": "ghost-bighead",
+      "kind": "original",
+      "artwork_id": "luopin-guiqu",
+      "source_url": "https://commons.wikimedia.org/wiki/File:鬼趣图_(大头).jpg",
+      "notes": "同一Met2009展图页所列私藏本，Commons文件来源均指向该展页。保留各文件PD-Art声明，不声称馆方书面许可。图像450–650像素宽，采用完整图或并置，不生成补细节。"
+    },
+    {
+      "id": "ghost-2",
+      "kind": "original",
+      "artwork_id": "luopin-guiqu",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ghost_Amusement_scroll_(2).jpg",
+      "notes": "同一Met2009展图页所列私藏本，Commons文件来源均指向该展页。保留各文件PD-Art声明，不声称馆方书面许可。图像450–650像素宽，采用完整图或并置，不生成补细节。"
+    },
+    {
+      "id": "ghost-3",
+      "kind": "original",
+      "artwork_id": "luopin-guiqu",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ghost_Amusement_scroll_(3).jpg",
+      "notes": "同一Met2009展图页所列私藏本，Commons文件来源均指向该展页。保留各文件PD-Art声明，不声称馆方书面许可。图像450–650像素宽，采用完整图或并置，不生成补细节。"
+    },
+    {
+      "id": "ghost-4",
+      "kind": "original",
+      "artwork_id": "luopin-guiqu",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ghost_Amusement_scroll_(4).jpg",
+      "notes": "同一Met2009展图页所列私藏本，Commons文件来源均指向该展页。保留各文件PD-Art声明，不声称馆方书面许可。图像450–650像素宽，采用完整图或并置，不生成补细节。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 4,
+      "purpose": "analysis",
+      "notes": "hook；时码为配音前预估。",
+      "asset_id": "shrimp"
+    },
+    {
+      "id": "s02",
+      "start": 4,
+      "end": 9,
+      "purpose": "analysis",
+      "notes": "hook；时码为配音前预估。",
+      "asset_id": "shrimp-skirt"
+    },
+    {
+      "id": "s03",
+      "start": 9,
+      "end": 15,
+      "purpose": "analysis",
+      "notes": "hook；时码为配音前预估。",
+      "asset_id": "sea-cast"
+    },
+    {
+      "id": "s04",
+      "start": 15,
+      "end": 20,
+      "purpose": "analysis",
+      "notes": "scroll；时码为配音前预估。",
+      "asset_id": "sea-cast"
+    },
+    {
+      "id": "s05",
+      "start": 20,
+      "end": 24,
+      "purpose": "analysis",
+      "notes": "scroll；时码为配音前预估。",
+      "asset_id": "sea-cast"
+    },
+    {
+      "id": "s06",
+      "start": 24,
+      "end": 29,
+      "purpose": "analysis",
+      "notes": "scroll；时码为配音前预估。",
+      "asset_id": "flags"
+    },
+    {
+      "id": "s07",
+      "start": 29,
+      "end": 34,
+      "purpose": "analysis",
+      "notes": "cast；时码为配音前预估。",
+      "asset_id": "fish-person"
+    },
+    {
+      "id": "s08",
+      "start": 34,
+      "end": 38,
+      "purpose": "analysis",
+      "notes": "cast；时码为配音前预估。",
+      "asset_id": "flags"
+    },
+    {
+      "id": "s09",
+      "start": 38,
+      "end": 42,
+      "purpose": "analysis",
+      "notes": "cast；时码为配音前预估。",
+      "asset_id": "sea-cast"
+    },
+    {
+      "id": "s10",
+      "start": 42,
+      "end": 47,
+      "purpose": "analysis",
+      "notes": "bowl；时码为配音前预估。",
+      "asset_id": "buddha"
+    },
+    {
+      "id": "s11",
+      "start": 47,
+      "end": 53,
+      "purpose": "analysis",
+      "notes": "bowl；时码为配音前预估。",
+      "asset_id": "workers"
+    },
+    {
+      "id": "s12",
+      "start": 53,
+      "end": 58,
+      "purpose": "analysis",
+      "notes": "bowl；时码为配音前预估。",
+      "asset_id": "pullers"
+    },
+    {
+      "id": "s13",
+      "start": 58,
+      "end": 63,
+      "purpose": "analysis",
+      "notes": "bowl；时码为配音前预估。",
+      "asset_id": "scaffold"
+    },
+    {
+      "id": "s14",
+      "start": 63,
+      "end": 68,
+      "purpose": "analysis",
+      "notes": "luo；时码为配音前预估。",
+      "asset_id": "ghost-4"
+    },
+    {
+      "id": "s15",
+      "start": 68,
+      "end": 78,
+      "purpose": "analysis",
+      "notes": "luo；时码为配音前预估。",
+      "asset_id": "ghost-2"
+    },
+    {
+      "id": "s16",
+      "start": 78,
+      "end": 83,
+      "purpose": "analysis",
+      "notes": "faces；时码为配音前预估。",
+      "asset_id": "ghost-bighead"
+    },
+    {
+      "id": "s17",
+      "start": 83,
+      "end": 88,
+      "purpose": "analysis",
+      "notes": "faces；时码为配音前预估。",
+      "asset_id": "ghost-2"
+    },
+    {
+      "id": "s18",
+      "start": 88,
+      "end": 94,
+      "purpose": "analysis",
+      "notes": "faces；时码为配音前预估。",
+      "asset_id": "ghost-bighead"
+    },
+    {
+      "id": "s19",
+      "start": 94,
+      "end": 101,
+      "purpose": "analysis",
+      "notes": "ink；时码为配音前预估。",
+      "asset_id": "ghost-4"
+    },
+    {
+      "id": "s20",
+      "start": 101,
+      "end": 109,
+      "purpose": "analysis",
+      "notes": "ink；时码为配音前预估。",
+      "asset_id": "ghost-3"
+    },
+    {
+      "id": "s21",
+      "start": 109,
+      "end": 115,
+      "purpose": "analysis",
+      "notes": "ending；时码为配音前预估。",
+      "asset_ids": [
+        "shrimp",
+        "ghost-bighead"
+      ],
+      "comparison_axis": "鬼的造型气质",
+      "labels": {
+        "freer-jiebo": "《揭钵图》｜清·旧传仇英",
+        "luopin-guiqu": "罗聘《鬼趣图》｜Met2009展出私藏本"
+      }
+    },
+    {
+      "id": "s22",
+      "start": 115,
+      "end": 120,
+      "purpose": "analysis",
+      "notes": "ending；时码为配音前预估。",
+      "asset_ids": [
+        "shrimp",
+        "ghost-bighead"
+      ],
+      "comparison_axis": "鬼的造型气质",
+      "labels": {
+        "freer-jiebo": "《揭钵图》｜清·旧传仇英",
+        "luopin-guiqu": "罗聘《鬼趣图》｜Met2009展出私藏本"
+      }
+    }
+  ]
+}

@@ -119,6 +119,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [荷石水鸟图制作与修订案例](references/bada-heshi-shuiniu-case.md) | 横版60秒、13镜、鸟与鱼对照、六款分工字体、放缓语速与展讯核实；保留单画配音前提案 |
 | [荷石水鸟图计划](examples/bada-heshi-shuiniu-plan.json) | 16:9、约40秒、8镜头与独立3:4封面的预估示例，不含媒体 |
 | [水鸟与鱼图实测编排](examples/bada-bird-fish-produced-plan.json) | v3的60秒、13镜编排：原画眼神对照、逐画身份标注；无媒体与私有路径 |
+| [揭钵图 × 鬼趣图制作案例](references/jiebo-guiqu-case.md) | 130.333秒、24镜：原卷虾精定位、鬼趣同本核实、磁性男声、4:3封面；保留配音前计划 |
+| [揭钵图 × 鬼趣图计划](examples/jiebo-guiqu-plan.json) | 16:9、约120秒、22镜预估与4:3封面，不含媒体 |
+| [揭钵与鬼趣实测编排](examples/jiebo-guiqu-produced-plan.json) | 130.333秒、3128帧、24镜、61条字幕的编排摘录；无媒体或私有路径 |
 
 
 ## 本地检查
@@ -133,6 +136,8 @@ python3 scripts/validate_plan.py examples/hangong-chunxiao-plan.json
 python3 scripts/validate_plan.py examples/fuchun-shanju-plan.json
 python3 scripts/validate_plan.py examples/qianli-jiangshan-plan.json
 python3 scripts/validate_plan.py examples/bada-heshi-shuiniu-plan.json
+python3 scripts/validate_plan.py examples/jiebo-guiqu-plan.json
+python3 scripts/validate_plan.py examples/jiebo-guiqu-produced-plan.json
 python3 scripts/validate_plan.py examples/american-gothic-theatre.json
 python3 scripts/validate_plan.py examples/multi-artwork-playful-plan.json
 python3 scripts/validate_sound.py examples/ruihe-sound-draft.json
@@ -155,7 +160,7 @@ python3 scripts/validate_sound.py /path/to/sound-plan.json \
 node --experimental-strip-types --test tests/test_long_scroll.mjs
 ```
 
-《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排；《千里江山图》JSON保留制作前150秒、12镜原提案，最终成片另为136秒、18镜，见案例页。单画《荷石水鸟图》JSON保留制作前约40秒、8镜提案；双画JSON摘录成片v3的60秒、13镜实际编排，见案例页。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
+《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排；《千里江山图》JSON保留制作前150秒、12镜原提案，最终成片另为136秒、18镜，见案例页。单画《荷石水鸟图》JSON保留制作前约40秒、8镜提案；双画JSON摘录成片v3的60秒、13镜实际编排，见案例页。《揭钵图》×《鬼趣图》分别保留120秒、22镜预估和130.333秒、24镜实测编排。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
 
 制作环境的安装按需执行，不能因为调用此 skill 就默认安装整套工具。计划检查脚本已用本次实际成片与封面验证；尚未在全新机器上重跑完整制作。生成、试听、剪辑软件兼容性仍须在使用者环境中确认。
 
