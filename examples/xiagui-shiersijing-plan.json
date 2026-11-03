@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "notes": "Gallery Mate《读画》奇趣美术馆单作制作前提案，语义脚本 gallery-mate-xiagui-shiersijing。2026-11-03 打开纳尔逊对象页：夏圭《山水十二景图》Twelve Views of Landscape，32-159/2，绢本水墨手卷，Image 27.31×253.68 cm，现存四景，On view Gallery 222。口播用「皇家四字题」，不把题字作者锁成某一人。耶鲁 1953.27.10 与台北私藏摹本不进镜头。尚未录音剪辑，仓库不分发媒体。时码为配音前预估。",
+  "artwork": {
+    "title": "山水十二景图",
+    "artist": "夏圭 Xia Gui",
+    "attribution": "Nelson-Atkins Museum of Art: Xia Gui (Chinese, active 1180-1224); Southern Song dynasty (1127-1279); handscroll, ink on silk; object number 32-159/2; Purchase: William Rockhill Nelson Trust. Four views survive. Original Language Title on the object page: 南宋 夏圭 山水十二景圖卷.",
+    "sources": [
+      "https://art.nelson-atkins.org/objects/29474/twelve-views-of-landscape",
+      "https://nelson-atkins.org/art/exhibitions/legendary-landscapes-sublime-visions-from-chinas-song-dynasty/",
+      "https://commons.wikimedia.org/wiki/File:Xia_Gui_-_Twelve_Views_of_Landscape_(Shan-shui_shih-erh-ching)_-_Google_Art_Project.jpg",
+      "https://commons.wikimedia.org/wiki/File:Xia_Gui_-_Twelve_Views_from_a_Thatched_Hut_-_Detail_1.jpg",
+      "https://commons.wikimedia.org/wiki/File:Xia_Gui_-_Twelve_Views_from_a_Thatched_Hut_-_Detail_2.jpg",
+      "https://scrolls.uchicago.edu/view-scroll/166",
+      "https://artgallery.yale.edu/collections/objects/52343",
+      "https://catalog.digitalarchives.tw/item/00/03/fa/34.html",
+      "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000965"
+    ],
+    "dimensions_cm": {
+      "height": 27.31,
+      "width": 253.68,
+      "scope": "Image only, handscroll, ink on silk, Nelson-Atkins 32-159/2, as printed on the object page 2026-11-03: 10 3/4 × 99 7/8 in (27.31 × 253.68 cm). Mount with colophons 27.94 × 293.37 cm and overall 27.94 × 963.93 cm are not the painting image. Commons Google Art Project info box lists 279.40 × 2305.05 mm; do not put that pair on screen. Shao-article 28 × 230.8 cm stays off the subtitle.",
+      "accessed": "2026-11-03"
+    },
+    "checked_on": "2026-11-03"
+  },
+  "editing_style": "playful-art-history",
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 60
+  },
+  "cover": {
+    "width": 1728,
+    "height": 2304
+  },
+  "assets": [
+    {
+      "id": "nelson-scroll-band",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Xia_Gui_-_Twelve_Views_of_Landscape_(Shan-shui_shih-erh-ching)_-_Google_Art_Project.jpg",
+      "notes": "Surviving Nelson fragment, accession 32-159/2. Commons original 16250×1601, about 6.69 MB; file page accession matches 32-159/2. PD-Art / faithful-reproduction tag is not a Nelson written license. Full-scroll fit inside 1920×1080 is only about 190 px tall; pan a readable section from the right instead of parking a hairline under a title. Object-page image is 27.31×253.68 cm. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "nelson-yan",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Xia_Gui_-_Twelve_Views_of_Landscape_(Shan-shui_shih-erh-ching)_-_Google_Art_Project.jpg",
+      "notes": "遥山书雁 crop from the same 32-159/2 file: rightmost surviving view, distant mountains and geese. Museum description: Distant mountain and wild geese. Label English: Like writing are the wild geese over distant mountains. Chinese four-character ink on this view was not isolated in the 2026-11-03 detail previews; confirm on a permitted high-resolution file. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "nelson-du",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Xia_Gui_-_Twelve_Views_of_Landscape_(Shan-shui_shih-erh-ching)_-_Google_Art_Project.jpg",
+      "notes": "烟村归渡 crop from the same 32-159/2 file: misty village, returning ferry, large empty water. Museum description: Mist over the village, the ferry returns. Keep the blank water visible. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "nelson-di",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Xia_Gui_-_Twelve_Views_from_a_Thatched_Hut_-_Detail_1.jpg",
+      "notes": "渔笛清幽 research preview. Commons file is 1708×742, uploaded 2009, titled Twelve Views from a Thatched Hut, medium line says ink and light colors, note says possibly a later copy, source is an old university page. The preview itself shows the four characters 渔笛清幽, a boat, and axe-cut rocks. Use it to find the passage; brushwork and medium follow the Nelson object page (ink on silk, 32-159/2). Too soft for a 1080p texture claim. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "nelson-bo",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Xia_Gui_-_Twelve_Views_from_a_Thatched_Hut_-_Detail_2.jpg",
+      "notes": "烟堤晚泊 research preview. Commons file is 1708×733 with the same Thatched Hut title, light-colors medium line, and later-copy note as Detail 1. The preview shows 烟堤晚泊, moored boats, a gate in mist, and a short signature-like line at lower left. Read the signature on a permitted Nelson file before putting 臣夏圭画 on screen. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "nelson-blank-water",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Xia_Gui_-_Twelve_Views_of_Landscape_(Shan-shui_shih-erh-ching)_-_Google_Art_Project.jpg",
+      "notes": "Empty-water passage on the 32-159/2 scroll between the returning ferry and the flute, then toward the evening mooring. The blank is the picture of time passing. Do not fill it with generated ink. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "nelson-titles-signature",
+      "kind": "original",
+      "source_url": "https://art.nelson-atkins.org/objects/29474/twelve-views-of-landscape",
+      "notes": "Four-character titles and the 臣夏圭画 area if the permitted file makes them legible. Gallery label attributes the poetic titles to Empress Xie (1208-1282); spoken line stays 皇家四字题. Historical twelve-scene record is Gao Shiqi, Jiangcun xiaoxia lu, listed in the object-page bibliography; the museum states that only four views remain. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "npm-xishan-optional",
+      "kind": "original",
+      "source_url": "https://catalog.digitalarchives.tw/item/00/03/fa/34.html",
+      "notes": "OPTIONAL one-frame flash only, not one of the eight required shots. NPM 宋夏珪溪山清遠卷, 中畫000009N000000000, image 46.5×889.1 cm, paper, artist field 夏珪. Different object from Nelson 32-159/2. Catalog page gives an authorization-application window, not a CC grant; recheck the download page before use. Catalog thumb is a weak reference and is not in this repo. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "cover-half-dusk",
+      "kind": "graphic",
+      "notes": "Cover layout only, 1728×2304. Underlying crops stay Nelson 32-159/2. Hook line: 半边江山，四字一句，空水把黄昏送回城. Supply your own permitted local file; media is not distributed."
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 7,
+      "asset_id": "nelson-scroll-band",
+      "purpose": "analysis",
+      "notes": "hook。见过十二景只剩四段的长卷吗？从右端取一段满宽，四字题可短闪。整卷若缩成细带，大标题退开。moment.half-lock 钉在「走回城」。手卷自右向左，画面不镜像。"
+    },
+    {
+      "id": "s02",
+      "start": 7,
+      "end": 14,
+      "asset_id": "nelson-yan",
+      "purpose": "analysis",
+      "notes": "selection.yan 遥山书雁。远山淡墨与雁阵。右起第一景。字幕可点「遥山书雁」。"
+    },
+    {
+      "id": "s03",
+      "start": 14,
+      "end": 21,
+      "asset_id": "nelson-du",
+      "purpose": "analysis",
+      "notes": "selection.du 烟村归渡。江面留白留在画面里，为后文「空水是时间」铺垫。"
+    },
+    {
+      "id": "s04",
+      "start": 21,
+      "end": 29,
+      "asset_id": "nelson-titles-signature",
+      "purpose": "analysis",
+      "notes": "selection.scroll。绢本水墨，馆方画心约二十七乘二百五十四厘米。字幕写 Image 27.31×253.68 cm、32-159/2。清人《江村销夏录》记原卷十二景、末署臣夏圭画；馆方写明今日只存四景。四字题口播用「皇家四字题」。段末 moment.cut。27.31 厘米不能说成一人高。装裱通高 963.93 cm 不进字幕。"
+    },
+    {
+      "id": "s05",
+      "start": 29,
+      "end": 37,
+      "asset_id": "nelson-di",
+      "purpose": "analysis",
+      "notes": "selection.di 渔笛清幽。石矶、扁舟、斧劈近景。笔法判断等馆方高清；2009 年局部只作找位。文件页的 Thatched Hut 标题和浅绛材质行不进口播。"
+    },
+    {
+      "id": "s06",
+      "start": 37,
+      "end": 46,
+      "asset_id": "nelson-blank-water",
+      "purpose": "analysis",
+      "notes": "selection.blank。空水不是没画，是时间在过：飞雁、归渡、渔笛，再推向晚泊。可在同一原卷上短接，不生成水雾。"
+    },
+    {
+      "id": "s07",
+      "start": 46,
+      "end": 53,
+      "asset_id": "nelson-bo",
+      "purpose": "analysis",
+      "notes": "烟堤晚泊，城关灯火微茫。moment.punch：一句一景，移步换景。夏半边把江山裁成诗。可选 1 秒 npm-xishan-optional，身份条写台北故宫《溪山清远》，不占主句。"
+    },
+    {
+      "id": "s08",
+      "start": 53,
+      "end": 60,
+      "asset_id": "nelson-scroll-band",
+      "purpose": "title",
+      "notes": "outro。打开 Gallery Mate，我们慢慢读。纳尔逊馆仍在展这半边黄昏。落版：Nelson-Atkins 32-159/2 · Xia Gui · Southern Song · ink on silk · Image 27.31×253.68 cm · Gallery 222 On view（对象页 2026-11-03）。Legendary Landscapes（2026-03-21–09-27）已结束，不作为观展主句。"
+    }
+  ]
+}
