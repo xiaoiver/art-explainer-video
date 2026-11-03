@@ -119,7 +119,7 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [荷石水鸟图制作与修订案例](references/bada-heshi-shuiniu-case.md) | 横版60秒、13镜、鸟与鱼对照、六款分工字体、放缓语速与展讯核实；保留单画配音前提案 |
 | [荷石水鸟图计划](examples/bada-heshi-shuiniu-plan.json) | 16:9、约40秒、8镜头与独立3:4封面的预估示例，不含媒体 |
 | [水鸟与鱼图实测编排](examples/bada-bird-fish-produced-plan.json) | v3的60秒、13镜编排：原画眼神对照、逐画身份标注；无媒体与私有路径 |
-| [揭钵图 × 鬼趣图制作案例](references/jiebo-guiqu-case.md) | 130.333秒、24镜：原卷虾精定位、鬼趣同本核实、磁性男声、4:3封面；保留配音前计划 |
+| [揭钵图 × 鬼趣图制作案例](references/jiebo-guiqu-case.md) | 130.333秒、24镜：原卷定位、同本核实、磁性男声；v4去通用提示，YouMind生成4:3融合封面；保留预估计划 |
 | [揭钵图 × 鬼趣图计划](examples/jiebo-guiqu-plan.json) | 16:9、约120秒、22镜预估与4:3封面，不含媒体 |
 | [揭钵与鬼趣实测编排](examples/jiebo-guiqu-produced-plan.json) | 130.333秒、3128帧、24镜、61条字幕的编排摘录；无媒体或私有路径 |
 
