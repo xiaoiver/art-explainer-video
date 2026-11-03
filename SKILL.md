@@ -101,6 +101,8 @@ python3 scripts/validate_plan.py /path/to/project.json --check-files --probe
 
 按任务选择案例：
 
+- [《揭钵图》×罗聘《鬼趣图》](references/jiebo-guiqu-case.md)：双画130秒、24镜，官方节图定位虾精、统一私藏展卷版本、原创磁性男声、静音停顿剪短、丰富字体与4:3传统宋体封面；预估和实测计划分开。
+
 - [《荷石水鸟图》](references/bada-heshi-shuiniu-case.md)：横版原画细读、用户要求追加《鱼石图》比较、早期尺幅、丰富字体、展览年度计划与语速反馈后重排；保留制作前提案供比较。
 
 - [莫迪里阿尼多作品趣味解读](references/modigliani-case.md)：9:16竖版、已选设计字体、实测语速、35镜头素材接力、多音字改写和可编辑字幕；省略身高对比。
