@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "notes": "Gallery Mate《读画》制作前提案，语义脚本 gallery-mate-bada-heshi-shuiniu。60 秒时码是配音前预估。尚未下载母版、申请授权、录音或剪辑。仓库不分发影像。片尾可点展名「高山仰止 墨染千秋」；国家文物局通稿写过江西省博物馆展出《荷石水鸟图》，口播只点展名，不念文物号或出展清单。",
+  "notes": "Gallery Mate《读画》制作前修订提案，语义脚本gallery-mate-bada-heshi-shuiniu。2026-11-03按评审修订为配音前预估40秒，8镜。眼部起问后立即建立127cm画心对170cm参照，不再说约一人高。片尾删除过期观展邀请，改为上博年度计划中的2026年12月至2027年3月东馆八大山人大展预告；未确认本轴参展。尚未制作成片，仓库不分发媒体。",
   "artwork": {
     "title": "荷石水鸟图",
     "sources": [
@@ -11,7 +11,8 @@
       "https://minghuaji.dpm.org.cn/page/copyright",
       "https://minghuaji.dpm.org.cn/page/helpus",
       "https://minghuaji.dpm.org.cn/page/applyimage",
-      "https://www.dpm.org.cn/bottom/apply_image"
+      "https://www.dpm.org.cn/bottom/apply_image",
+      "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/I00004987"
     ],
     "dimensions_cm": {
       "height": 127,
@@ -25,7 +26,7 @@
     "width": 1920,
     "height": 1080,
     "fps": 24,
-    "duration_seconds": 60
+    "duration_seconds": 40
   },
   "cover": {
     "width": 1728,
@@ -36,13 +37,13 @@
       "id": "whole-scroll",
       "kind": "original",
       "source_url": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E8%8D%B7%E7%9F%B3%E6%B0%B4%E9%B8%9F%E5%9B%BE%E8%BD%B4.png",
-      "notes": "全幅立轴，同一文物号新00146234。s03 自上而下看空纸、右上墨荷、下腹危石与单脚鸟；s07 尺幅主画面；s08 落版前静止。直链 https://upload.wikimedia.org/wikipedia/commons/9/9e/%E6%9C%B1%E8%80%B7%E8%8D%B7%E7%9F%B3%E6%B0%B4%E9%B8%9F%E5%9B%BE%E8%BD%B4.png （6139×16787，约76.3MB，公有领域扫描标签，Credit 为名画记）。尺寸页 https://www.dpm.org.cn/collection/paint/232837.html 纵127×横46厘米。s07 在剪辑中于画侧叠加 graphic「scale-silhouette」，170厘米参照，画高约为人身高的127/170，标「按馆方尺寸示意」。标签不等于故宫书面授权。Supply your own permitted local file; media is not distributed."
+      "notes": "全幅立轴，同一文物号新00146234。s03 自上而下看空纸、右上墨荷、下腹危石与单脚鸟；s07（第二镜）尺幅主画面；s08 落版前静止。直链 https://upload.wikimedia.org/wikipedia/commons/9/9e/%E6%9C%B1%E8%80%B7%E8%8D%B7%E7%9F%B3%E6%B0%B4%E9%B8%9F%E5%9B%BE%E8%BD%B4.png （6139×16787，约76.3MB，公有领域扫描标签，Credit 为名画记）。尺寸页 https://www.dpm.org.cn/collection/paint/232837.html 纵127×横46厘米。s07 在剪辑中于画侧叠加 graphic「scale-silhouette」，170厘米参照，画高约为人身高的127/170，标「按馆方尺寸示意」。标签不等于故宫书面授权。Supply your own permitted local file; media is not distributed."
     },
     {
       "id": "bird-eye",
       "kind": "original",
       "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=93d446d067914c0cacb3c4d8ac43e879",
-      "notes": "水鸟眼部，供 s01 Ken Burns 与 s02 定帧。从全幅原画裁切，不是另一件作品，也不是生成眼。馆方正文写「冷眼观望」，未逐字写「白眼」；眼珠是否顶到上眶，配音前用名画记放大核对。Commons 全幅眼部裁切可能偏软。Supply your own permitted local file; media is not distributed."
+      "notes": "水鸟眼部，供 s01 短钩子与尺幅后s02定帧。从全幅原画裁切，不是另一件作品，也不是生成眼。馆方正文写「冷眼观望」，未逐字写「白眼」；眼珠是否顶到上眶，配音前用名画记放大核对。Commons 全幅眼部裁切可能偏软。Supply your own permitted local file; media is not distributed."
     },
     {
       "id": "lotus-rock",
@@ -67,66 +68,66 @@
     {
       "id": "s01",
       "start": 0,
-      "end": 8,
+      "end": 3,
       "asset_id": "bird-eye",
       "purpose": "analysis",
-      "notes": "selection.baiyan。旁白：见过翻白眼的鸟吗？眼珠顶到眼眶上沿——八大山人的招牌眼神。原画眼部缓推。字幕可高亮「白眼」。无生成画面。"
-    },
-    {
-      "id": "s02",
-      "start": 8,
-      "end": 11,
-      "asset_id": "bird-eye",
-      "purpose": "analysis",
-      "notes": "moment.eye-lock。同一原画眼部定住一拍。不换成生成特写。"
-    },
-    {
-      "id": "s03",
-      "start": 11,
-      "end": 22,
-      "asset_id": "whole-scroll",
-      "purpose": "analysis",
-      "notes": "selection.composition。全幅由右上墨荷缓移到下腹危石与单脚鸟，大片空纸保持可见。旁白：《荷石水鸟图》里，大半幅是空的。"
-    },
-    {
-      "id": "s04",
-      "start": 22,
-      "end": 26,
-      "asset_id": "lotus-rock",
-      "purpose": "analysis",
-      "notes": "moment.shaoli。字幕「少，才有力」。主画面仍是原画荷石与鸟，贴纸不能代替这笔墨。"
-    },
-    {
-      "id": "s05",
-      "start": 26,
-      "end": 34,
-      "asset_id": "signature-seals",
-      "purpose": "analysis",
-      "notes": "selection.bada。旁白：他是朱耷，明宗室后人，出家后号八大山人。画面用款印加短字「朱耷 → 八大山人」。不造肖像，不排年表，不报1624或1626。"
-    },
-    {
-      "id": "s06",
-      "start": 34,
-      "end": 42,
-      "asset_id": "signature-seals",
-      "purpose": "analysis",
-      "notes": "selection.kuzhixiaozhi。款书连笔特写，字幕并置「哭之／笑之」。接着：这只鸟，又倔又静。印文差额未核前，不把「虚斋珍玩／秘玩」念出口。"
+      "notes": "hook。这只鸟，怎么像在翻白眼？眼部只起问，先不长篇细读。"
     },
     {
       "id": "s07",
-      "start": 42,
-      "end": 52,
+      "start": 3,
+      "end": 6,
       "asset_id": "whole-scroll",
       "purpose": "analysis",
-      "notes": "moment.renshi。人尺在片尾之前单独成镜。主画面是原画全幅，剪辑叠加 scale-silhouette。口语：立轴约一人来高。图上按藏品页纵127×横46厘米对170厘米参照，人物高于画幅。标「按馆方尺寸示意」。检索2026-11-03：https://www.dpm.org.cn/collection/paint/232837.html 。不把画拉到与人同高，不念厘米作为唯一一句。"
+      "notes": "scale。画心高一米二十七。原画全幅为主画面，叠加170cm成人参照，画高/人高=127/170约74.7%，标纵127×横46厘米·按馆方尺寸示意。先于持续局部讲解，不能说约一人高。"
+    },
+    {
+      "id": "s02",
+      "start": 6,
+      "end": 10,
+      "asset_id": "bird-eye",
+      "purpose": "analysis",
+      "notes": "eye。黑眼珠挤在上边，下面却留着白。原图眼部短推后落稳；高清核对后再配音，不生成眼睛。"
+    },
+    {
+      "id": "s03",
+      "start": 10,
+      "end": 18,
+      "asset_id": "whole-scroll",
+      "purpose": "analysis",
+      "notes": "composition。大片纸都空着，墨荷从右上压下来。危石上缩着一只单脚水鸟。全幅与原画局部接力，空纸必须保持可见。"
+    },
+    {
+      "id": "s04",
+      "start": 18,
+      "end": 21,
+      "asset_id": "lotus-rock",
+      "purpose": "analysis",
+      "notes": "few。笔墨少，气势一点没少。原画荷石与鸟，短贴纸点题后退出，不以贴纸替代证据。"
+    },
+    {
+      "id": "s05",
+      "start": 21,
+      "end": 26,
+      "asset_id": "signature-seals",
+      "purpose": "analysis",
+      "notes": "artist。画家叫朱耷，出过家，后来用八大山人署名。款印全图定位后才放大，注明现代排录。"
+    },
+    {
+      "id": "s06",
+      "start": 26,
+      "end": 32,
+      "asset_id": "signature-seals",
+      "purpose": "analysis",
+      "notes": "signature。这几个字连起来，像哭之，也像笑之。回看鸟，安静却很有脾气。馆方作者小传解释与原款分层，不把未核鉴藏印念出口。"
     },
     {
       "id": "s08",
-      "start": 52,
-      "end": 60,
+      "start": 32,
+      "end": 40,
       "asset_id": "whole-scroll",
       "purpose": "title",
-      "notes": "segment.outro。全幅静止后黑场。旁白：南昌「高山仰止」、北京「可得神仙」，周年展里也能遇见他。打开 Gallery Mate，我们慢慢读。弱字幕可闪「高山仰止 墨染千秋」。国家文物局2026-07-16通稿写江西省博物馆主要展品含《荷石水鸟图》等（http://www.ncha.gov.cn/art/2026/7/16/art_723_203775.html），口播不念文物号、不念清单。落版仍写馆藏：清 朱耷（八大山人）《荷石水鸟图》轴，故宫博物院藏，文物号新00146234，纵127×横46厘米。无生成画面。"
+      "notes": "outro。按上博年度计划，十二月东馆将迎来八大山人大展。看展之前，先读懂他的眼神。打开Gallery Mate，我们慢慢读。上屏全称大音希声：八大山人诞辰400周年书画艺术大展，计划2026.12–2027.03，具体安排以馆方后续公告为准；不承诺故宫新00146234参展。馆藏落版仍是故宫博物院本轴。"
     }
   ]
 }
