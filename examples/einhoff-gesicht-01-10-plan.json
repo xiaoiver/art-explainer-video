@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "notes": "Gallery Mate《读画》制作前提案，语义脚本 gallery-mate-einhoff-gesicht-01-10。60 秒时码是配音前预估。尚未获得庄园／画廊书面影像授权、下载母版、录音或剪辑。仓库不分发影像。作者 2018 年去世，版权仍有效，不得标 Public Domain。新闻配图只作分镜参照。片尾可点展名「人是个谜」「自性洄溯」；口播不念闭幕日差额或出展清单。字幕图片致谢万一空间，致谢不是许可。",
+  "artwork": {
+    "title": "面孔 01/10",
+    "sources": [
+      "https://www.trueart.com/news/650679.html",
+      "https://www.trueart.com/news/463977.html",
+      "https://www.trueart.com/news/650940.html",
+      "https://www.howartmuseum.org.cn/portal/zh-CN/Artist/Detail/c9c3f769-3b42-a8db-1647-ec438268916b",
+      "https://www.trueart.com/news/550507.html",
+      "http://www.wonespace.cn/cn/exhibition"
+    ],
+    "dimensions_cm": {
+      "height": 55,
+      "width": 44.5,
+      "scope": "双面画。昊美术馆相关通稿（崇真艺客）图注：丙烯、碳粉、泥土、帆布、木板，55×44.5 cm，2001，图片致谢万一空间。英文题 Gesicht 01/10。比例尺与字幕数字采用 55×44.5；旁白用人尺／手尺口语「半臂见方」。检索2026-11-03。",
+      "accessed": "2026-11-03"
+    }
+  },
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 60
+  },
+  "cover": {
+    "width": 1728,
+    "height": 2304
+  },
+  "assets": [
+    {
+      "id": "face-front",
+      "kind": "original",
+      "source_url": "https://www.trueart.com/news/650679.html",
+      "notes": "《面孔 01/10》正面全幅。s03 全幅缓推；s07 尺幅主画面；s08 落版前静止；亦可裁供 s01/s02。通稿图注 55×44.5 cm，图片致谢万一空间。新闻配图不是授权母版，版权仍有效。s07 在剪辑中叠加待制作的手／前臂 graphic「scale-hand」，按 55×44.5 对成人前臂／手掌示意，标「按通稿尺寸示意」。本仓库尚无该 graphic 文件。Supply your own permitted local file; media is not distributed. Copyright still active."
+    },
+    {
+      "id": "face-wipe",
+      "kind": "original",
+      "source_url": "https://www.trueart.com/news/650679.html",
+      "notes": "正面脸部／五官被抹区域，供 s01 Ken Burns 与 s02 定帧。从正面原作裁切，不是另一件作品，也不是生成脸。低清新闻图可能偏软；获准后用高清。新闻配图仅供参照。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "face-back",
+      "kind": "original",
+      "source_url": "https://www.trueart.com/news/650679.html",
+      "notes": "《面孔 01/10》反面全幅，s05 双面揭示。同一件 2001 双面画，不是近题另作。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "material-surface",
+      "kind": "original",
+      "source_url": "https://www.trueart.com/news/650679.html",
+      "notes": "泥土／碳粉／丙烯表面肌理局部，s04「模糊，不是失手」。仍属本幅正面裁切，不用生成风化填空。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "scale-hand",
+      "kind": "graphic",
+      "notes": "待制作的原创手／前臂比例示意，只叠加在 s07，不作为该分析镜头的主画面。参照约成人前臂与 55×44.5 cm 画幅。不是展厅真人手，也不能单独证明厘米数。仓库 assets/scale-reference/ 现有站姿剪影不适合冒充半臂对照，本提案不入库新手绘图，也不预写不存在的 path。执行前按 scale-reference 惯例补 graphic，再填写 path。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 8,
+      "asset_id": "face-wipe",
+      "purpose": "analysis",
+      "notes": "selection.momo。旁白：见过五官被抹掉的脸吗？灰土里像风化，又像还在呼吸。原作正面脸部缓推。字幕可高亮「抹掉」。无生成画面。"
+    },
+    {
+      "id": "s02",
+      "start": 8,
+      "end": 11,
+      "asset_id": "face-wipe",
+      "purpose": "analysis",
+      "notes": "moment.stare。同一原作脸部定住一拍。不换成生成特写。"
+    },
+    {
+      "id": "s03",
+      "start": 11,
+      "end": 20,
+      "asset_id": "face-front",
+      "purpose": "analysis",
+      "notes": "selection.composition。正面全幅缓推：静物式人像嵌入灰底。旁白：《面孔 01/10》正面：泥土、碳粉糊在画布上——人成了静物，却盯着你。"
+    },
+    {
+      "id": "s04",
+      "start": 20,
+      "end": 26,
+      "asset_id": "material-surface",
+      "purpose": "analysis",
+      "notes": "moment.fenghua。字幕「模糊，不是失手」。主画面仍是原作材料局部，贴纸不能代替这笔肌理。"
+    },
+    {
+      "id": "s05",
+      "start": 26,
+      "end": 32,
+      "asset_id": "face-back",
+      "purpose": "analysis",
+      "notes": "selection.fanshen。旁白：翻过去，背面还有一张。字幕可标「双面画／反面」。不与近题头像对切冒充反面。"
+    },
+    {
+      "id": "s06",
+      "start": 32,
+      "end": 44,
+      "asset_id": "face-front",
+      "purpose": "analysis",
+      "notes": "selection.einhoff + selection.gudu。旁白：他是德国画家弗里德里希·埃因霍夫：人像被异化，五官难认。霍夫曼说，正是他们的孤独，创造了整体的凝聚力。画面用正面中景加短字「1936–2018」与霍夫曼句字幕。不堆年表；不把群像作品切进本镜冒充本幅。霍夫曼句出处：https://www.trueart.com/news/463977.html"
+    },
+    {
+      "id": "s07",
+      "start": 44,
+      "end": 52,
+      "asset_id": "face-front",
+      "purpose": "analysis",
+      "notes": "moment.renshi。人尺／手尺在片尾之前单独成镜。主画面是正面全幅，剪辑叠加 scale-hand。口语：这幅约半臂见方。图上按通稿 55×44.5 cm 示意。标「按通稿尺寸示意」。检索2026-11-03：https://www.trueart.com/news/650679.html 。不把画拉到与人同高，不念厘米作为唯一一句。"
+    },
+    {
+      "id": "s08",
+      "start": 52,
+      "end": 60,
+      "asset_id": "face-front",
+      "purpose": "title",
+      "notes": "segment.outro。正面静止后黑场。旁白：深圳「人是个谜」、上海「自性洄溯」，展名里也能遇见他。打开 Gallery Mate，我们慢慢读。弱字幕可闪「人是个谜」「自性洄溯」（可选「去往塔拉斯孔的路上」）。口播不念闭幕日差额。落版写：弗里德里希·埃因霍夫《面孔 01/10》，2001，双面画，丙烯、碳粉、泥土、帆布、木板，55×44.5 cm；图片致谢：万一空间。授权状态获准后填写。无生成画面。版权仍有效，不得标 Public Domain。新闻配图不是许可。"
+    }
+  ]
+}
