@@ -1,0 +1,247 @@
+{
+  "schema_version": 1,
+  "notes": "已制作v3的60秒、13镜实测编排摘录；不含媒体、音色参考或本机目录。原画、声音、字体和渲染源需自行准备；不是直接可渲染的完整工程。单画配音前8镜提案另行保留。",
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 60
+  },
+  "cover": {
+    "width": 1728,
+    "height": 2304
+  },
+  "assets": [
+    {
+      "id": "whole-scroll",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E8%8D%B7%E7%9F%B3%E6%B0%B4%E9%B8%9F%E5%9B%BE%E8%BD%B4.png",
+      "notes": "新00146234原画画心全幅，供全貌、尺度和片尾；原作127×46cm。 Commons扫描标记不等于院方书面影像许可。",
+      "artwork_id": "bada-bird"
+    },
+    {
+      "id": "bird-eye",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E8%8D%B7%E7%9F%B3%E6%B0%B4%E9%B8%9F%E5%9B%BE%E8%BD%B4.png",
+      "notes": "新00146234原画鸟头与眼部真实裁切，供眼部分析及非同比例局部对照。 Commons扫描标记不等于院方书面影像许可。",
+      "artwork_id": "bada-bird"
+    },
+    {
+      "id": "lotus-rock",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E8%8D%B7%E7%9F%B3%E6%B0%B4%E9%B8%9F%E5%9B%BE%E8%BD%B4.png",
+      "notes": "新00146234上部墨荷与留白，和全幅一同展示。 Commons扫描标记不等于院方书面影像许可。",
+      "artwork_id": "bada-bird"
+    },
+    {
+      "id": "signature-seals",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E8%8D%B7%E7%9F%B3%E6%B0%B4%E9%B8%9F%E5%9B%BE%E8%BD%B4.png",
+      "notes": "新00146234作者款与印的真实裁切；现代排录分层，未核印文不朗读。 Commons扫描标记不等于院方书面影像许可。",
+      "artwork_id": "bada-bird"
+    },
+    {
+      "id": "scale-silhouette",
+      "kind": "graphic",
+      "notes": "仓库内原创成人侧立剪影，只叠加在 s07，不作为该分析镜头的主画面。可见身高按 assets/scale-reference/viewer-standing-left.json，参照 170 厘米。不是展厅真人，也不能证明127厘米。"
+    },
+    {
+      "id": "bird-rock",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E8%8D%B7%E7%9F%B3%E6%B0%B4%E9%B8%9F%E5%9B%BE%E8%BD%B4.png",
+      "notes": "新00146234水鸟与危石真实裁切。 Commons扫描标记不等于院方书面影像许可。",
+      "artwork_id": "bada-bird"
+    },
+    {
+      "id": "mix",
+      "kind": "audio"
+    },
+    {
+      "id": "fish-whole",
+      "kind": "original",
+      "artwork_id": "bada-fish",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E9%B1%BC%E7%9F%B3%E5%9B%BE%E8%BD%B4.png",
+      "notes": "新00076950《鱼石图》原画全幅；Commons3974×4800公有领域扫描。 Commons扫描标记不等于院方书面影像许可。"
+    },
+    {
+      "id": "fish-detail",
+      "kind": "original",
+      "artwork_id": "bada-fish",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E9%B1%BC%E7%9F%B3%E5%9B%BE%E8%BD%B4.png",
+      "notes": "新00076950鱼身与眼部真实裁切，不生成补眼或水纹。 Commons扫描标记不等于院方书面影像许可。"
+    },
+    {
+      "id": "fish-eye",
+      "kind": "original",
+      "artwork_id": "bada-fish",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E9%B1%BC%E7%9F%B3%E5%9B%BE%E8%BD%B4.png",
+      "notes": "新00076950鱼头真实裁切，和水鸟原眼部做构图对照，非同比例。 Commons扫描标记不等于院方书面影像许可。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "opening-0",
+      "start": 0.0,
+      "end": 3.0,
+      "asset_id": "bird-rock",
+      "purpose": "analysis",
+      "notes": "hook"
+    },
+    {
+      "id": "opening-1",
+      "start": 3.0,
+      "end": 6.0,
+      "asset_id": "whole-scroll",
+      "purpose": "analysis",
+      "notes": "scale"
+    },
+    {
+      "id": "opening-2",
+      "start": 6.0,
+      "end": 11.375,
+      "asset_id": "bird-eye",
+      "purpose": "analysis",
+      "notes": "eye"
+    },
+    {
+      "id": "composition-3",
+      "start": 11.375,
+      "end": 15.375,
+      "purpose": "analysis",
+      "notes": "space",
+      "asset_ids": [
+        "whole-scroll",
+        "lotus-rock"
+      ]
+    },
+    {
+      "id": "composition-4",
+      "start": 15.375,
+      "end": 18.375,
+      "asset_id": "bird-rock",
+      "purpose": "analysis",
+      "notes": "rock"
+    },
+    {
+      "id": "composition-5",
+      "start": 18.375,
+      "end": 21.375,
+      "asset_id": "bird-rock",
+      "purpose": "analysis",
+      "notes": "few"
+    },
+    {
+      "id": "signature-6",
+      "start": 21.375,
+      "end": 25.666666666666668,
+      "asset_id": "signature-seals",
+      "purpose": "analysis",
+      "notes": "artist"
+    },
+    {
+      "id": "signature-7",
+      "start": 25.666666666666668,
+      "end": 28.916666666666668,
+      "asset_id": "signature-seals",
+      "purpose": "analysis",
+      "notes": "signature"
+    },
+    {
+      "id": "signature-8",
+      "start": 28.916666666666668,
+      "end": 33.583333333333336,
+      "asset_id": "bird-rock",
+      "purpose": "analysis",
+      "notes": "temper"
+    },
+    {
+      "id": "fish-9",
+      "start": 33.583333333333336,
+      "end": 37.583333333333336,
+      "purpose": "analysis",
+      "notes": "fish-full",
+      "asset_id": "fish-whole"
+    },
+    {
+      "id": "fish-10",
+      "start": 37.583333333333336,
+      "end": 47.583333333333336,
+      "purpose": "analysis",
+      "notes": "fish-eye",
+      "asset_id": "fish-detail"
+    },
+    {
+      "id": "fish-11",
+      "start": 47.583333333333336,
+      "end": 51.791666666666664,
+      "purpose": "analysis",
+      "notes": "fish-compare",
+      "asset_ids": [
+        "bird-eye",
+        "fish-eye"
+      ],
+      "comparison_axis": "眼神",
+      "labels": {
+        "bada-bird": "《荷石水鸟图》局部",
+        "bada-fish": "《鱼石图》局部"
+      }
+    },
+    {
+      "id": "outro-12",
+      "start": 51.791666666666664,
+      "end": 60.0,
+      "purpose": "analysis",
+      "notes": "outro",
+      "asset_id": "fish-detail"
+    }
+  ],
+  "artworks": [
+    {
+      "title": "荷石水鸟图",
+      "sources": [
+        "https://www.dpm.org.cn/collection/paint/232837.html",
+        "https://minghuaji.dpm.org.cn/paint/detail?id=93d446d067914c0cacb3c4d8ac43e879",
+        "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E8%8D%B7%E7%9F%B3%E6%B0%B4%E9%B8%9F%E5%9B%BE%E8%BD%B4.png",
+        "https://upload.wikimedia.org/wikipedia/commons/9/9e/%E6%9C%B1%E8%80%B7%E8%8D%B7%E7%9F%B3%E6%B0%B4%E9%B8%9F%E5%9B%BE%E8%BD%B4.png",
+        "https://minghuaji.dpm.org.cn/page/copyright",
+        "https://minghuaji.dpm.org.cn/page/helpus",
+        "https://minghuaji.dpm.org.cn/page/applyimage",
+        "https://www.dpm.org.cn/bottom/apply_image",
+        "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/I00004987"
+      ],
+      "dimensions_cm": {
+        "height": 127,
+        "width": 46,
+        "scope": "纸本墨笔立轴。故宫藏品页纵127×横46厘米，文物号新00146234。名画记页眉另写纵126.7厘米，正文仍写127×46；Commons 文件说明跟随页眉。比例尺与字幕数字采用藏品页127×46，页眉差额不进旁白。检索2026-11-03。",
+        "accessed": "2026-11-03"
+      },
+      "id": "bada-bird",
+      "artist": "朱耷（八大山人）"
+    },
+    {
+      "id": "bada-fish",
+      "artist": "朱耷（八大山人）",
+      "title": "鱼石图",
+      "sources": [
+        "https://minghuaji.dpm.org.cn/paint/detail?id=2e9397d7d1834b049c6fa57d64fce565",
+        "https://digicol.dpm.org.cn/cultural/detail?id=b365dfdd3b674184ba0ef236b4448ede",
+        "https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E8%80%B7%E9%B1%BC%E7%9F%B3%E5%9B%BE%E8%BD%B4.png"
+      ],
+      "dimensions_cm": {
+        "height": 58.3,
+        "width": 48.6,
+        "scope": "故宫名画记著录；鱼图仅作眼神与留白对照，不作实际尺幅比较。",
+        "accessed": "2026-11-03"
+      }
+    }
+  ],
+  "comparison": {
+    "mode": "same-artist",
+    "question": "八大山人的鱼与鸟，眼神和留白怎样显出性格？",
+    "axes": [
+      "眼神",
+      "留白"
+    ]
+  }
+}
