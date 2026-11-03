@@ -87,7 +87,7 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |
 | [音效选材与来源台账](references/sound-sourcing.md) | 外录/自录与生成声音的选择、逐镜头声音表、源片段、许可署名和跨集复用 |
 | [声音计划检查](scripts/validate_sound.py) | 可选本地音频探测、SHA-256、片段能量分析、CSV声音表与署名导出 |
-| [字体与文字层级](references/typography.md) | 稳定宋体字幕、按角色扩展展示/手写/粗黑/英文衬线，含六款实际搭配与字体加载验收 |
+| [字体与文字层级](references/typography.md) | 本系列最新收拢为文楷短标题与宋体字幕；古画封面延续传统宋体，多字体探索归入历史案例 |
 | [封面的画字融合](references/cover-design.md) | 古画传统字体、纸绢留白、参考图生图与独立排字的选择，以及两次封面修订 |
 | [剪辑与交付](references/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
 | [横竖版与重新构图](references/formats.md) | 方向选择、原画局部、宽幅全景、字幕安全区与素材复用 |
