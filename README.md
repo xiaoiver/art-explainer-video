@@ -118,6 +118,8 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [千里江山图原提案计划](examples/qianli-jiangshan-plan.json) | 制作前150秒、12镜头与3:4封面的预估示例，不含媒体；与最终成片不同 |
 | [荷石水鸟图案例与制作前提案](references/bada-heshi-shuiniu-case.md) | 制作前提案：白眼钩子、早期尺幅、空与压、上博未来展览计划；故宫新00146234，尚未拍摄 |
 | [荷石水鸟图计划](examples/bada-heshi-shuiniu-plan.json) | 16:9、约40秒、8镜头与独立3:4封面的预估示例，不含媒体 |
+| [揭钵图 × 鬼趣图案例与制作前提案](references/jiebo-guiqu-case.md) | 制作前提案：荷叶裙虾精与罗聘湿墨鬼趣对照；弗利尔 F1909.400 旧传仇英，版本未锁，尚未拍摄 |
+| [揭钵图 × 鬼趣图计划](examples/jiebo-guiqu-plan.json) | 16:9、60秒、8镜头与独立3:4封面的双画预估示例，不含媒体 |
 
 
 ## 本地检查
@@ -132,6 +134,7 @@ python3 scripts/validate_plan.py examples/hangong-chunxiao-plan.json
 python3 scripts/validate_plan.py examples/fuchun-shanju-plan.json
 python3 scripts/validate_plan.py examples/qianli-jiangshan-plan.json
 python3 scripts/validate_plan.py examples/bada-heshi-shuiniu-plan.json
+python3 scripts/validate_plan.py examples/jiebo-guiqu-plan.json
 python3 scripts/validate_plan.py examples/american-gothic-theatre.json
 python3 scripts/validate_plan.py examples/multi-artwork-playful-plan.json
 python3 scripts/validate_sound.py examples/ruihe-sound-draft.json
@@ -154,7 +157,7 @@ python3 scripts/validate_sound.py /path/to/sound-plan.json \
 node --experimental-strip-types --test tests/test_long_scroll.mjs
 ```
 
-《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排；《千里江山图》JSON保留制作前150秒、12镜原提案，最终成片另为136秒、18镜，见案例页。《荷石水鸟图》JSON是制作前约40秒、8镜提案，尚未拍摄。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
+《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排；《千里江山图》JSON保留制作前150秒、12镜原提案，最终成片另为136秒、18镜，见案例页。《荷石水鸟图》JSON是制作前约40秒、8镜提案，尚未拍摄。《揭钵图》×《鬼趣图》JSON是制作前60秒、8镜双画提案，尚未拍摄，也不含影像母版。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
 
 制作环境的安装按需执行，不能因为调用此 skill 就默认安装整套工具。计划检查脚本已用本次实际成片与封面验证；尚未在全新机器上重跑完整制作。生成、试听、剪辑软件兼容性仍须在使用者环境中确认。
 

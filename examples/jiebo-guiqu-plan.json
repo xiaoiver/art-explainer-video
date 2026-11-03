@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "notes": "Gallery Mate《读画》奇趣美术馆双画对照制作前提案，语义脚本 gallery-mate-jiebo-guiqu。2026-11-03：弗利尔档案页核对 F1909.400 为 Formerly attributed to Qiu Ying、清代 1644–1911、绢本设色、画心 27.4×424 cm、Usage conditions apply。口播诚实句排在揭钵故事之前。鬼趣图版本未锁；Commons 大头与 Geisterbelustigung 不是已证明的同一本。尚未录音剪辑，仓库不分发媒体。时码为配音前预估。",
+  "artworks": [
+    {
+      "id": "freer-jiebo",
+      "title": "揭钵图",
+      "artist": "Formerly attributed to Qiu Ying 仇英",
+      "attribution": "Freer Gallery of Art: Formerly attributed to Qiu Ying 仇英 (ca. 1494-1552); Qing dynasty, 1644-1911; ink and color on silk; handscroll; accession F1909.400. Not a confirmed Qiu Ying autograph.",
+      "sources": [
+        "https://asia.si.edu/explore-art-culture/collections/search/edanmdm:fsg_F1909.400/",
+        "https://asia-archive.si.edu/object/F1909.400/",
+        "https://collections.si.edu/search/detail/edanmdm:fsg_F1909.400",
+        "https://www.si.edu/object/fsg_F1909.400",
+        "https://www.si.edu/termsofuse"
+      ],
+      "dimensions_cm": {
+        "height": 27.4,
+        "width": 424,
+        "scope": "H x W (image), handscroll, ink and color on silk. Freer F1909.400 as printed on https://asia-archive.si.edu/object/F1909.400/ on 2026-11-03. Short scroll F1917.134 (29.1×138.3 cm) and Taipei NPM 故畫001611 are not this object.",
+        "accessed": "2026-11-03"
+      },
+      "checked_on": "2026-11-03"
+    },
+    {
+      "id": "luopin-guiqu",
+      "title": "鬼趣图",
+      "artist": "罗聘",
+      "attribution": "Luo Pin (Luo Ping), 1733-1799, hao Liangfeng. Multiple versions of Ghost Amusement exist. This plan does not lock the Hong Kong Museum of Art eight-leaf set, the Deji scroll, the Met 2009 private-collection scroll, or the Honolulu album as one object.",
+      "sources": [
+        "https://www.info.gov.hk/gia/general/201009/24/P201009240166_photo_1020653.htm",
+        "https://www.dejiart.com/en/digital_library/guiqutujuan/",
+        "https://www.metmuseum.org/pt/exhibitions/listings/2009/luo-ping/photo-gallery",
+        "https://commons.wikimedia.org/wiki/File:%E9%AC%BC%E8%B6%A3%E5%9B%BE_(%E5%A4%A7%E5%A4%B4).jpg",
+        "https://commons.wikimedia.org/wiki/File:Luo,_Pin_%E2%80%94_Geisterbelustigung_%E2%80%94_18._Jhd.jpg",
+        "https://commons.wikimedia.org/wiki/File:Album_of_Ghost_Paintings_by_Luo_Ping,_18th_century,_long-term_loan_to_the_Honolulu_Museum_of_Art_a.jpg"
+      ],
+      "dimensions_cm": {
+        "scope": "Version-dependent; no single official size until one version is locked. Do not copy another scroll's centimeters onto the chosen leaf.",
+        "accessed": "2026-11-03"
+      },
+      "checked_on": "2026-11-03"
+    }
+  ],
+  "comparison": {
+    "mode": "cross-artist",
+    "question": "古人怎么画鬼：潮穿搭小队，还是人间漫画？",
+    "axes": [
+      "鬼的造型气质",
+      "笔墨／设色手段",
+      "叙事功能（宗教故事 vs 讽世）"
+    ]
+  },
+  "editing_style": "playful-art-history",
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 60
+  },
+  "cover": {
+    "width": 1728,
+    "height": 2304
+  },
+  "assets": [
+    {
+      "id": "freer-shrimp",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "Shrimp spirit / layered lotus-leaf skirt crop from F1909.400 only. Coordinates are not locked; do not treat an XHS crop as the museum master or as a located region. Usage conditions apply. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "freer-alms-bowl",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "Alms-bowl and the demons trying to lift it, same accession F1909.400. Handscroll reads right to left. Usage conditions apply. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "freer-scroll-band",
+      "kind": "original",
+      "artwork_id": "freer-jiebo",
+      "source_url": "https://asia-archive.si.edu/object/F1909.400/",
+      "notes": "Long band or stitched overview for the 27.4×424 cm image. Archive page lists IDS id FS-F1909.400_Stitched among section thumbnails FS-7461_19–FS-7461_28. Height is 27.4 cm, not a standing adult. Usage conditions apply. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "guiqu-wet-ink",
+      "kind": "original",
+      "artwork_id": "luopin-guiqu",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Luo,_Pin_%E2%80%94_Geisterbelustigung_%E2%80%94_18._Jhd.jpg",
+      "notes": "Public file of skeletons in a grove, 450×602, PD-Art tag with death year 1799. Commons institution field is empty, source is a Tumblr URL, and categories disagree (Palace Museum vs location missing). Not the HKMoA eight-leaf set and not proof of the wet-paper process. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "guiqu-cast",
+      "kind": "original",
+      "artwork_id": "luopin-guiqu",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E9%AC%BC%E8%B6%A3%E5%9B%BE_(%E5%A4%A7%E5%A4%B4).jpg",
+      "notes": "Commons file titled 鬼趣图 (五), described as the big-headed ghost, fifth illustration, source line points at the Met 2009 Luo Ping photo gallery, PD-Art tag. It does not contain the servant pair, the broad ghost, or the umbrella ghost. Those crops wait on one locked version. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "guiqu-honolulu-leaf",
+      "kind": "original",
+      "artwork_id": "luopin-guiqu",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Album_of_Ghost_Paintings_by_Luo_Ping,_18th_century,_long-term_loan_to_the_Honolulu_Museum_of_Art_a.jpg",
+      "notes": "Not used in the eight shots. Honolulu long-term-loan album leaf photographed by Commons user Hiart and tagged CC0. Do not caption it as the HKMoA short set. Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "cover-pair",
+      "kind": "graphic",
+      "notes": "Cover layout only, 1728×2304. Underlying painting crops stay attributed originals: F1909.400 Usage conditions apply, plus whichever Ghost Amusement version is locked. Supply your own permitted local file; media is not distributed."
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 12,
+      "asset_id": "freer-shrimp",
+      "purpose": "analysis",
+      "notes": "hook / selection.shrimp。见过穿荷叶裙的虾精吗？Ken Burns 停在荷叶裙；字幕可高亮「荷叶裙」。moment.shrimp-lock 在「潮到离谱」后定住一拍。轻短响可选，不证明坐标。"
+    },
+    {
+      "id": "s02",
+      "start": 12,
+      "end": 18,
+      "asset_id": "freer-scroll-band",
+      "purpose": "analysis",
+      "notes": "诚实句：馆方现标清代、旧传仇英，不是板上钉钉的真迹。字幕写 Formerly attributed to Qiu Ying、Qing 1644–1911、F1909.400、纵 27.4 × 横 424 厘米。手卷自右向左只给一眼，不把 27.4 厘米说成一人来高。"
+    },
+    {
+      "id": "s03",
+      "start": 18,
+      "end": 28,
+      "asset_id": "freer-alms-bowl",
+      "purpose": "analysis",
+      "notes": "selection.jiebo。佛把鬼子母爱子扣在钵下，众魔抬不开，鬼母皈依。段末 moment.turn，贴纸可选「同是画鬼」，贴纸不证明故事。"
+    },
+    {
+      "id": "s04",
+      "start": 28,
+      "end": 34,
+      "asset_ids": [
+        "freer-shrimp",
+        "guiqu-wet-ink"
+      ],
+      "purpose": "analysis",
+      "comparison_axis": "鬼的造型气质",
+      "labels": {
+        "freer-jiebo": "旧传仇英｜揭钵图",
+        "luopin-guiqu": "罗聘｜鬼趣图"
+      },
+      "notes": "同是画鬼，换到扬州。左右并置先给问题。右叶版本未锁，身份条写「罗聘｜鬼趣图 · 版本待定」，不写港艺或故宫藏唯一本。"
+    },
+    {
+      "id": "s05",
+      "start": 34,
+      "end": 42,
+      "asset_id": "guiqu-wet-ink",
+      "purpose": "analysis",
+      "notes": "selection.luopin。罗聘号两峰，扬州八怪，自诩白日能见鬼。本镜只看这张公开叶上可见的晕墨。「湿纸作画」指向 Met 2009 展说，本环境未重开该页，口播若保留湿纸句，字幕注明展说出处，不把这张照片说成工艺鉴定。"
+    },
+    {
+      "id": "s06",
+      "start": 42,
+      "end": 52,
+      "asset_id": "guiqu-cast",
+      "purpose": "analysis",
+      "notes": "selection.guiqu。当前能点名的公开文件是大头鬼一开。主仆、阔鬼、雨中伞鬼仍是口播角色；同一本未锁定前不从檀香山册页或其他卷拼进这一镜。"
+    },
+    {
+      "id": "s07",
+      "start": 52,
+      "end": 56,
+      "asset_ids": [
+        "freer-shrimp",
+        "guiqu-cast"
+      ],
+      "purpose": "analysis",
+      "comparison_axis": "叙事功能（宗教故事 vs 讽世）",
+      "labels": {
+        "freer-jiebo": "潮穿搭小队",
+        "luopin-guiqu": "人间漫画"
+      },
+      "notes": "moment.punch。一个把鬼画成潮穿搭小队，一个把人画成鬼。左为揭钵宗教故事里的水族，右为大头鬼一开；不把右图说成已含伞鬼全套。"
+    },
+    {
+      "id": "s08",
+      "start": 56,
+      "end": 60,
+      "asset_id": "freer-scroll-band",
+      "purpose": "title",
+      "notes": "outro。落版两行：Freer F1909.400 · Qing · Formerly attributed to Qiu Ying · Usage conditions apply；罗聘《鬼趣图》· 版本待定（成片改成实际所用本）。CTA：打开 Gallery Mate，我们慢慢读。"
+    }
+  ]
+}
