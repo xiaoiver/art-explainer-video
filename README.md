@@ -87,7 +87,7 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |
 | [音效选材与来源台账](references/sound-sourcing.md) | 外录/自录与生成声音的选择、逐镜头声音表、源片段、许可署名和跨集复用 |
 | [声音计划检查](scripts/validate_sound.py) | 可选本地音频探测、SHA-256、片段能量分析、CSV声音表与署名导出 |
-| [字体与文字层级](references/typography.md) | 宋体字幕、得意黑视频短标题、黑体导航标注，以及实际字体加载与文字层可编辑性 |
+| [字体与文字层级](references/typography.md) | 稳定宋体字幕、按角色扩展展示/手写/粗黑/英文衬线，含六款实际搭配与字体加载验收 |
 | [封面的画字融合](references/cover-design.md) | 古画传统字体、纸绢留白、参考图生图与独立排字的选择，以及两次封面修订 |
 | [剪辑与交付](references/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
 | [横竖版与重新构图](references/formats.md) | 方向选择、原画局部、宽幅全景、字幕安全区与素材复用 |
@@ -116,8 +116,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [富春山居图计划](examples/fuchun-shanju-plan.json) | 16:9、132秒、22镜头与独立4:3封面，不含媒体 |
 | [千里江山图案例与原提案](references/qianli-jiangshan-case.md) | 已交付136秒成片与4:3融合封面；保留原提案的资料依据和使用条件，非最终时间线 |
 | [千里江山图原提案计划](examples/qianli-jiangshan-plan.json) | 制作前150秒、12镜头与3:4封面的预估示例，不含媒体；与最终成片不同 |
-| [荷石水鸟图案例与制作前提案](references/bada-heshi-shuiniu-case.md) | 制作前提案：白眼钩子、早期尺幅、空与压、上博未来展览计划；故宫新00146234，尚未拍摄 |
+| [荷石水鸟图制作与修订案例](references/bada-heshi-shuiniu-case.md) | 横版60秒、13镜、鸟与鱼对照、六款分工字体、放缓语速与展讯核实；保留单画配音前提案 |
 | [荷石水鸟图计划](examples/bada-heshi-shuiniu-plan.json) | 16:9、约40秒、8镜头与独立3:4封面的预估示例，不含媒体 |
+| [水鸟与鱼图实测编排](examples/bada-bird-fish-produced-plan.json) | v3的60秒、13镜编排：原画眼神对照、逐画身份标注；无媒体与私有路径 |
 
 
 ## 本地检查
@@ -154,7 +155,7 @@ python3 scripts/validate_sound.py /path/to/sound-plan.json \
 node --experimental-strip-types --test tests/test_long_scroll.mjs
 ```
 
-《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排；《千里江山图》JSON保留制作前150秒、12镜原提案，最终成片另为136秒、18镜，见案例页。《荷石水鸟图》JSON是制作前约40秒、8镜提案，尚未拍摄。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
+《溪山行旅图》示例是简化重建计划，《早春图》和《汉宫春晓图》分别保留修订版的25镜、20镜时间线；《富春山居图》保留132秒、22镜的实际编排；《千里江山图》JSON保留制作前150秒、12镜原提案，最终成片另为136秒、18镜，见案例页。单画《荷石水鸟图》JSON保留制作前约40秒、8镜提案；双画JSON摘录成片v3的60秒、13镜实际编排，见案例页。均不含可下载的私人素材，也不是可以直接渲染的完整工程。使用自己的文件填充素材路径和交付路径后，可加 `--check-files --probe` 核对实际媒体。
 
 制作环境的安装按需执行，不能因为调用此 skill 就默认安装整套工具。计划检查脚本已用本次实际成片与封面验证；尚未在全新机器上重跑完整制作。生成、试听、剪辑软件兼容性仍须在使用者环境中确认。
 
