@@ -9,7 +9,7 @@
 | `video` | `width`、`height`、`fps`、`duration_seconds`；可选 `orientation` 为 `landscape`、`portrait` 或 `square`，须与宽高一致 |
 | `cover` | 可选；`width`、`height`，单独指定比例 |
 | `assets` | 对象数组；`id` 唯一，`kind` 是 `original`、`ai-image`、`ai-video`、`audio` 或 `graphic`；可选 `path`、`source_url`、`notes` |
-| `shots` | 对象数组；`id` 唯一，`start`、`end`、`asset_id`、`purpose`（`analysis`、`atmosphere`、`title`）；生成画面增加非空 `ai_label` |
+| `shots` | 对象数组；`id` 唯一，`start`、`end`、`asset_id`、`purpose`（`analysis`、`atmosphere`、`title`、`context`）；生成画面增加非空 `ai_label` |
 | `deliverables` | 可选；`video` 与 `cover` 的本地路径 |
 
 素材路径和交付路径相对于计划文件目录解析，也接受执行者自己的绝对路径。计划中不要放密钥、临时签名 URL；公开案例仅含公开资料链接。
@@ -39,3 +39,11 @@ python3 scripts/validate_plan.py /path/to/project.json --check-files --probe
 镜头以`asset_id`表示单主画面，或以`asset_ids`数组表示并置的原画证据，二者不能同时填写。不同作品的分析并置声明`comparison_axis`与`labels`（作品ID到屏幕身份文字）。贴纸、字幕、运镜与声音写进镜头`notes`及实际编辑工程，不混入原画证据数组。
 
 顶层`editing_style`可选`contemplative`或`playful-art-history`。示例见[双画趣味比较草案](../examples/multi-artwork-playful-plan.json)，选材与镜头规范见[多作品解读](multi-artwork.md)和[趣味剪辑](playful-editing.md)。校验只检查已声明的结构、引用和标签，不核实馆藏事实、历史影响、尺幅几何、实际标签、贴纸运动或阅读速度。
+
+## 编辑标注叠层
+
+旧计划不写这些字段就不受影响。需要在原画镜头上圈年份、馆藏署名或短引文，或单独放一镜地图、信札、照片、著录扫描时，再读[编辑标注叠层](editorial-annotation.md)。竖版骨架见[editorial-annotation-plan.json](../examples/editorial-annotation-plan.json)。
+
+`annotations` 写在镜头上，不代替 `asset_id`。`year`、`museum-credit`、`quote` 要有 `source`；生成镜头不能再叠这些引文。`vo_words` 可选，写了 `word_id` 时，标注的 `start` 必须等于该词的 `start`。
+
+`purpose: context` 只用于证据桌：`evidence_desk.material` 为 `map`、`letter`、`photo` 或 `document`，`layers` 为 `desk`、`cutout`、`occlusion`，`not_painting` 为 true，主画面是 `graphic`。`editorial_timing` 里相机只接受 `smooth`，切点只接受 `hard`，入场只接受 `spring`，`elements_fps` 约 12 且低于成片帧率。`follow_red_line: true` 要求紧接着的一镜是原画 `analysis`。`music_duck` 只是布尔声明，不检查音量。

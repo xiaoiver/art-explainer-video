@@ -121,5 +121,71 @@ class PlanChecks(unittest.TestCase):
         self.assertTrue(any("deliverables.cover" in error for error in result["errors"]))
 
 
+class EditorialOverlayChecks(unittest.TestCase):
+    def setUp(self):
+        self.plan = json.loads((ROOT / "examples/editorial-annotation-plan.json").read_text(encoding="utf-8"))
+
+    def validate(self):
+        return MODULE.validate_plan(self.plan, ROOT)
+
+    def test_skeleton_passes_and_classic_plans_stay_untouched(self):
+        result = self.validate()
+        self.assertEqual(result["errors"], [])
+        self.assertEqual(result["ratios"]["video"], "9:16")
+        classic = json.loads((ROOT / "examples/xishan-plan.json").read_text(encoding="utf-8"))
+        playful = json.loads((ROOT / "examples/multi-artwork-playful-plan.json").read_text(encoding="utf-8"))
+        self.assertEqual(MODULE.validate_plan(classic, ROOT)["errors"], [])
+        self.assertEqual(MODULE.validate_plan(playful, ROOT)["errors"], [])
+
+    def test_desk_cannot_hold_the_painting(self):
+        shot = self.plan["shots"][1]
+        shot["purpose"] = "analysis"
+        shot["asset_id"] = "painting"
+        errors = self.validate()["errors"]
+        self.assertTrue(any("evidence desk" in item for item in errors))
+        shot["purpose"] = "context"
+        shot["asset_id"] = "catalogue-scan"
+        shot["evidence_desk"]["subject"] = self.plan["artwork"]["title"]
+        self.assertTrue(any("subject" in item for item in self.validate()["errors"]))
+        shot["evidence_desk"]["subject"] = "馆藏说明摘句"
+        shot["evidence_desk"]["not_painting"] = False
+        self.assertTrue(any("not_painting" in item for item in self.validate()["errors"]))
+
+    def test_citations_stay_off_generated_shots_and_keep_their_clock(self):
+        self.plan["shots"][3]["annotations"] = [{
+            "id": "fake", "kind": "underline", "role": "year", "text": "北宋",
+            "source": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959",
+            "start": 23, "end": 25,
+        }]
+        self.assertTrue(any("generated" in item for item in self.validate()["errors"]))
+        self.plan["shots"][3].pop("annotations")
+        note = self.plan["shots"][0]["annotations"][0]
+        note.pop("source")
+        self.assertTrue(any("source" in item for item in self.validate()["errors"]))
+        note["source"] = "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959"
+        note["start"] = 1.5
+        self.assertTrue(any("spoken word" in item for item in self.validate()["errors"]))
+
+    def test_timing_rules_reject_fade_tear_and_a_red_line_into_atmosphere(self):
+        timing = self.plan["shots"][0]["editorial_timing"]
+        timing["entrance"] = "fade"
+        self.assertTrue(any("spring" in item for item in self.validate()["errors"]))
+        timing["entrance"] = "spring"
+        timing["cut"] = "tear-paper"
+        self.assertTrue(any("hard cut" in item for item in self.validate()["errors"]))
+        timing["cut"] = "hard"
+        timing["elements_fps"] = 24
+        self.assertTrue(any("elements_fps" in item for item in self.validate()["errors"]))
+        timing["elements_fps"] = 12
+        self.plan["shots"][2]["editorial_timing"]["follow_red_line"] = True
+        self.assertTrue(any("follow_red_line" in item for item in self.validate()["errors"]))
+
+    def test_context_and_music_duck_keep_their_types(self):
+        self.plan["shots"][1].pop("evidence_desk")
+        self.assertTrue(any("context requires" in item for item in self.validate()["errors"]))
+        self.plan["shots"][0]["music_duck"] = "yes"
+        self.assertTrue(any("music_duck" in item for item in self.validate()["errors"]))
+
+
 if __name__ == "__main__":
     unittest.main()

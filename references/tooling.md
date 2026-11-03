@@ -38,6 +38,10 @@ CLI 路线先用帮助发现功能，再通过 `youmind info` 查看目标操作
 
 依赖环境缺失时先完成脚本、分镜等独立工作；安装仅限所选路线需要的组件，不能因自动安装脚本失败就运行来源不明的替代包。
 
+## 可选：`@remotion/rough-notation`
+
+年份、馆藏署名和短引文的手绘笔划见[编辑标注叠层](editorial-annotation.md)。仓库里的 `CitationMark` 不依赖额外包。使用者自己的 Remotion 工程若要换成官方笔划，在那个工程里执行 `npx remotion add @remotion/rough-notation`，或 `npm install @remotion/rough-notation --save-exact`，并与已安装的 `remotion` 使用同一精确版本。进度用 `assets/editorial-overlay/timing.ts` 的 `markerDraw`，`seed` 保持不变。本技能不安装这个包，也不因此更换 Open Montage。
+
 ## 剪映 / CapCut
 
 可用路线：[capcut-cli 的 capcut-edit](https://github.com/renezander030/capcut-cli)。它是第三方项目；安装前核对当前来源、版本与平台兼容性。它与剪映原生桌面软件分别检测。

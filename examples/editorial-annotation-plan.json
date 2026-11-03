@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "notes": "只示范编辑标注叠层。正式成片仍以馆藏高清为主，先按画面与脚本交代尺幅，再进入持续局部。本文件不含媒体，年代措辞上屏前须打开馆方页面核对。",
+  "artwork": {
+    "title": "溪山行旅图",
+    "sources": ["https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959"]
+  },
+  "video": {"width": 1080, "height": 1920, "fps": 24, "duration_seconds": 36, "orientation": "portrait"},
+  "cover": {"width": 1080, "height": 1440},
+  "assets": [
+    {
+      "id": "painting",
+      "kind": "original",
+      "source_url": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959",
+      "notes": "馆藏高清仍是主证据。自行取得可用文件后填写 path。"
+    },
+    {
+      "id": "catalogue-scan",
+      "kind": "graphic",
+      "source_url": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959",
+      "notes": "非原画。证据桌只放地图、信札、照片或著录扫描。此处是占位，须换成脚本实际引用的档案页。"
+    },
+    {
+      "id": "ink-motion",
+      "kind": "ai-video",
+      "notes": "自有图生视频，只作气氛。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "survey",
+      "start": 0,
+      "end": 8,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "music_duck": true,
+      "editorial_timing": {"camera": "smooth", "elements_fps": 12, "cut": "hard", "entrance": "spring"},
+      "vo_words": [
+        {"id": "w-era", "text": "北宋", "start": 1.2, "end": 1.8},
+        {"id": "w-museum", "text": "台北故宫", "start": 4.4, "end": 5.2}
+      ],
+      "annotations": [
+        {
+          "id": "era",
+          "kind": "underline",
+          "role": "year",
+          "text": "北宋",
+          "source": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959",
+          "word_id": "w-era",
+          "start": 1.2,
+          "end": 4.2
+        },
+        {
+          "id": "museum",
+          "kind": "highlight",
+          "role": "museum-credit",
+          "text": "台北故宫博物院藏",
+          "source": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959",
+          "word_id": "w-museum",
+          "start": 4.4,
+          "end": 7.6
+        }
+      ],
+      "notes": "原画满屏缓推。下划线和荧光笔只标年份与馆藏署名。"
+    },
+    {
+      "id": "catalogue",
+      "start": 8,
+      "end": 14,
+      "asset_id": "catalogue-scan",
+      "purpose": "context",
+      "music_duck": true,
+      "evidence_desk": {
+        "material": "document",
+        "layers": ["desk", "cutout", "occlusion"],
+        "subject": "馆藏说明摘句",
+        "not_painting": true
+      },
+      "editorial_timing": {
+        "camera": "smooth",
+        "elements_fps": 12,
+        "cut": "hard",
+        "entrance": "spring",
+        "follow_red_line": true
+      },
+      "vo_words": [
+        {"id": "w-line", "text": "著录", "start": 8.6, "end": 9.1}
+      ],
+      "annotations": [
+        {
+          "id": "line",
+          "kind": "bracket",
+          "role": "quote",
+          "text": "（换成馆方原文）",
+          "source": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000959",
+          "word_id": "w-line",
+          "start": 8.6,
+          "end": 12.6
+        }
+      ],
+      "notes": "档案扫描随硬切出现。红线之后切回高清原画，不撕纸，不把画作放上这张桌。"
+    },
+    {
+      "id": "travelers",
+      "start": 14,
+      "end": 22,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "music_duck": true,
+      "editorial_timing": {"camera": "smooth", "elements_fps": 12, "cut": "hard", "entrance": "spring"},
+      "annotations": [
+        {
+          "id": "caravan",
+          "kind": "circle",
+          "role": "label",
+          "text": "行旅",
+          "start": 15,
+          "end": 18.5
+        }
+      ],
+      "notes": "硬切进入高清局部。圈线指认行旅，原画不做网点。"
+    },
+    {
+      "id": "ink",
+      "start": 22,
+      "end": 27,
+      "asset_id": "ink-motion",
+      "purpose": "atmosphere",
+      "ai_label": "AI笔墨延展",
+      "notes": "标明的笔墨延展。这一镜不叠加馆藏引文，也不当证据桌。"
+    },
+    {
+      "id": "return",
+      "start": 27,
+      "end": 36,
+      "asset_id": "painting",
+      "purpose": "analysis",
+      "notes": "回到原画全幅。"
+    }
+  ]
+}
