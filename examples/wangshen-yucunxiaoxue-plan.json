@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "notes": "《渔村小雪图》单作制作前提案，语义脚本 wangshen-yucunxiaoxue。2026-11-04 打开故宫藏品页与名画记：王诜《渔村小雪图》卷，新00093902，绢本设色，纵44.5×横219.5厘米。口播读三段空间和雪意。片尾不写展讯，不出现产品名。尚未录音剪辑，仓库不分发媒体。时码为配音前预估。Supply your own permitted local file; media is not distributed.",
+  "artwork": {
+    "title": "渔村小雪图",
+    "artist": "王诜 Wang Shen",
+    "attribution": "The Palace Museum, Beijing: 王诜渔村小雪图卷, Northern Song, ink and color on silk, 44.5 × 219.5 cm, accession 新00093902. Collection page and 名画记 essay by 娄玮 agree on medium and dimensions (checked 2026-11-04). Wan Muchun's figure caption prints 44.5 × 219 cm; subtitles follow the museum 219.5 cm.",
+    "sources": [
+      "https://www.dpm.org.cn/collection/paint/234606.html",
+      "https://minghuaji.dpm.org.cn/paint/detail?id=7cyuan1afqo9y0yzqig73m93vdzgg8qf",
+      "https://digicol.dpm.org.cn/cultural/detail?id=6e4f4d07a094402d9f2354ddd35cd6c1",
+      "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/85/%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
+      "https://minghuaji.dpm.org.cn/page/copyright",
+      "https://minghuaji.dpm.org.cn/page/helpus",
+      "https://minghuaji.dpm.org.cn/page/applyimage",
+      "https://www.dpm.org.cn/bottom/apply_image",
+      "https://digitalarchive.npm.gov.tw/Collection/Detail/505?dep=P"
+    ],
+    "dimensions_cm": {
+      "height": 44.5,
+      "width": 219.5,
+      "scope": "画心。故宫藏品页与名画记均作绢本设色、纵44.5×横219.5厘米，文物号新00093902。检索2026-11-04。万木春图注44.5×219厘米不进字幕。Commons全文件53150×3451含左侧题跋，宽高比约15.4，不能把整文件像素当成画心横长。",
+      "accessed": "2026-11-04"
+    },
+    "checked_on": "2026-11-04"
+  },
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 60
+  },
+  "cover": {
+    "width": 1728,
+    "height": 2304
+  },
+  "assets": [
+    {
+      "id": "palace-opening",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
+      "notes": "新00093902画心右端，供s01满宽起问。Commons原文件53150×3451、约287.74MB，直链字节数301713665，来源栏为名画记，信息栏文物号相符。文件页是机械扫描类公有领域标签，不是故宫书面授权。全文件左侧是题跋；2026-11-04的3840×249预览里山水在右。只取画心，不把整卷缩成细带。手卷自右向左，画面不镜像。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "palace-painting",
+      "kind": "original",
+      "source_url": "https://www.dpm.org.cn/collection/paint/234606.html",
+      "notes": "新00093902画心全宽，供s02尺幅与s08落版。尺寸页纵44.5×横219.5厘米，绢本设色。s02在剪辑中于画侧叠加graphic「scale-silhouette」，170厘米参照，画高/人高=44.5/170约26%，横长/人高=219.5/170约1.29，标「按馆方尺寸示意」。不能说约一人高。题跋不计入横长。名画记同尺寸：https://minghuaji.dpm.org.cn/paint/detail?id=7cyuan1afqo9y0yzqig73m93vdzgg8qf 。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "palace-village",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
+      "notes": "卷首渔村，s03。从画心右端向左。山把村子围住，这一截先自己成立。裁切坐标等故宫高清再钉。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "palace-peak",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
+      "notes": "中段大山，s04与s06。先看它把左右分开，再看前后两层和中间窄缝。不生成山体，也不切到郭熙《早春图》。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "palace-far-shore",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
+      "notes": "后段远岸与卷尾老松，s05。岸线躲进烟里，老松把景拉近。烟不用生成雾补上。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "palace-ink-snow",
+      "kind": "original",
+      "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=7cyuan1afqo9y0yzqig73m93vdzgg8qf",
+      "notes": "山脚与峰顶，s07。深墨在暗处，峰顶留白。名画记写白粉与金粉；万木春不记得看见金粉。口播不报金粉，也不把白粉当成已经复核的材料结论。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "scale-silhouette",
+      "kind": "graphic",
+      "path": "../assets/scale-reference/viewer-standing-left.png",
+      "notes": "仓库内原创成人侧立剪影，只叠加在s02，不作为该分析镜头的主画面。可见身高按assets/scale-reference/viewer-standing-left.json，参照170厘米。不是展厅真人，也不能证明44.5厘米。"
+    },
+    {
+      "id": "npm-copy-optional",
+      "kind": "original",
+      "source_url": "https://digitalarchive.npm.gov.tw/Collection/Detail/505?dep=P",
+      "notes": "OPTIONAL one-frame flash only, not one of the eight shots. 台北故宫宋王詵漁村小雪圖卷，中畫000147N000000000，本幅32.4×220.3厘米，绢。目录仍署王詵。低阶图像页写无须申请、不限用途、不需注明出处；该句只覆盖这一件，不覆盖北京新00093902。万木春读为较晚临本，画面上不能把临本写成馆方定论。若使用，身份条写「另一件 · 台北故宫目录署王詵 · 32.4×220.3 cm」。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "cover-snow-stitch",
+      "kind": "graphic",
+      "notes": "Cover layout only, 1728×2304. Underlying crop stays Palace Museum 新00093902. Hook line: 一卷小雪，三段景色对不上. No product name. Supply your own permitted local file; media is not distributed."
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 6,
+      "asset_id": "palace-opening",
+      "purpose": "analysis",
+      "notes": "hook。见过一卷小雪，三段景色对不上的吗？画心右端满宽，只起问。整卷若缩成细带，大标题退开。手卷自右向左，画面不镜像。"
+    },
+    {
+      "id": "s02",
+      "start": 6,
+      "end": 17,
+      "asset_id": "palace-painting",
+      "purpose": "analysis",
+      "notes": "selection.scroll。北京故宫藏北宋王诜《渔村小雪图》。绢本设色，画心纵四十四点五厘米，横二百一十九点五厘米。字幕写画心44.5×219.5 cm、新00093902。叠加170cm成人参照，画高/人高=44.5/170约26%，标按馆方尺寸示意。不能说约一人高。题跋宽度不进字幕。早于后面的分段细读。"
+    },
+    {
+      "id": "s03",
+      "start": 17,
+      "end": 24,
+      "asset_id": "palace-village",
+      "purpose": "analysis",
+      "notes": "从右往左展开。selection.cun。卷首渔村被山围住，先自成一截。"
+    },
+    {
+      "id": "s04",
+      "start": 24,
+      "end": 32,
+      "asset_id": "palace-peak",
+      "purpose": "analysis",
+      "notes": "selection.feng。中间大山把左右分开；再看，山是前后两层，江水从窄缝里过。不切《早春图》。"
+    },
+    {
+      "id": "s05",
+      "start": 32,
+      "end": 39,
+      "asset_id": "palace-far-shore",
+      "purpose": "analysis",
+      "notes": "selection.an。后段岸线躲进烟里，卷尾一坡老松把它拉近。moment.stitch-lock 钉在句末。烟不用生成雾填上。"
+    },
+    {
+      "id": "s06",
+      "start": 39,
+      "end": 49,
+      "asset_id": "palace-peak",
+      "purpose": "analysis",
+      "notes": "若用现在的眼睛，这三截像拼上去的。放回王诜那个时候，这种接法并不算出错。画面停在渔村与大山相接处，仍是新00093902。不讲贬谪，不讲西园。"
+    },
+    {
+      "id": "s07",
+      "start": 49,
+      "end": 56,
+      "asset_id": "palace-ink-snow",
+      "purpose": "analysis",
+      "notes": "selection.mo。深墨把缝拢住，山脚更暗，峰顶留白，雪意才连成一卷。moment.punch 钉在句末。不报金粉。默认不闪台北同名卷；若以后加约一秒，用npm-copy-optional并标明另一件。"
+    },
+    {
+      "id": "s08",
+      "start": 56,
+      "end": 60,
+      "asset_id": "palace-painting",
+      "purpose": "title",
+      "notes": "outro。我们慢慢读，把这卷雪意看完。落版：故宫博物院 · 新00093902 · 王诜 · 北宋 · 绢本设色 · 画心44.5×219.5 cm。不写展讯，不出现产品名。典则唐宋展已于2026-11-01结束，通稿未列此卷。"
+    }
+  ]
+}
