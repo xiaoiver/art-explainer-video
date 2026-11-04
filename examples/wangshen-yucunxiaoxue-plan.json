@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "notes": "《渔村小雪图》单作制作前提案，语义脚本 wangshen-yucunxiaoxue。2026-11-04 打开故宫藏品页与名画记：王诜《渔村小雪图》卷，新00093902，绢本设色，纵44.5×横219.5厘米。口播读三段空间和雪意。片尾不写展讯，不出现产品名。尚未录音剪辑，仓库不分发媒体。时码为配音前预估。Supply your own permitted local file; media is not distributed.",
+  "notes": "《渔村小雪图》单作制作前提案，语义脚本 wangshen-yucunxiaoxue。2026-11-04 打开故宫藏品页与名画记：王诜《渔村小雪图》卷，新00093902，绢本设色，纵44.5×横219.5厘米。口播读三段空间和雪意。片尾不写展讯，不出现产品名。中等分辨率工作裁切在 assets/wangshen-yucunxiaoxue/。Commons 原 PNG（约 287.74MB，53150×3451）不在仓库，需要母版时按直链自行下载。机械扫描类公有领域标签不是故宫书面授权。画心左右边界按全卷亮度推定（约原图像素 x=34100–50800，去掉右侧裱边与题签），裁切在故宫高清复核前为暂定。尚未录音剪辑。时码为配音前预估。",
   "artwork": {
     "title": "渔村小雪图",
     "artist": "王诜 Wang Shen",
@@ -40,38 +40,44 @@
     {
       "id": "palace-opening",
       "kind": "original",
+      "path": "../assets/wangshen-yucunxiaoxue/s01-opening-right.jpg",
       "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
-      "notes": "新00093902画心右端，供s01满宽起问。Commons原文件53150×3451、约287.74MB，直链字节数301713665，来源栏为名画记，信息栏文物号相符。文件页是机械扫描类公有领域标签，不是故宫书面授权。全文件左侧是题跋；2026-11-04的3840×249预览里山水在右。只取画心，不把整卷缩成细带。手卷自右向左，画面不镜像。Supply your own permitted local file; media is not distributed."
+      "notes": "新00093902画心右端工作图，1200×2066，供s01满宽起问。Commons原文件53150×3451、约287.74MB，直链字节数301713665，来源栏为名画记，信息栏文物号相符。文件页是机械扫描类公有领域标签，不是故宫书面授权。全文件左侧是题跋；3840×249总览里山水在右。只取画心，不把整卷缩成细带。手卷自右向左，画面不镜像。工作裁切已在仓库；约288MB母版不在仓库，需要时按直链自行下载。画心边界暂定。"
     },
     {
       "id": "palace-painting",
       "kind": "original",
+      "path": "../assets/wangshen-yucunxiaoxue/painting-heart.jpg",
       "source_url": "https://www.dpm.org.cn/collection/paint/234606.html",
-      "notes": "新00093902画心全宽，供s02尺幅与s08落版。尺寸页纵44.5×横219.5厘米，绢本设色。s02在剪辑中于画侧叠加graphic「scale-silhouette」，170厘米参照，画高/人高=44.5/170约26%，横长/人高=219.5/170约1.29，标「按馆方尺寸示意」。不能说约一人高。题跋不计入横长。名画记同尺寸：https://minghuaji.dpm.org.cn/paint/detail?id=7cyuan1afqo9y0yzqig73m93vdzgg8qf 。Supply your own permitted local file; media is not distributed."
+      "notes": "新00093902画心工作图，10000×2066，供s02尺幅与s08落版。尺寸页纵44.5×横219.5厘米，绢本设色。s02在剪辑中于画侧叠加graphic「scale-silhouette」，170厘米参照，画高/人高=44.5/170约26%，横长/人高=219.5/170约1.29，标「按馆方尺寸示意」。不能说约一人高。题跋不计入横长。名画记同尺寸：https://minghuaji.dpm.org.cn/paint/detail?id=7cyuan1afqo9y0yzqig73m93vdzgg8qf 。工作裁切已在仓库；约288MB母版不在仓库。画心左右按亮度推定，约原图像素 x=34100–50800。"
     },
     {
       "id": "palace-village",
       "kind": "original",
+      "path": "../assets/wangshen-yucunxiaoxue/s03-village.jpg",
       "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
-      "notes": "卷首渔村，s03。从画心右端向左。山把村子围住，这一截先自己成立。裁切坐标等故宫高清再钉。Supply your own permitted local file; media is not distributed."
+      "notes": "卷首渔村工作图，3000×2066，s03。从画心右端向左。山把村子围住，这一截先自己成立。裁切坐标等故宫高清再钉。工作图已在仓库；约288MB母版不在仓库。Commons PD-scan 标签不是故宫书面授权。"
     },
     {
       "id": "palace-peak",
       "kind": "original",
+      "path": "../assets/wangshen-yucunxiaoxue/s04-peak.jpg",
       "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
-      "notes": "中段大山，s04与s06。先看它把左右分开，再看前后两层和中间窄缝。不生成山体，也不切到郭熙《早春图》。Supply your own permitted local file; media is not distributed."
+      "notes": "中段大山工作图，3000×2066，s04与s06。先看它把左右分开，再看前后两层和中间窄缝。不生成山体，也不切到郭熙《早春图》。工作图已在仓库；约288MB母版不在仓库。裁切暂定。"
     },
     {
       "id": "palace-far-shore",
       "kind": "original",
+      "path": "../assets/wangshen-yucunxiaoxue/s05-far-shore.jpg",
       "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
-      "notes": "后段远岸与卷尾老松，s05。岸线躲进烟里，老松把景拉近。烟不用生成雾补上。Supply your own permitted local file; media is not distributed."
+      "notes": "后段远岸与卷尾老松工作图，3000×2066，s05。岸线躲进烟里，老松把景拉近。烟不用生成雾补上。工作图已在仓库；约288MB母版不在仓库。裁切暂定。"
     },
     {
       "id": "palace-ink-snow",
       "kind": "original",
+      "path": "../assets/wangshen-yucunxiaoxue/s07-ink-snow.jpg",
       "source_url": "https://minghuaji.dpm.org.cn/paint/detail?id=7cyuan1afqo9y0yzqig73m93vdzgg8qf",
-      "notes": "山脚与峰顶，s07。深墨在暗处，峰顶留白。名画记写白粉与金粉；万木春不记得看见金粉。口播不报金粉，也不把白粉当成已经复核的材料结论。Supply your own permitted local file; media is not distributed."
+      "notes": "山脚与峰顶工作图，3000×2066，s07。深墨在暗处，峰顶留白。名画记写白粉与金粉；万木春不记得看见金粉。口播不报金粉，也不把白粉当成已经复核的材料结论。工作图已在仓库；约288MB母版不在仓库。Commons PD-scan 标签不是故宫书面授权。"
     },
     {
       "id": "scale-silhouette",
@@ -86,9 +92,17 @@
       "notes": "OPTIONAL one-frame flash only, not one of the eight shots. 台北故宫宋王詵漁村小雪圖卷，中畫000147N000000000，本幅32.4×220.3厘米，绢。目录仍署王詵。低阶图像页写无须申请、不限用途、不需注明出处；该句只覆盖这一件，不覆盖北京新00093902。万木春读为较晚临本，画面上不能把临本写成馆方定论。若使用，身份条写「另一件 · 台北故宫目录署王詵 · 32.4×220.3 cm」。Supply your own permitted local file; media is not distributed."
     },
     {
+      "id": "palace-overview",
+      "kind": "original",
+      "path": "../assets/wangshen-yucunxiaoxue/full-scroll-overview-3840.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png",
+      "notes": "含题跋的全卷细带总览，3840×249。不是八镜主画面，也不拿整文件横长当画心219.5厘米。约288MB母版不在仓库。Commons PD-scan 标签不是故宫书面授权。"
+    },
+    {
       "id": "cover-snow-stitch",
       "kind": "graphic",
-      "notes": "Cover layout only, 1728×2304. Underlying crop stays Palace Museum 新00093902. Hook line: 一卷小雪，三段景色对不上. No product name. Supply your own permitted local file; media is not distributed."
+      "path": "../assets/wangshen-yucunxiaoxue/cover-3x4.jpg",
+      "notes": "封面底图 1728×2304，画心竖裁，故宫新00093902。钩子句另行排字：一卷小雪，三段景色对不上。不出现产品名。工作图已在仓库；约288MB母版不在仓库。Commons PD-scan 标签不是故宫书面授权。"
     }
   ],
   "shots": [
