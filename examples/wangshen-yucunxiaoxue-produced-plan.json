@@ -1,0 +1,345 @@
+{
+  "schema_version": 1,
+  "notes": "2026-11-04已交付并获用户认可的实测编排：120.666667秒/2896帧/22镜/59字幕，其中18条淡金重点词。视频16:9，封面4:3。南西油墨宋承担封面和篇名，宋体承担连续字幕与同字体淡金强调，文楷按需作景名、诗句和短释文。数据只作案例，非直接可渲染工程；不含单集媒体、字体文件、私人路径、音色参考或平台文件ID，复用者自行取得可用输入。",
+  "artwork": {
+    "title": "渔村小雪图",
+    "artist": "北宋 王诜",
+    "accession": "新00093902",
+    "collection": "故宫博物院",
+    "dimensions_cm": {
+      "height": 44.5,
+      "width": 219.5,
+      "scope": "画心，绢本设色；不含装裱及拖尾，按主藏馆著录"
+    },
+    "sources": [
+      "https://www.dpm.org.cn/collection/paint/234606.html",
+      "https://www.dpm.org.cn/vr/stone-moat/wyd_11.html",
+      "https://www.shanghaimuseum.net/mu/frontend/pg/m/article/id/P00002775",
+      "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    ]
+  },
+  "editing_style": "contemplative",
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 120.66666666666667
+  },
+  "cover": {
+    "width": 2304,
+    "height": 1728
+  },
+  "assets": [
+    {
+      "id": "colophon",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。来自53150×3451完整扫描；题名王字残缺保留，现代释文独立排录，流传事实据馆方说明，不把某枚未释读印章当作独立证明。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "ending",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "gap",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "ink-detail",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "mounting",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。来自53150×3451完整扫描；题名王字残缺保留，现代释文独立排录，流传事实据馆方说明，不把某枚未释读印章当作独立证明。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "opening",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。实际连续取段6500×2066，以高795px等比显示，1920px满宽视窗从右向左缓慢浏览一段；不是完整全卷。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "peak",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。修正预案偏左裁切，覆盖主峰与前后层次。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "pines",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "scroll",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。s02以A4纸21×29.7cm作同一厘米比例参照，画心44.5×219.5cm依据故宫主藏馆著录；题跋与装裱不计入画心横长。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "shore",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "snow",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "snow-detail",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "title-context",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。来自53150×3451完整扫描；题名王字残缺保留，现代释文独立排录，流传事实据馆方说明，不把某枚未释读印章当作独立证明。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "title-original",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。来自53150×3451完整扫描；题名王字残缺保留，现代释文独立排录，流传事实据馆方说明，不把某枚未释读印章当作独立证明。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "video-pines",
+      "kind": "ai-video",
+      "notes": "Seedance2.0经YouMind生成，源片1280×720/24fps/6.041667s，名义选源0.5–4.5s，另有8帧出场叠化。依据本卷局部的AI气氛延展，不承担原作证据；需自行取得本地源片。寒松片有后期AI角标；水域过亮纹线按本片原参考图局部压低，原始源片另存。"
+    },
+    {
+      "id": "video-water",
+      "kind": "ai-video",
+      "notes": "Seedance2.0经YouMind生成，源片1280×720/24fps/6.041667s，名义选源0.5–4.5s，另有8帧出场叠化。依据本卷局部的AI气氛延展，不承担原作证据；需自行取得本地源片。溪水片源自带AI标记并保留，另加来源行。"
+    },
+    {
+      "id": "village",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "village-detail",
+      "kind": "original",
+      "notes": "同件原画裁切，需自行准备可用影像；仓库不分发该媒体。",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%E7%8E%8B%E8%AF%9C%E6%B8%94%E6%9D%91%E5%B0%8F%E9%9B%AA%E5%9B%BE%E5%8D%B7.png"
+    },
+    {
+      "id": "a4-reference",
+      "kind": "graphic",
+      "notes": "自制A4纸矩形，21×29.7cm，s02与画心按同一比例合成；不是展厅照片或文物图像。"
+    },
+    {
+      "id": "cover",
+      "kind": "ai-image",
+      "notes": "GPT Image2经YouMind参考生成的无字4:3底图，再用真实南西油墨宋排字；保留底图、透明标题PNG和排字源，不含字体或媒体。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0.0,
+      "end": 7.0,
+      "purpose": "title",
+      "notes": "展卷｜opening；实际时间线摘录。",
+      "asset_id": "opening"
+    },
+    {
+      "id": "s02",
+      "start": 7.0,
+      "end": 13.5,
+      "purpose": "analysis",
+      "notes": "展卷｜scale；实际时间线摘录。",
+      "asset_id": "scroll"
+    },
+    {
+      "id": "s03",
+      "start": 13.5,
+      "end": 17.875,
+      "purpose": "analysis",
+      "notes": "渔村｜original；实际时间线摘录。",
+      "asset_id": "village"
+    },
+    {
+      "id": "s04",
+      "start": 17.875,
+      "end": 20.875,
+      "purpose": "analysis",
+      "notes": "渔村｜original；实际时间线摘录。",
+      "asset_id": "village-detail"
+    },
+    {
+      "id": "s05",
+      "start": 20.875,
+      "end": 25.958333333333332,
+      "purpose": "analysis",
+      "notes": "渔村｜original；实际时间线摘录。",
+      "asset_id": "village"
+    },
+    {
+      "id": "s06",
+      "start": 25.958333333333332,
+      "end": 29.958333333333332,
+      "purpose": "atmosphere",
+      "notes": "渔村｜ai；实际时间线摘录。",
+      "asset_id": "video-water",
+      "ai_label": "AI笔墨延展"
+    },
+    {
+      "id": "s07",
+      "start": 29.958333333333332,
+      "end": 33.666666666666664,
+      "purpose": "analysis",
+      "notes": "主峰｜original；实际时间线摘录。",
+      "asset_id": "peak"
+    },
+    {
+      "id": "s08",
+      "start": 33.666666666666664,
+      "end": 39.666666666666664,
+      "purpose": "analysis",
+      "notes": "主峰｜gap；实际时间线摘录。",
+      "asset_id": "gap"
+    },
+    {
+      "id": "s09",
+      "start": 39.666666666666664,
+      "end": 44.25,
+      "purpose": "analysis",
+      "notes": "主峰｜original；实际时间线摘录。",
+      "asset_id": "peak"
+    },
+    {
+      "id": "s10",
+      "start": 44.25,
+      "end": 49.458333333333336,
+      "purpose": "analysis",
+      "notes": "远岸｜shore；实际时间线摘录。",
+      "asset_id": "shore"
+    },
+    {
+      "id": "s11",
+      "start": 49.458333333333336,
+      "end": 52.916666666666664,
+      "purpose": "analysis",
+      "notes": "远岸｜original；实际时间线摘录。",
+      "asset_id": "pines"
+    },
+    {
+      "id": "s12",
+      "start": 52.916666666666664,
+      "end": 56.708333333333336,
+      "purpose": "analysis",
+      "notes": "远岸｜three；实际时间线摘录。同一件作品的三个局部并置，分别标渔村、主峰、烟水。",
+      "asset_ids": [
+        "village",
+        "peak",
+        "shore"
+      ]
+    },
+    {
+      "id": "s13",
+      "start": 56.708333333333336,
+      "end": 60.708333333333336,
+      "purpose": "atmosphere",
+      "notes": "远岸｜ai；实际时间线摘录。",
+      "asset_id": "video-pines",
+      "ai_label": "AI笔墨延展"
+    },
+    {
+      "id": "s14",
+      "start": 60.708333333333336,
+      "end": 68.625,
+      "purpose": "analysis",
+      "notes": "墨与雪｜original；实际时间线摘录。",
+      "asset_id": "snow"
+    },
+    {
+      "id": "s15",
+      "start": 68.625,
+      "end": 77.58333333333333,
+      "purpose": "analysis",
+      "notes": "墨与雪｜snow；实际时间线摘录。雪峰与寒林原图并置，白粉信息明确归于馆方说明。",
+      "asset_ids": [
+        "snow-detail",
+        "ink-detail"
+      ]
+    },
+    {
+      "id": "s16",
+      "start": 77.58333333333333,
+      "end": 80.58333333333333,
+      "purpose": "analysis",
+      "notes": "题与印｜mounting；实际时间线摘录。",
+      "asset_id": "mounting"
+    },
+    {
+      "id": "s17",
+      "start": 80.58333333333333,
+      "end": 88.0,
+      "purpose": "analysis",
+      "notes": "题与印｜title-detail；实际时间线摘录。",
+      "asset_id": "title-original"
+    },
+    {
+      "id": "s18",
+      "start": 88.0,
+      "end": 94.75,
+      "purpose": "analysis",
+      "notes": "题与印｜title-context；实际时间线摘录。",
+      "asset_ids": [
+        "title-context",
+        "title-original"
+      ]
+    },
+    {
+      "id": "s19",
+      "start": 94.75,
+      "end": 102.125,
+      "purpose": "analysis",
+      "notes": "流传｜history；实际时间线摘录。",
+      "asset_id": "colophon"
+    },
+    {
+      "id": "s20",
+      "start": 102.125,
+      "end": 105.66666666666667,
+      "purpose": "analysis",
+      "notes": "流传｜original；实际时间线摘录。",
+      "asset_id": "shore"
+    },
+    {
+      "id": "s21",
+      "start": 105.66666666666667,
+      "end": 112.66666666666667,
+      "purpose": "analysis",
+      "notes": "回望｜three；实际时间线摘录。同一件作品的三个局部并置，分别标渔村、主峰、烟水。",
+      "asset_ids": [
+        "village",
+        "peak",
+        "shore"
+      ]
+    },
+    {
+      "id": "s22",
+      "start": 112.66666666666667,
+      "end": 120.66666666666667,
+      "purpose": "analysis",
+      "notes": "回望｜ending；实际时间线摘录。",
+      "asset_id": "ending"
+    }
+  ]
+}

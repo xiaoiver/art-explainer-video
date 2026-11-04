@@ -87,7 +87,7 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |
 | [音效选材与来源台账](references/sound-sourcing.md) | 外录/自录与生成声音的选择、逐镜头声音表、源片段、许可署名和跨集复用 |
 | [声音计划检查](scripts/validate_sound.py) | 可选本地音频探测、SHA-256、片段能量分析、CSV声音表与署名导出 |
-| [字体与文字层级](references/typography.md) | 本系列最新收拢为文楷短标题与宋体字幕；古画封面延续传统宋体，多字体探索归入历史案例 |
+| [字体与文字层级](references/typography.md) | 南西油墨宋封面与篇名、宋体字幕及淡金重点词、文楷诗句短释文；真实排字与原生回退检查 |
 | [封面的画字融合](references/cover-design.md) | 古画传统字体、纸绢留白、参考图生图与独立排字的选择，以及两次封面修订 |
 | [剪辑与交付](references/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
 | [横竖版与重新构图](references/formats.md) | 方向选择、原画局部、宽幅全景、字幕安全区与素材复用 |
@@ -100,6 +100,8 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 
 | 文件 | 用途 |
 | --- | --- |
+| [渔村小雪图制作案例](references/wangshen-yucunxiaoxue-produced-case.md) | 120.667秒、22镜、59条字幕：三段视角、题名流传、南西油墨宋封面与剪映字体兼容性取舍 |
+| [渔村小雪图实测编排](examples/wangshen-yucunxiaoxue-produced-plan.json) | 16:9视频、4:3封面、两段AI笔墨延展的实际时码；不含媒体或私人路径 |
 | [双画趣味比较草案](examples/multi-artwork-playful-plan.json) | 范宽/郭熙两幅山水围绕视线入口比较；含贴纸/运镜/声音提示，90秒预估，无媒体或成片 |
 | [瑞鹤图音效选材草案](examples/ruihe-sound-draft.json) | 下一版真实风声/鹤鸣的待选时码示例，不含录音、不改写既有生成音轨来源 |
 | [美国哥特式案例](references/american-gothic-case.md) | 人物小剧场、剪映v4与带片头v5、原画回归、4:3封面和致敬文案 |
@@ -138,6 +140,7 @@ python3 scripts/validate_plan.py examples/qianli-jiangshan-plan.json
 python3 scripts/validate_plan.py examples/bada-heshi-shuiniu-plan.json
 python3 scripts/validate_plan.py examples/jiebo-guiqu-plan.json
 python3 scripts/validate_plan.py examples/jiebo-guiqu-produced-plan.json
+python3 scripts/validate_plan.py examples/wangshen-yucunxiaoxue-produced-plan.json
 python3 scripts/validate_plan.py examples/american-gothic-theatre.json
 python3 scripts/validate_plan.py examples/multi-artwork-playful-plan.json
 python3 scripts/validate_sound.py examples/ruihe-sound-draft.json
@@ -188,13 +191,19 @@ node --experimental-strip-types --test tests/test_long_scroll.mjs
 
 ### 封面画字融合示例
 
-本系列古画封面优先传统字体，让文字自然落在纸绢留白，与山水共同构图。需要重构时用参考图生图；需要准确字体文件或可编辑文字时，采用无字底图加独立排字。方法见[封面的画字融合](references/cover-design.md)。视频短标题与底部字幕仍按各自角色选择字体。
+本系列古画封面优先传统字体，让文字自然落在纸绢留白，与山水共同构图。当前固定分工为：南西油墨宋用于封面与视频篇名，宋体用于连续字幕及同字体淡金重点词，文楷按需用于景名、诗句与短释文。需要准确字体文件时，用参考生成的无字底图加真实字体排字。方法见[字体分工](references/typography.md)与[封面的画字融合](references/cover-design.md)。
 
 | 《富春山居图》横版封面v3 | 《千里江山图》封面v2 |
 | :---: | :---: |
 | <img src="docs/shots/fuchun-cover.webp" alt="富春山居图4:3生成封面：纸断了，山水还在。宋体风格文字融入暖米白纸本水墨留白" width="100%" /> | <img src="docs/shots/qianli-cover.webp" alt="千里江山图4:3生成封面：一卷青绿，如何铺开千里江山？宋体风格文字融入青绿山水绢底" width="100%" /> |
 
 这是2026-10-31后续重做的本地封面预览，尚未替换已发布笔记的封面。两张均通过YouMind的GPT Image 2参考生成，原图各为2304×1728，已核对文字、缩略图和Board可见性。封面属于创意重构，非原画复制品；随图文字不是准确字体文件或独立文字层。实际做法见[富春山居图案例](references/fuchun-shanju-case.md#后续封面v3传统字体融入纸本水墨)与[千里江山图案例](references/qianli-jiangshan-case.md#当前交付与融合封面2026-10-31)。
+
+### 《渔村小雪图》：真实字体排字
+
+<img src="docs/shots/wangshen-cover.webp" alt="渔村小雪图4:3封面：YouMind生成无字古绢雪景底图，真实南西油墨宋独立排字，一卷雪景／三次换景" width="640" />
+
+2026-11-04本地完成120.667秒横版视频，用户已确认满意。封面先用YouMind参考生成无字底图，再使用真实南西油墨宋字体排字；上图是创意重构的缩略图，字体文件由使用者自备。本库不分发该字体或单集原画母版。[制作案例](references/wangshen-yucunxiaoxue-produced-case.md)记录了22镜、59条宋体字幕、题名流传与剪映字体回退的取舍；[实测编排](examples/wangshen-yucunxiaoxue-produced-plan.json)不含媒体或私人路径。
 
 ## 「名画开小差」与《美国哥特式》
 
