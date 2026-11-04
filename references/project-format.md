@@ -1,6 +1,6 @@
 # 可选计划文件
 
-`scripts/validate_plan.py` 只读检查以下轻量格式。它不是 Open Montage 或剪映的输入 schema；既有工程可以保留自己的格式，不必为了本 skill 重建。下列时间单位均为秒。
+`scripts/validate_plan.py` 只读检查以下轻量格式。它是本 skill 的可选制作计划，不是 Remotion 或剪映的输入 schema；既有工程可以保留自己的格式，不必为了本 skill 重建。下列时间单位均为秒。Remotion 使用自己的入口与 props，渲染接入见 [独立渲染](remotion-rendering.md)。
 
 | 字段 | 含义 |
 | --- | --- |

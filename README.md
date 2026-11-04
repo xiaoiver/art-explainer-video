@@ -5,9 +5,9 @@
 
 把一幅画做成有依据、保留原作质感的赏析视频。由《溪山行旅图》《早春图》《雪中猎人》《汉宫春晓图》《富春山居图》《千里江山图》以及「名画开小差」片头与《美国哥特式》的实际制作过程整理，供支持 `SKILL.md` 的智能体使用。
 
-支持单画赏析、同一或不同艺术家的多作品解读，以及画中人物虚构对白小剧场；剪辑可选沉静赏析或快节奏、丰富贴纸与音效的趣味艺术史。覆盖原画研究、讲解脚本、按叙事需要交代原作尺幅、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。已实践的工具组合是 YouMind、Seed Audio、Open Montage、Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。
+支持单画赏析、同一或不同艺术家的多作品解读，以及画中人物虚构对白小剧场；剪辑可选沉静赏析或快节奏、丰富贴纸与音效的趣味艺术史。覆盖原画研究、讲解脚本、按叙事需要交代原作尺幅、AI 动态试样、统一音色、BGM 与音效、字幕精剪、封面和发布文案。当前工具组合是 YouMind、Seed Audio、直接运行的 Remotion / FFmpeg 与剪映；可按任务替换或只执行其中一部分。**新制作不依赖 Open Montage**。
 
-本仓库提供制作方法与计划检查脚本，**不是一键渲染器**。媒体服务与剪辑软件需要使用者自己的访问权限；本仓库不包含凭据、单集原画母版、完整单集视频或私人项目链接。附带示例静帧、原创合成人物尺幅素材，以及可直接使用的「名画开小差」片头MP4和音乐/音效分轨。
+本仓库提供制作方法、计划检查和可选的本地渲染脚本；完整制作仍需要作品资料、素材、脚本与相应服务权限。本仓库不包含凭据、单集原画母版、完整单集视频或私人项目链接。附带示例静帧、原创合成人物尺幅素材，以及可直接使用的「名画开小差」片头MP4和音乐/音效分轨。
 
 ## 作品截图
 
@@ -33,6 +33,8 @@ gh repo clone xiaoiver/art-explainer-video ~/.codex/skills/art-explainer-video
 ```
 
 目标目录应不存在；已有安装请在该目录查看更改后更新。其他支持 Agent Skills 的工具可将仓库放入其技能目录。入口是 [SKILL.md](SKILL.md)。
+
+需要本地画面渲染时，复制 [最小 Remotion 环境](assets/remotion-runtime/package.json) 到自己的项目并执行 `npm ci`，再用 [render_remotion.py](scripts/render_remotion.py) 或官方 CLI。运行环境只声明 Remotion CLI、Remotion、React、React DOM 四个直接依赖，并附依赖锁文件；不需要旧框架的仓库或指令。安装、代表帧检查、短样和整片命令见 [独立渲染](references/remotion-rendering.md)。只做研究、脚本或复用现成片头时无需安装它。
 
 示例请求：
 
@@ -83,7 +85,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [尺幅参照人物](references/scale-reference.md) | 自然站姿透明 PNG、可见身高边界、等比缩放脚本与横竖版合成方法 |
 | [顶部章节导航](references/chapter-navigation.md) | 竖版固定章节栏、当前段高亮、React组件与《万壑松风图》实际时码示例 |
 | [题跋与印章](references/inscriptions-and-seals.md) | 从题名、后人观看与收藏流传中选取有依据的故事 |
-| [工具接入](references/tooling.md) | YouMind、Seed Audio、Open Montage 的接入与恢复 |
+| [工具接入](references/tooling.md) | YouMind、Seed Audio、独立 Remotion / FFmpeg 的接入与恢复 |
+| [独立 Remotion 渲染](references/remotion-rendering.md) | 最小运行环境、本地 CLI、代表帧与短样、计划预检及渲染报告 |
+| [直接渲染脚本](scripts/render_remotion.py) | 调用已安装 CLI，成功探测后落盘，保留运行报告；不自动安装或生成素材 |
 | [声音制作](references/audio.md) | 音色试样、分轨、循环与时间校准 |
 | [音效选材与来源台账](references/sound-sourcing.md) | 外录/自录与生成声音的选择、逐镜头声音表、源片段、许可署名和跨集复用 |
 | [声音计划检查](scripts/validate_sound.py) | 可选本地音频探测、SHA-256、片段能量分析、CSV声音表与署名导出 |
@@ -96,10 +100,11 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 
 ## 案例与示例
 
-以下是已完成制作的复盘，以及可校验的分镜计划，不是默认工作流地图。
+以下是已完成制作的复盘，以及可校验的分镜计划，不是默认工作流地图。部分早期案例保留当时实际使用 Open Montage 的记录；新项目按当前独立渲染路线执行，无需安装该历史框架。
 
 | 文件 | 用途 |
 | --- | --- |
+| [捣练图实测编排](examples/daolian-produced-plan.json) | 125.458秒、22镜、4:3封面；复用此片验证独立 Remotion 渲染，不含媒体 |
 | [渔村小雪图制作案例](references/wangshen-yucunxiaoxue-produced-case.md) | 120.667秒、22镜、59条字幕：三段视角、题名流传、南西油墨宋封面与剪映字体兼容性取舍 |
 | [渔村小雪图实测编排](examples/wangshen-yucunxiaoxue-produced-plan.json) | 16:9视频、4:3封面、两段AI笔墨延展的实际时码；不含媒体或私人路径 |
 | [双画趣味比较草案](examples/multi-artwork-playful-plan.json) | 范宽/郭熙两幅山水围绕视线入口比较；含贴纸/运镜/声音提示，90秒预估，无媒体或成片 |
@@ -141,6 +146,7 @@ python3 scripts/validate_plan.py examples/bada-heshi-shuiniu-plan.json
 python3 scripts/validate_plan.py examples/jiebo-guiqu-plan.json
 python3 scripts/validate_plan.py examples/jiebo-guiqu-produced-plan.json
 python3 scripts/validate_plan.py examples/wangshen-yucunxiaoxue-produced-plan.json
+python3 scripts/validate_plan.py examples/daolian-produced-plan.json
 python3 scripts/validate_plan.py examples/american-gothic-theatre.json
 python3 scripts/validate_plan.py examples/multi-artwork-playful-plan.json
 python3 scripts/validate_sound.py examples/ruihe-sound-draft.json

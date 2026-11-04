@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "artwork": {
+    "title": "捣练图",
+    "artist": "传宋徽宗摹唐代张萱",
+    "accession": "12.886",
+    "collection": "波士顿美术博物馆",
+    "dimensions_cm": {
+      "height": 37.1,
+      "width": 145,
+      "scope": "画心；装裱全卷37.7×466cm另记。芝加哥资料另记37.7×146cm，测量差异不作推断。"
+    },
+    "sources": [
+      "https://www.mfa.org/news/court-ladies-or-pin-up-girls",
+      "https://scrolls.uchicago.edu/view-scroll/42",
+      "https://www.hws.edu/alum/pssSpring21/blanchard.aspx",
+      "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "https://omekas.prattsi.org/s/HistoryofBlue/item/1859",
+      "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/EA17C20866613AE9DEFDCACD8019F807/S2059163223000130a.pdf/picturing-parental-love-for-girls-in-song-960-1279-china.pdf",
+      "https://www.npm.gov.tw/NewChineseArtDownload.ashx?bid=3898"
+    ]
+  },
+  "editing_style": "contemplative",
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 125.45833333333333
+  },
+  "cover": {
+    "width": 2304,
+    "height": 1728
+  },
+  "assets": [
+    {
+      "id": "child",
+      "kind": "original",
+      "path": "assets/child.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "cloth-detail",
+      "kind": "original",
+      "path": "assets/cloth-detail.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "cloth-right",
+      "kind": "original",
+      "path": "assets/cloth-right.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "fan",
+      "kind": "original",
+      "path": "assets/fan.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "painting",
+      "kind": "original",
+      "path": "assets/painting.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "pound",
+      "kind": "original",
+      "path": "assets/pound.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "pound-hands",
+      "kind": "original",
+      "path": "assets/pound-hands.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "reference-pound",
+      "kind": "original",
+      "path": "assets/reference-pound.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "reference-silk",
+      "kind": "original",
+      "path": "assets/reference-silk.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "silk",
+      "kind": "original",
+      "path": "assets/silk.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "thread",
+      "kind": "original",
+      "path": "assets/thread.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "thread-hands",
+      "kind": "original",
+      "path": "assets/thread-hands.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "title-context",
+      "kind": "original",
+      "path": "assets/title-context.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "同件12.886全卷原图裁切；无生成修补。画心排除左侧锦绫装裱；题字镜头单列保留装裱题签。详见research/crop-map.json。"
+    },
+    {
+      "id": "video-pound",
+      "kind": "ai-video",
+      "path": "assets/video-pound.mp4",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "依据同件原画局部生成的工笔微动；全段标明AI画意演绎，不作证据。"
+    },
+    {
+      "id": "video-silk",
+      "kind": "ai-video",
+      "path": "assets/video-silk.mp4",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Court_Ladies_Preparing_Newly_Woven_Silk.jpg",
+      "notes": "依据同件原画局部生成的工笔微动；全段标明AI画意演绎，不作证据。"
+    },
+    {
+      "id": "audio-narration",
+      "kind": "audio",
+      "path": "audio/narration.wav",
+      "notes": "独立48kHz立体声；生成性质、原始时长、循环、拟音时码见pipeline/sound-cues.json。"
+    },
+    {
+      "id": "audio-bgm",
+      "kind": "audio",
+      "path": "audio/bgm.wav",
+      "notes": "独立48kHz立体声；生成性质、原始时长、循环、拟音时码见pipeline/sound-cues.json。"
+    },
+    {
+      "id": "audio-sfx",
+      "kind": "audio",
+      "path": "audio/sfx.wav",
+      "notes": "独立48kHz立体声；生成性质、原始时长、循环、拟音时码见pipeline/sound-cues.json。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0.0,
+      "end": 11.666666666666666,
+      "purpose": "title",
+      "notes": "入卷；scroll；8帧完整布局叠化。",
+      "asset_id": "painting"
+    },
+    {
+      "id": "s02",
+      "start": 11.666666666666666,
+      "end": 19.166666666666668,
+      "purpose": "title",
+      "notes": "尺幅；hero；8帧完整布局叠化。",
+      "asset_id": "painting"
+    },
+    {
+      "id": "s03",
+      "start": 19.166666666666668,
+      "end": 27.291666666666668,
+      "purpose": "analysis",
+      "notes": "尺幅；scale；8帧完整布局叠化。",
+      "asset_id": "painting"
+    },
+    {
+      "id": "s04",
+      "start": 27.291666666666668,
+      "end": 33.916666666666664,
+      "purpose": "analysis",
+      "notes": "捣练；original；8帧完整布局叠化。",
+      "asset_id": "pound"
+    },
+    {
+      "id": "s05",
+      "start": 33.916666666666664,
+      "end": 38.541666666666664,
+      "purpose": "analysis",
+      "notes": "捣练；original；8帧完整布局叠化。",
+      "asset_id": "pound-hands"
+    },
+    {
+      "id": "s06",
+      "start": 38.541666666666664,
+      "end": 41.708333333333336,
+      "purpose": "analysis",
+      "notes": "捣练；original；8帧完整布局叠化。",
+      "asset_id": "reference-pound"
+    },
+    {
+      "id": "s07",
+      "start": 41.708333333333336,
+      "end": 45.958333333333336,
+      "purpose": "atmosphere",
+      "notes": "捣练；ai；8帧完整布局叠化。",
+      "asset_id": "video-pound",
+      "ai_label": "AI画意演绎"
+    },
+    {
+      "id": "s08",
+      "start": 45.958333333333336,
+      "end": 52.5,
+      "purpose": "analysis",
+      "notes": "理线；original；8帧完整布局叠化。",
+      "asset_id": "thread"
+    },
+    {
+      "id": "s09",
+      "start": 52.5,
+      "end": 55.791666666666664,
+      "purpose": "analysis",
+      "notes": "理线；original；8帧完整布局叠化。",
+      "asset_id": "thread-hands"
+    },
+    {
+      "id": "s10",
+      "start": 55.791666666666664,
+      "end": 60.625,
+      "purpose": "analysis",
+      "notes": "理线；original；8帧完整布局叠化。",
+      "asset_id": "thread"
+    },
+    {
+      "id": "s11",
+      "start": 60.625,
+      "end": 66.5,
+      "purpose": "analysis",
+      "notes": "熨绢；original；8帧完整布局叠化。",
+      "asset_id": "silk"
+    },
+    {
+      "id": "s12",
+      "start": 66.5,
+      "end": 71.29166666666667,
+      "purpose": "analysis",
+      "notes": "熨绢；original；8帧完整布局叠化。",
+      "asset_ids": [
+        "cloth-right",
+        "silk"
+      ]
+    },
+    {
+      "id": "s13",
+      "start": 71.29166666666667,
+      "end": 75.04166666666667,
+      "purpose": "analysis",
+      "notes": "熨绢；silk-return；8帧完整布局叠化。",
+      "asset_id": "reference-silk"
+    },
+    {
+      "id": "s14",
+      "start": 75.04166666666667,
+      "end": 79.29166666666667,
+      "purpose": "atmosphere",
+      "notes": "熨绢；ai；8帧完整布局叠化。",
+      "asset_id": "video-silk",
+      "ai_label": "AI画意演绎"
+    },
+    {
+      "id": "s15",
+      "start": 79.29166666666667,
+      "end": 85.0,
+      "purpose": "analysis",
+      "notes": "童趣；original；8帧完整布局叠化。",
+      "asset_id": "fan"
+    },
+    {
+      "id": "s16",
+      "start": 85.0,
+      "end": 88.25,
+      "purpose": "analysis",
+      "notes": "童趣；original；8帧完整布局叠化。",
+      "asset_id": "child"
+    },
+    {
+      "id": "s17",
+      "start": 88.25,
+      "end": 93.16666666666667,
+      "purpose": "analysis",
+      "notes": "童趣；original；8帧完整布局叠化。",
+      "asset_id": "silk"
+    },
+    {
+      "id": "s18",
+      "start": 93.16666666666667,
+      "end": 97.33333333333333,
+      "purpose": "analysis",
+      "notes": "题字；title-detail；8帧完整布局叠化。",
+      "asset_id": "title-context"
+    },
+    {
+      "id": "s19",
+      "start": 97.33333333333333,
+      "end": 101.79166666666667,
+      "purpose": "analysis",
+      "notes": "题字；title-detail；8帧完整布局叠化。",
+      "asset_id": "title-context"
+    },
+    {
+      "id": "s20",
+      "start": 101.79166666666667,
+      "end": 108.79166666666667,
+      "purpose": "analysis",
+      "notes": "题字；provenance；8帧完整布局叠化。",
+      "asset_id": "title-context"
+    },
+    {
+      "id": "s21",
+      "start": 108.79166666666667,
+      "end": 118.04166666666667,
+      "purpose": "analysis",
+      "notes": "回望；rhythm；8帧完整布局叠化。",
+      "asset_ids": [
+        "cloth-right",
+        "pound-hands",
+        "cloth-detail"
+      ]
+    },
+    {
+      "id": "s22",
+      "start": 118.04166666666667,
+      "end": 125.45833333333333,
+      "purpose": "analysis",
+      "notes": "回望；ending；8帧完整布局叠化。",
+      "asset_id": "painting"
+    }
+  ],
+  "deliverables": {
+    "video": "outputs/daolian-16x9.mp4",
+    "cover": "outputs/cover-4x3.png"
+  },
+  "notes": "开头原画右侧局部满宽慢展卷，不宣称短时间滚完整卷。A4同厘米尺度参照在持续细读前。原画解释动作与题字，AI只作有限想象性微动。南西油墨宋篇名，宋体无底板解说、同字族淡金重点词，文楷现代释文。 本例摘录已经完成的时间线；后续直接Remotion迁移验证不重新生成素材。素材路径需由使用者填充，不包含媒体。"
+}

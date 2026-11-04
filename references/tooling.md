@@ -22,9 +22,11 @@ CLI 路线先用帮助发现功能，再通过 `youmind info` 查看目标操作
 
 需要生成BGM或音效时可使用同一模型；现有或外录素材的选取与台账另见[音效选材](sound-sourcing.md)。生成结果的真实时长须实测，不能把提示词里的“生成 90 秒”当成已生成 90 秒。声音处理见 [声音制作](audio.md)。
 
-## Open Montage、Remotion 与 FFmpeg
+## Remotion 与 FFmpeg：独立运行
 
-项目：[Open Montage](https://github.com/calesthio/OpenMontage)。有已安装技能时先读取，再选择适合混合原画与生成素材的编排方式。也可以沿用现有剪辑工程，不必重建。
+直接使用项目自己的 React / Remotion 构图与官方 CLI；混音、字幕合成和最终编码按项目需要使用 FFmpeg。新流程不安装 Open Montage、不调用其 VideoCompose / CompositionValidator，也不读取其流程指令。旧案例保留实际制作记录，不作为新项目的依赖清单。
+
+最小环境与操作见 [独立 Remotion 渲染](remotion-rendering.md)。可选 `scripts/render_remotion.py` 直接调用本地安装的 CLI，支持代表帧、短范围测试、整片渲染、计划与素材预检、输出探测和运行报告；它不会下载生成素材或自行安装依赖。也可以直接用官方 CLI，沿用既有剪辑工程时无需重建。
 
 仅在实际需要渲染时准备环境，记录版本和安装位置，不预设本机路径。检查 Python、Node、FFmpeg / ffprobe、渲染器与浏览器是否满足所选路线。缺少某个字幕滤镜不一定需要重编译 FFmpeg，可使用现有 Remotion 或原生剪辑字幕。
 
@@ -33,7 +35,7 @@ CLI 路线先用帮助发现功能，再通过 `youmind info` 查看目标操作
 - Remotion 的公开媒体目录使用真实文件；符号链接媒体曾导致资源 404。源码或依赖链接是否可用应单独验证。
 - 渲染前用一个代表镜头测试资源、字体和浏览器，确认后再跑整片。
 - `amix` 的自动归一化可能随同时输入数量改变音量；明确配置并验证实际混音。
-- 本次 Open Montage 包装层对 sidechain 压缩的 attack / release 单位处理与 FFmpeg 不一致。检查当前实现和 `ffmpeg -h filter=sidechaincompress`，不要固定沿用历史补偿数值。
+- 混音直接按当前 FFmpeg 的单位传入 attack / release，可用 `ffmpeg -h filter=sidechaincompress` 核对，不沿用旧包装层的补偿数值。
 - 混音输出可能略短，必要时显式补齐与裁切到画面时长，再送入剪辑器。不要靠伪造源时长让工程编译通过。
 
 依赖环境缺失时先完成脚本、分镜等独立工作；安装仅限所选路线需要的组件，不能因自动安装脚本失败就运行来源不明的替代包。
