@@ -42,6 +42,8 @@ CLI 路线先用帮助发现功能，再通过 `youmind info` 查看目标操作
 
 ## 剪映 / CapCut
 
+检测到可用原生应用时，默认用它完成最终精剪与可编辑字幕制作；无烧录字幕底片、分轨声音、原生验收与本地导出要求见 [剪辑与交付](editing-delivery.md)。原生应用不可用或用户另选时再走其他交付路线。
+
 可用路线：[capcut-cli 的 capcut-edit](https://github.com/renezander030/capcut-cli)。它是第三方项目；安装前核对当前来源、版本与平台兼容性。它与剪映原生桌面软件分别检测。
 
 参照实际 CLI 帮助 / schema 编译工程，先检查再写入。不要将本次 CLI 版本、模板或字号值当作跨版本保证。原生工程处理和导出见 [剪辑与交付](editing-delivery.md)。
