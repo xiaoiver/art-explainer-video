@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "notes": "《读画》制作前提案，语义脚本 gallery-mate-licheng-qingluanxiaosi。2026-11-05 整理，约 60 秒、8 镜，口播 202 个汉字（不计标点），配音前预估。主钩子是大山堂堂与近、中、远三条景深：楼阁与桥、寺塔、主峰，瀑布把景深串起来。归属只用一句：无作者款，现名后加，难证亲笔，构图仍是李成、郭熙一脉的北宋范式。不采用笔记封面误题《溪山行旅图》，不说宣和画谱未收，不把郭熙写成弟子。特展「传奇山水」只在片尾用过去时轻提。口播、字幕、片尾与封面标题不出现品牌名。尚未制作成片，仓库不分发媒体。",
+  "editing_style": "contemplative",
+  "artwork": {
+    "title": "晴峦萧寺",
+    "artist": "北宋（传）李成",
+    "collection": "纳尔逊-阿特金斯艺术博物馆",
+    "accession": "47-71",
+    "sources": [
+      "https://art.nelson-atkins.org/objects/641/a-solitary-temple-amid-clearing-peaks",
+      "https://art.nelson-atkins.org/internal/media/dispatcher/178383/full",
+      "https://art.nelson-atkins.org/rights",
+      "https://commons.wikimedia.org/wiki/File:Li_Cheng_-_A_Solitary_Temple_Amid_Clearing_Peaks_-_Google_Art_Project.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bf/Li_Cheng_-_A_Solitary_Temple_Amid_Clearing_Peaks_-_Google_Art_Project.jpg",
+      "https://commons.wikimedia.org/wiki/Category:A_Solitary_Temple_Amid_Clearing_Peaks",
+      "https://www.nelson-atkins.org/art/exhibitions/legendary-landscapes-sublime-visions-from-chinas-song-dynasty/",
+      "https://www.thepaper.cn/newsDetail_forward_32746192",
+      "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/I00011786",
+      "https://zh.wikisource.org/zh-hans/%E5%AE%A3%E5%92%8C%E7%95%AB%E8%AD%9C/%E5%8D%B7%E5%8D%81%E4%B8%80"
+    ],
+    "dimensions_cm": {
+      "height": 111.76,
+      "width": 55.88,
+      "scope": "画心 Image。馆方页 44 × 22 inches（111.76 × 55.88 cm），绢本立轴，墨笔淡设色，文物号 47-71。外表 Overall 含 1.5 英寸悬挂绳，88 × 22.5 inches（223.52 × 57.15 cm），不用于比例尺，也不进旁白。检索 2026-11-05。",
+      "accessed": "2026-11-05"
+    }
+  },
+  "video": {
+    "orientation": "landscape",
+    "width": 1920,
+    "height": 1080,
+    "fps": 24,
+    "duration_seconds": 60
+  },
+  "cover": {
+    "width": 1728,
+    "height": 2304
+  },
+  "narration": {
+    "hanzi_count": 202,
+    "count_note": "只计汉字与〇，不计标点、引号和间隔。配音前预估。归属句 47 字落在 12 秒内，约 3.9 字/秒；全片 202 字对 60 秒，连停顿平均约 3.4 字/秒。实际配音后重排。",
+    "lines": [
+      {"id": "s01", "hanzi": 20, "text": "这座山，堂堂立在绢的正中。近处是人，高处才是天。"},
+      {"id": "s02", "hanzi": 11, "text": "先看全幅：画心高一米一二。"},
+      {"id": "s03", "hanzi": 29, "text": "最底下，离我们最近：临水的楼阁，檐下挑着酒幌。有人从左下过来，走向桥。"},
+      {"id": "s04", "hanzi": 23, "text": "山沟里，寺和塔叠在一起。塔造得很密，尖顶指着更高的山。"},
+      {"id": "s05", "hanzi": 34, "text": "主峰从后面拔起来，撑住整幅画。人、寺、主峰，由近到远叠成三条。瀑布再把它们串起来。"},
+      {"id": "s06", "hanzi": 47, "text": "没有李成落款。米芾早叹过真迹难寻，这个名字也是后来加上的。即便难证是他亲笔，仍是李成、郭熙一脉的北宋样子。"},
+      {"id": "s07", "hanzi": 18, "text": "二〇一二年在上海，灯很暗，许多细处没看清。"},
+      {"id": "s08", "hanzi": 20, "text": "今年夏天，它在纳尔逊「传奇山水」里。山还是这座山。"}
+    ]
+  },
+  "assets": [
+    {
+      "id": "whole-scroll",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Li_Cheng_-_A_Solitary_Temple_Amid_Clearing_Peaks_-_Google_Art_Project.jpg",
+      "notes": "同一件 47-71 全幅，供 s01、s02、s06、s07、s08。直链 https://upload.wikimedia.org/wikipedia/commons/b/bf/Li_Cheng_-_A_Solitary_Temple_Amid_Clearing_Peaks_-_Google_Art_Project.jpg （2010×4001，3336658 字节，约 35.8 像素/厘米）。馆方尺寸页 https://art.nelson-atkins.org/objects/641/a-solitary-temple-amid-clearing-peaks 画心纵 111.76 × 横 55.88 厘米。s02 在剪辑中于画侧叠加 graphic「scale-silhouette」，170 厘米参照，画高/人高=111.76/170 约 65.7%，标「纵111.76 × 横55.88厘米 · 按馆方尺寸示意」。不用外表 223.52 厘米。Commons 的公有领域扫描标签不是馆方书面授权。馆方公开预览仅 502×1000。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "near-village",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Li_Cheng_-_A_Solitary_Temple_Amid_Clearing_Peaks_-_Google_Art_Project.jpg",
+      "notes": "s03 近景。同一件 47-71 的下段：临水楼阁、木桥、左下朝桥而来的人。檐下竖幌与观展笔记的酒幌位置相符；公开扫描读不出「酒」字，配音前用馆方高清复核，读不出则口播改「幌子」。不报死人数。屏风字画不讲。可叠红色观看辅助线，线不是原画。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "temple-pagoda",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Li_Cheng_-_A_Solitary_Temple_Amid_Clearing_Peaks_-_Google_Art_Project.jpg",
+      "notes": "s04 中景寺塔。同一件 47-71。多层塔以原画为准。山道若在高清里看不清，不加引导线，旁白也不依赖它。可叠蓝色观看辅助线。不讲蟹爪。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "peaks-falls",
+      "kind": "original",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Li_Cheng_-_A_Solitary_Temple_Amid_Clearing_Peaks_-_Google_Art_Project.jpg",
+      "notes": "s05 主峰与瀑布。同一件 47-71。公开扫描可见左侧崖壁不止一段落水，右侧也有水；笔记记左二右一。口播只说瀑布把景深串起来，不报叠数。可叠黄色观看辅助线标主峰。右上角朱印不认读。Supply your own permitted local file; media is not distributed."
+    },
+    {
+      "id": "scale-silhouette",
+      "kind": "graphic",
+      "path": "../../assets/scale-reference/viewer-standing-left.png",
+      "notes": "仓库内原创成人侧立剪影，只叠加在 s02，不作为该镜主画面。可见身高按 assets/scale-reference/viewer-standing-left.json，参照 170 厘米。不是展厅真人，也不能证明 111.76 厘米。"
+    }
+  ],
+  "shots": [
+    {
+      "id": "s01",
+      "start": 0,
+      "end": 6,
+      "asset_id": "whole-scroll",
+      "purpose": "analysis",
+      "notes": "hook。这座山，堂堂立在绢的正中。近处是人，高处才是天。全幅先停在主峰，再让观众感到上重下轻。20 字。"
+    },
+    {
+      "id": "s02",
+      "start": 6,
+      "end": 11,
+      "asset_id": "whole-scroll",
+      "purpose": "analysis",
+      "notes": "scale。先看全幅：画心高一米一二。原画全幅为主画面，叠加 170cm 参照，111.76/170 约 65.7%，标纵111.76 × 横55.88厘米 · 按馆方尺寸示意。早于 s03 的持续局部。不能说约一人高，也不能改用外表 223.52 厘米。11 字。"
+    },
+    {
+      "id": "s03",
+      "start": 11,
+      "end": 20,
+      "asset_id": "near-village",
+      "purpose": "analysis",
+      "notes": "near。最底下，离我们最近：临水的楼阁，檐下挑着酒幌。有人从左下过来，走向桥。红色辅助线可标这一段，并注明是观看辅助。酒幌待高清复核。29 字。"
+    },
+    {
+      "id": "s04",
+      "start": 20,
+      "end": 28,
+      "asset_id": "temple-pagoda",
+      "purpose": "analysis",
+      "notes": "temple。山沟里，寺和塔叠在一起。塔造得很密，尖顶指着更高的山。蓝色辅助线可标中景。不画看不清的山道。23 字。"
+    },
+    {
+      "id": "s05",
+      "start": 28,
+      "end": 38,
+      "asset_id": "peaks-falls",
+      "purpose": "analysis",
+      "notes": "depths。主峰从后面拔起来，撑住整幅画。人、寺、主峰，由近到远叠成三条。瀑布再把它们串起来。黄色辅助线只标主峰范围。不报瀑布叠数。34 字。"
+    },
+    {
+      "id": "s06",
+      "start": 38,
+      "end": 50,
+      "asset_id": "whole-scroll",
+      "purpose": "analysis",
+      "notes": "attribution。没有李成落款。米芾早叹过真迹难寻，这个名字也是后来加上的。即便难证是他亲笔，仍是李成、郭熙一脉的北宋样子。不说画谱未收，不说郭熙是弟子，不认印，不讲蟹爪。47 字，约 3.9 字/秒。"
+    },
+    {
+      "id": "s07",
+      "start": 50,
+      "end": 55,
+      "asset_id": "whole-scroll",
+      "purpose": "analysis",
+      "notes": "memory。二〇一二年在上海，灯很暗，许多细处没看清。这是观展笔记里的个人记忆，不是馆方事实。不念两套展期，不把画名念成睛峦萧寺。18 字。"
+    },
+    {
+      "id": "s08",
+      "start": 55,
+      "end": 60,
+      "asset_id": "whole-scroll",
+      "purpose": "title",
+      "notes": "outro。今年夏天，它在纳尔逊「传奇山水」里。山还是这座山。上屏小字可写全名「传奇山水——宋画的崇高之境 · 2026.3.21–9.27 · 已结束」。不邀请观展，不出现品牌名。落版：北宋（传）李成《晴峦萧寺》，纳尔逊-阿特金斯艺术博物馆藏，47-71，画心纵111.76 × 横55.88厘米。20 字。"
+    }
+  ]
+}

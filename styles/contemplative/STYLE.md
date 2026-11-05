@@ -73,6 +73,7 @@ python3 scripts/validate_plan.py /path/to/project.json --check-files --probe
 
 按任务选择案例：
 
+- [《晴峦萧寺》制作前提案](../../cases/contemplative/licheng-qingluanxiaosi-case.md)：传李成、纳尔逊 47-71；60秒、8镜预估，大山堂堂与三条景深，画心尺幅早于局部，归属一句带过，特展只在片尾。尚未成片。
 - [《渔村小雪图》制作案例](../../cases/contemplative/wangshen-yucunxiaoxue-produced-case.md)：120.667秒、22镜；连续宽幅展卷、A4尺幅、三段视角、白粉与题名流传，南西油墨宋真实排字封面、宋体淡金字幕及剪映字体回退的实际取舍。
 - [《揭钵图》×罗聘《鬼趣图》](../../cases/contemplative/jiebo-guiqu-case.md)：双画130秒、24镜，官方节图定位虾精、统一私藏展卷版本、原创磁性男声、静音停顿剪短、丰富字体与4:3传统宋体封面；预估和实测计划分开。
 - [《荷石水鸟图》](../../cases/contemplative/bada-heshi-shuiniu-case.md)：横版原画细读、用户要求追加《鱼石图》比较、早期尺幅、丰富字体、展览年度计划与语速反馈后重排；保留制作前提案供比较。
