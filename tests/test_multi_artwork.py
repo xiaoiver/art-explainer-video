@@ -12,14 +12,14 @@ SPEC.loader.exec_module(module)
 
 class MultiArtworkTests(unittest.TestCase):
     def setUp(self):
-        self.plan = json.loads((ROOT / "examples/multi-artwork-playful-plan.json").read_text())
+        self.plan = json.loads((ROOT / "examples/playful/multi-artwork-playful-plan.json").read_text())
 
     def check(self):
         return module.validate_plan(self.plan, ROOT)
 
     def test_comparison_example_and_legacy_examples_remain_valid(self):
         self.assertFalse(self.check()["errors"])
-        for path in (ROOT / "examples").glob("*plan.json"):
+        for path in (ROOT / "examples").rglob("*plan.json"):
             plan = json.loads(path.read_text())
             self.assertFalse(module.validate_plan(plan, path.parent)["errors"], path.name)
 
@@ -82,6 +82,10 @@ class MultiArtworkTests(unittest.TestCase):
         self.assertFalse(self.check()["errors"])
         self.plan["editing_style"] = "playful-art-history"
         self.assertFalse(self.check()["errors"])
+        self.plan["editing_style"] = "theatre"
+        self.assertFalse(self.check()["errors"])
+        self.plan["editing_style"] = "not-a-style"
+        self.assertTrue(self.check()["errors"])
         self.plan["editing_style"] = []
         self.assertTrue(self.check()["errors"])
 

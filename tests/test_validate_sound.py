@@ -151,7 +151,7 @@ class SoundPlanTests(unittest.TestCase):
             self.assertTrue(sound.validate_sound(value, self.base)["errors"])
 
     def test_public_draft_has_no_recordings_or_license_claims(self):
-        example = json.loads((ROOT / "examples/ruihe-sound-draft.json").read_text())
+        example = json.loads((ROOT / "examples/contemplative/ruihe-sound-draft.json").read_text())
         self.assertFalse(sound.validate_sound(example, ROOT / "examples")["errors"])
         self.assertTrue(sound.validate_sound(example, ROOT / "examples", ready=True)["errors"])
 
