@@ -15,7 +15,7 @@ SPEC.loader.exec_module(MODULE)
 
 class PlanChecks(unittest.TestCase):
     def setUp(self):
-        self.plan = json.loads((ROOT / "examples/xishan-plan.json").read_text(encoding="utf-8"))
+        self.plan = json.loads((ROOT / "examples/contemplative/xishan-plan.json").read_text(encoding="utf-8"))
 
     def validate(self, plan=None, **kwargs):
         return MODULE.validate_plan(self.plan if plan is None else plan, ROOT, **kwargs)

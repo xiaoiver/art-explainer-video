@@ -109,7 +109,8 @@ def validate_plan(data, base_dir, check_files=False, probe=False):
             errors.append("artwork.title is required")
         elif not isinstance(artwork.get("sources"), list) or not artwork["sources"]:
             warnings.append("artwork.sources has no references; verify provenance separately")
-    if "editing_style" in data and data["editing_style"] not in ("contemplative", "playful-art-history"):
+    if "editing_style" in data and data["editing_style"] not in (
+            "contemplative", "playful-art-history", "theatre"):
         errors.append("editing_style is unsupported")
 
     sizes = {}
