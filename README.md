@@ -133,6 +133,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [揭钵图 × 鬼趣图计划](examples/contemplative/jiebo-guiqu-plan.json) | 16:9、约120秒、22镜预估与4:3封面，不含媒体 |
 | [揭钵与鬼趣实测编排](examples/contemplative/jiebo-guiqu-produced-plan.json) | 130.333秒、3128帧、24镜、61条字幕的编排摘录；无媒体或私有路径 |
 
+### 资料收集：林皖「三访《五马图》」
+
+这一组只做资料收集，分镜计划留待成片阶段。[来源与权利](cases/contemplative/linwan-wumatu-SOURCES.md)记录馆方条目、已核对的公开文件和仍然缺图的几件；[书页转录](cases/contemplative/linwan-wumatu-article-original.md)、[20 件清单](cases/contemplative/linwan-wumatu-artworks.md)与[照片页码](cases/contemplative/linwan-wumatu-photo-page-map.md)在同一目录。仓库不含五马全卷、高清母版和书页原片。
 
 ## 本地检查
 
