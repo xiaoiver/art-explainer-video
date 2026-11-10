@@ -133,6 +133,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [揭钵图 × 鬼趣图计划](examples/contemplative/jiebo-guiqu-plan.json) | 16:9、约120秒、22镜预估与4:3封面，不含媒体 |
 | [揭钵与鬼趣实测编排](examples/contemplative/jiebo-guiqu-produced-plan.json) | 130.333秒、3128帧、24镜、61条字幕的编排摘录；无媒体或私有路径 |
 
+### 预制作：马远《水图》× 库尔贝《海浪》（柏林）
+
+这一组只做预制作资料，尚未进入制作；分镜 JSON 与配音留待成片阶段。[案例简报](cases/contemplative/mayuan-shuitu-courbet-wave-case.md)、[九十秒至两分钟口播](cases/contemplative/mayuan-shuitu-courbet-wave-script.md)与[来源与权利](cases/contemplative/mayuan-shuitu-courbet-wave-SOURCES.md)在同一目录。中西并置是观看方法，不是影响史。仓库只收 [五张压缩预览 JPEG](docs/shots/mayuan-courbet/)（四段《水图》与柏林《海浪》A I 967，最大约 551 KB），不含故宫、名画记或奥赛母版。
 
 ## 本地检查
 
