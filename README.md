@@ -133,6 +133,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [揭钵图 × 鬼趣图计划](examples/contemplative/jiebo-guiqu-plan.json) | 16:9、约120秒、22镜预估与4:3封面，不含媒体 |
 | [揭钵与鬼趣实测编排](examples/contemplative/jiebo-guiqu-produced-plan.json) | 130.333秒、3128帧、24镜、61条字幕的编排摘录；无媒体或私有路径 |
 
+### 预制作：牧溪《六柿图》× 莫兰迪的瓶罐
+
+这一组只做预制作资料，尚未进入制作；分镜 JSON 与配音留待成片阶段。[案例简报](cases/contemplative/muxi-liushi-morandi-case.md)、[九十秒口播](cases/contemplative/muxi-liushi-morandi-script.md)与[来源与权利](cases/contemplative/muxi-liushi-morandi-SOURCES.md)在同一目录。中西并置是观看方法，不是影响史。仓库只收 [一张低清预览 JPEG](docs/shots/muxi-morandi/01-muxi-six-persimmons.jpg)（《六柿图》，约 491×600）。莫兰迪作品仍在版权保护期内，只保留馆方链接，不入库原图。
 
 ## 本地检查
 
