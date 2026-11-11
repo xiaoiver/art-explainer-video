@@ -133,6 +133,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [揭钵图 × 鬼趣图计划](examples/contemplative/jiebo-guiqu-plan.json) | 16:9、约120秒、22镜预估与4:3封面，不含媒体 |
 | [揭钵与鬼趣实测编排](examples/contemplative/jiebo-guiqu-produced-plan.json) | 130.333秒、3128帧、24镜、61条字幕的编排摘录；无媒体或私有路径 |
 
+### 预制作：三只兔（丢勒《野兔》× 崔白《双喜图》× 敦煌三兔共耳）
+
+这一组只做预制作资料，尚未进入制作；分镜 JSON 与配音留待成片阶段。[案例简报](cases/contemplative/sanzhitu-durer-cuibai-case.md)、[约一百一十秒口播](cases/contemplative/sanzhitu-durer-cuibai-script.md)与[来源与权利](cases/contemplative/sanzhitu-durer-cuibai-SOURCES.md)在同一目录。中西并置是观看方法，不是影响史。仓库只收 [四张压缩预览 JPEG](docs/shots/sanzhitu-durer-cuibai/)（丢勒《野兔》全幅与头部局部，崔白《双喜图》全幅与兔的局部，最大约 461 KB），不含阿贝蒂娜、台北故宫或敦煌研究院母版，也不含莫高窟洞窟照片。
 
 ## 本地检查
 
