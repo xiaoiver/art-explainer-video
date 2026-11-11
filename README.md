@@ -133,6 +133,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [揭钵图 × 鬼趣图计划](examples/contemplative/jiebo-guiqu-plan.json) | 16:9、约120秒、22镜预估与4:3封面，不含媒体 |
 | [揭钵与鬼趣实测编排](examples/contemplative/jiebo-guiqu-produced-plan.json) | 130.333秒、3128帧、24镜、61条字幕的编排摘录；无媒体或私有路径 |
 
+### 预制作：张波《从“画中书”到“画中人”》（读书图的读法）
+
+这一组只做书页整理，尚未进入制作；口播、分镜与配音留待以后另做。[整理说明](cases/contemplative/zhangbo-huazhongshu/README.md)、[转录](cases/contemplative/zhangbo-huazhongshu/从画中书到画中人.md)、[画作清单](cases/contemplative/zhangbo-huazhongshu/画作清单.md)与[出处备忘](cases/contemplative/zhangbo-huazhongshu/SOURCES.md)在同一目录。正式刊名、年期与起止页仍未核实。仓库只收已压缩的书页裁切与馆藏公开预览（`images/crops/` 四张、`images/public/` 四张，最大约 473 KB）。13 张书页照片与高清馆藏母版未收入。图5、图6、图8及原刊图7整页，以及 p.53 正文，在文稿中仍标为缺失。公共下载不等于商业许可。
 
 ## 本地检查
 
