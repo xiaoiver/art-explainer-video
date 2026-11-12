@@ -133,6 +133,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [揭钵图 × 鬼趣图计划](examples/contemplative/jiebo-guiqu-plan.json) | 16:9、约120秒、22镜预估与4:3封面，不含媒体 |
 | [揭钵与鬼趣实测编排](examples/contemplative/jiebo-guiqu-produced-plan.json) | 130.333秒、3128帧、24镜、61条字幕的编排摘录；无媒体或私有路径 |
 
+### 预制作：敦煌藏经洞地藏绢画 × 法尤姆木乃伊肖像，尚未进入制作
+
+这一组只做预制作资料，尚未进入制作；分镜 JSON 与配音留待成片阶段。[案例简报](cases/contemplative/dunhuang-dizang-fayum-isidora-case.md)、[九十秒至两分钟口播](cases/contemplative/dunhuang-dizang-fayum-isidora-script.md)与[来源与权利](cases/contemplative/dunhuang-dizang-fayum-isidora-SOURCES.md)在同一目录。中西并置是观看方法，不是影响史。仓库只收 [四张压缩预览 JPEG](docs/shots/dunhuang-dizang-fayum-isidora/)（绢画下段供养人、绢画全幅、法尤姆眼睛局部与带红裹布的全幅，最大约 559 KB）。大英博物馆／IDP 照片不是自由商用，盖蒂图像为 CC0；不含馆方母版、IDP 原底、敦煌研究院或数字敦煌影像，也不含段文杰临摹。
 
 ## 本地检查
 
