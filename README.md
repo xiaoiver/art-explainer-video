@@ -133,6 +133,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [揭钵图 × 鬼趣图计划](examples/contemplative/jiebo-guiqu-plan.json) | 16:9、约120秒、22镜预估与4:3封面，不含媒体 |
 | [揭钵与鬼趣实测编排](examples/contemplative/jiebo-guiqu-produced-plan.json) | 130.333秒、3128帧、24镜、61条字幕的编排摘录；无媒体或私有路径 |
 
+### 预制作：李嵩《骷髅幻戏图》× 霍尔拜因《大使们》
+
+这一组只做预制作资料，尚未进入制作；分镜 JSON 与配音留待成片阶段。[案例简报](cases/contemplative/lisong-kulou-holbein-ambassadors-case.md)、[九十秒至两分钟口播](cases/contemplative/lisong-kulou-holbein-ambassadors-script.md)与[来源与权利](cases/contemplative/lisong-kulou-holbein-ambassadors-SOURCES.md)在同一目录。中西并置是观看方法，不是影响史。仓库只收 [五张压缩预览 JPEG](docs/shots/lisong-kulou-holbein-ambassadors/)（《骷髅幻戏图》全幅与提线局部，《大使们》全幅与脚边斜影，以及标明为透视校正的头骨，最大约 616 KB），不含故宫、名画记或伦敦国家美术馆母版。
 
 ## 本地检查
 
