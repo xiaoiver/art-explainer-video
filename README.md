@@ -135,7 +135,7 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 
 ### 沉静赏析：尚未进入制作
 
-- [王振朋《伯牙鼓琴图》× 扬·斯腾《年轻女子为年轻男子弹羽管键琴》——听是怎样被画出来的](cases/contemplative/boya-steen-harpsichord-case.md)（尚未进入制作）
+- [王振朋《伯牙鼓琴图》× 扬·斯滕《年轻女子为年轻男子弹羽管键琴》——听是怎样被画出来的](cases/contemplative/boya-steen-harpsichord-case.md)（尚未进入制作）
 
 ## 本地检查
 
