@@ -1,6 +1,6 @@
-# 可选计划文件
+# 制作计划与校验
 
-`scripts/validate_plan.py` 只读检查以下轻量格式。它是本 skill 的可选制作计划，不是 Remotion 或剪映的输入 schema；既有工程可以保留自己的格式，不必为了本 skill 重建。下列时间单位均为秒。Remotion 使用自己的入口与 props，渲染接入见 [独立渲染](remotion-rendering.md)。
+新建完整视频工程时，用以下 JSON 记录尺寸、素材和镜头，并用 `scripts/validate_plan.py` 校验。续作沿用已有工程及其格式；单改封面或字幕时直接处理对应素材。时间单位为秒。渲染仍使用工程自己的入口与 props，见[独立渲染](remotion-rendering.md)。
 
 | 字段 | 含义 |
 | --- | --- |
@@ -21,7 +21,7 @@
 示例见简化的 [xishan-plan.json](../examples/contemplative/xishan-plan.json)、保留25镜头时间线的 [early-spring-plan.json](../examples/contemplative/early-spring-plan.json)，[雪中猎人竖版计划](../examples/contemplative/hunters-in-snow-portrait-plan.json)，[汉宫春晓图20镜计划](../examples/contemplative/hangong-chunxiao-plan.json)，实际132秒的 [富春山居图22镜计划](../examples/contemplative/fuchun-shanju-plan.json)，以及尚未制作的 [千里江山图12镜计划](../examples/contemplative/qianli-jiangshan-plan.json)。长卷开场的原画慢移可记作 `title`，尺幅及后续原作讲解仍为 `analysis`；平移本身不属于 AI 动态。同一作品的不同方向各存一个计划，避免覆盖原版。复制后修改作品、时间、来源与文件路径，不能把案例坐标和素材当作其他画作的依据。
 
 ```bash
-python3 scripts/validate_plan.py examples/contemplative/xishan-plan.json
+python3 scripts/validate_plan.py /path/to/project.json
 python3 scripts/validate_plan.py /path/to/project.json --check-files
 python3 scripts/validate_plan.py /path/to/project.json --check-files --probe
 ```

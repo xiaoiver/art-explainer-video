@@ -94,11 +94,11 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [声音制作](shared/audio.md) | 音色试样、分轨、循环与时间校准 |
 | [音效选材与来源台账](shared/sound-sourcing.md) | 外录/自录与生成声音的选择、逐镜头声音表、源片段、许可署名和跨集复用 |
 | [声音计划检查](scripts/validate_sound.py) | 可选本地音频探测、SHA-256、片段能量分析、CSV声音表与署名导出 |
-| [字体与文字层级](shared/typography.md) | 南西油墨宋封面与篇名、宋体字幕及淡金重点词、文楷诗句短释文；真实排字与原生回退检查 |
-| [封面的画字融合](shared/cover-design.md) | 古画传统字体、纸绢留白、参考图生图与独立排字的选择，以及两次封面修订 |
+| [字体与文字层级](shared/typography.md) | 封面、篇名、章节导航、字幕与资料小字的字体分工，以及真实排字与字体回退检查 |
+| [封面的画字融合](shared/cover-design.md) | 纸绢留白、参考图生图、独立排字与封面验收 |
 | [剪辑与交付](shared/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
 | [横竖版与重新构图](shared/formats.md) | 方向选择、原画局部、宽幅全景、字幕安全区与素材复用 |
-| [计划文件格式](shared/project-format.md) | 可选 JSON 格式与检查命令 |
+| [计划文件格式](shared/project-format.md) | 新建完整视频工程的 JSON 格式与检查命令 |
 
 
 ## 案例与示例
@@ -136,22 +136,9 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 
 ## 本地检查
 
-计划检查脚本仅依赖 Python 3.9+ 标准库；只有 `--probe` 需要可执行的 `ffprobe`。
+制作计划的检查命令见[制作计划与校验](shared/project-format.md)。脚本仅依赖 Python 3.9+ 标准库，探测成片时另需 `ffprobe`。
 
 ```bash
-python3 scripts/validate_plan.py examples/contemplative/xishan-plan.json
-python3 scripts/validate_plan.py examples/contemplative/early-spring-plan.json
-python3 scripts/validate_plan.py examples/contemplative/hunters-in-snow-portrait-plan.json
-python3 scripts/validate_plan.py examples/contemplative/hangong-chunxiao-plan.json
-python3 scripts/validate_plan.py examples/contemplative/fuchun-shanju-plan.json
-python3 scripts/validate_plan.py examples/contemplative/qianli-jiangshan-plan.json
-python3 scripts/validate_plan.py examples/contemplative/bada-heshi-shuiniu-plan.json
-python3 scripts/validate_plan.py examples/contemplative/jiebo-guiqu-plan.json
-python3 scripts/validate_plan.py examples/contemplative/jiebo-guiqu-produced-plan.json
-python3 scripts/validate_plan.py examples/contemplative/wangshen-yucunxiaoxue-produced-plan.json
-python3 scripts/validate_plan.py examples/contemplative/daolian-produced-plan.json
-python3 scripts/validate_plan.py examples/theatre/american-gothic-theatre.json
-python3 scripts/validate_plan.py examples/playful/multi-artwork-playful-plan.json
 python3 scripts/validate_sound.py examples/contemplative/ruihe-sound-draft.json
 python3 -m unittest discover -s tests -v
 ```
@@ -200,7 +187,7 @@ node --experimental-strip-types --test tests/test_long_scroll.mjs
 
 ### 封面画字融合示例
 
-本系列古画封面优先传统字体，让文字自然落在纸绢留白，与山水共同构图。当前固定分工为：南西油墨宋用于封面与视频篇名，宋体用于连续字幕及同字体淡金重点词，文楷按需用于景名、诗句与短释文。需要准确字体文件时，用参考生成的无字底图加真实字体排字。方法见[字体分工](shared/typography.md)与[封面的画字融合](shared/cover-design.md)。
+本系列让标题落在纸绢留白处，与原画共同构图。封面用字见[当前字体分工](shared/typography.md#当前默认)，无字底图与独立排字的做法见[封面的画字融合](shared/cover-design.md)。
 
 | 《富春山居图》横版封面v3 | 《千里江山图》封面v2 |
 | :---: | :---: |
