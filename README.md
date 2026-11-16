@@ -99,6 +99,7 @@ python3 scripts/prepend_intro.py --episode /path/to/episode.mp4 \
 | [剪辑与交付](shared/editing-delivery.md) | 剪映、真实导出、验收与制作记录 |
 | [横竖版与重新构图](shared/formats.md) | 方向选择、原画局部、宽幅全景、字幕安全区与素材复用 |
 | [计划文件格式](shared/project-format.md) | 可选 JSON 格式与检查命令 |
+| [伍梓维《以谱解画——读李衍〈四清图〉》书页整理](docs/articles/wuziyi-siqingtu/README.md) | 论文转录与图版备忘，非正式选题 |
 
 
 ## 案例与示例
