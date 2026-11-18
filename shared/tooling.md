@@ -46,4 +46,4 @@ CLI 路线先用帮助发现功能，再通过 `youmind info` 查看目标操作
 
 可用路线：[capcut-cli 的 capcut-edit](https://github.com/renezander030/capcut-cli)。它是第三方项目；安装前核对当前来源、版本与平台兼容性。它与剪映原生桌面软件分别检测。
 
-参照实际 CLI 帮助 / schema 编译工程，先检查再写入。不要将本次 CLI 版本、模板或字号值当作跨版本保证。原生工程处理和导出见 [剪辑与交付](editing-delivery.md)。
+参照实际 CLI 帮助 / schema 编译工程，先检查再写入。字幕、分轨、相对路径和恢复工程的具体做法见 [剪映草稿编译](capcut-draft.md)。不要将本次 CLI 版本、模板或字号值当作跨版本保证。原生工程处理和导出见 [剪辑与交付](editing-delivery.md)。
